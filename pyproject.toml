@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "letta-research-chat"
+version = "0.1.0"
+description = "Research-oriented Python utilities and CLI for interacting with a Letta (MemGPT) agent server."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "requests>=2.31.0",
+  "colorama>=0.4.6",
+]
+
+[project.optional-dependencies]
+gui = [
+  "flask>=3.0.0",
+]
+graph = [
+  "graphiti-core>=0.29.1,<0.30",
+]
+profile = [
+  "memobase>=0.0.27",
+]
+test = [
+  "pytest==7.4.4",
+]
+all = [
+  "flask>=3.0.0",
+  "graphiti-core>=0.29.1,<0.30",
+  "memobase>=0.0.27",
+]
+
+[project.scripts]
+letta-chat = "letta_research_chat.cli:main"
+letta-chat-web = "letta_research_chat.web:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

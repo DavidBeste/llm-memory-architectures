@@ -1,0 +1,8 @@
+# Large/example inputs for the unrelated code-style evaluation are retained in
+# the development repository but omitted from anonymous CIMemories source
+# archives produced by `git archive`.
+cweval_core_c_sections.jsonl export-ignore
+cweval_lang_c_sections.jsonl export-ignore
+cweval_schema_sections.jsonl export-ignore
+dataset_full_functions_final.json export-ignore
+dataset_functions.json export-ignore

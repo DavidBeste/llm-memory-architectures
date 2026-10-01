@@ -1,0 +1,70 @@
+diff --git a/src/server/api/memobase_server/llms/__init__.py b/src/server/api/memobase_server/llms/__init__.py
+index ecc221a..1a1d5c5 100644
+--- a/src/server/api/memobase_server/llms/__init__.py
++++ b/src/server/api/memobase_server/llms/__init__.py
+@@ -92,6 +92,12 @@
+ async def llm_sanity_check():
++    #r = await llm_complete(
++    #    DEFAULT_PROJECT_ID, "Test", max_tokens=16, prompt_id="__test__"
++    #)
+     r = await llm_complete(
+-        DEFAULT_PROJECT_ID, "Test", max_tokens=16, prompt_id="__test__"
++        DEFAULT_PROJECT_ID,
++        "Reply with exactly: OK",
++        max_tokens=256,
++        prompt_id="__test__",
+     )
+     if not r.ok():
+         raise ValueError(f"LLM sanity check failed: {r.msg()}")
+diff --git a/src/server/api/memobase_server/llms/openai_model_llm.py b/src/server/api/memobase_server/llms/openai_model_llm.py
+index 39117cf..237aa26 100644
+--- a/src/server/api/memobase_server/llms/openai_model_llm.py
++++ b/src/server/api/memobase_server/llms/openai_model_llm.py
+@@ -9,6 +9,30 @@ async def openai_complete(
+     prompt_id = sp_args.get("prompt_id", None)
+ 
+     openai_async_client = get_openai_async_client_instance()
++
++    # --- local patch: OpenAI reasoning models (gpt-5.x, o-series) ---
++    # They reject `max_tokens` and non-default `temperature`, and they spend the
++    # completion budget on reasoning before emitting any content, so the 1024
++    # default would return an empty string. Reverse by restoring
++    # openai_model_llm.py.orig.
++    model_name = str(model)
++    if model_name.startswith(("gpt-5", "o1", "o3", "o4")):
++        budget = kwargs.pop("max_tokens", 1024)
++        kwargs["max_completion_tokens"] = max(int(budget), 16384)
++        kwargs.pop("temperature", None)
++        kwargs.pop("top_p", None)
++        kwargs.setdefault("reasoning_effort", "low")
++    elif model_name in (
++        "zai-org/GLM-5.3-Flash",
++        "deepseek-ai/DeepSeek-V4-Flash-0731",
++    ):
++        # Together's reasoning endpoints expose internal reasoning through
++        # reasoning_content and counts it against max_tokens.  Memobase's
++        # 1024-token default can therefore be exhausted before the model emits
++        # the visible JSON/content required by profile extraction.
++        budget = kwargs.get("max_tokens", 1024)
++        kwargs["max_tokens"] = max(int(budget), 16384)
++
+     messages = []
+     if system_prompt:
+         messages.append({"role": "system", "content": system_prompt})
+@@ -22,4 +46,15 @@ async def openai_complete(
+     LOG.info(
+         f"Cached {prompt_id} {model} {cached_tokens}/{response.usage.prompt_tokens}"
+     )
+-    return response.choices[0].message.content
++    #return response.choices[0].message.content
++    content = response.choices[0].message.content
++    if not content:
++        reasoning_content = getattr(
++            response.choices[0].message, "reasoning_content", None
++        )
++        raise ValueError(
++            f"Model {model!r} returned no visible content; "
++            f"finish_reason={response.choices[0].finish_reason!r}, "
++            f"reasoning_content_present={bool(reasoning_content)}"
++        )
++    return content

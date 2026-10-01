@@ -1,0 +1,31 @@
+services:
+  neo4j:
+    image: ${NEO4J_IMAGE:-neo4j@sha256:4bae36aff76271e27fd6a6ed0835413f86a284cd179cfb1cb7d188f5f7533aca}
+    container_name: letta-graphiti-neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/password
+    volumes:
+      - ~/.letta/.persist/neo4j/data:/data
+      - ~/.letta/.persist/neo4j/logs:/logs
+      - ~/.letta/.persist/neo4j/plugins:/plugins
+
+  letta:
+    image: ${LETTA_IMAGE:-letta/letta@sha256:aa66c3eeee13d2dfc40c650d709b550237ee31bfc91942a52fa488a13fa8c102}
+    container_name: letta1
+    restart: unless-stopped
+    depends_on:
+      - neo4j
+    ports:
+      - "8283:8283"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.openai.com/v1}
+      TOGETHER_API_KEY: ${TOGETHER_API_KEY}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ~/.letta/.persist/pgdata:/var/lib/postgresql/data

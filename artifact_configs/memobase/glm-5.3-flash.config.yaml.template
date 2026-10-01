@@ -1,0 +1,51 @@
+language: en
+
+llm_style: openai
+llm_base_url: https://api.together.xyz/v1
+llm_api_key: REPLACE_WITH_TOGETHER_API_KEY
+best_llm_model: zai-org/GLM-5.3-Flash
+thinking_llm_model: zai-org/GLM-5.3-Flash
+summary_llm_model: zai-org/GLM-5.3-Flash
+
+enable_event_embedding: true
+embedding_provider: openai
+embedding_base_url: https://api.openai.com/v1
+embedding_api_key: REPLACE_WITH_OPENAI_API_KEY
+embedding_model: text-embedding-3-small
+embedding_dim: 1536
+
+max_chat_blob_buffer_token_size: 100
+max_profile_subtopics: 200
+max_pre_profile_token_size: 2048
+
+additional_user_profiles:
+  - topic: finance
+    description: "Income, accounts, debts, assets, transactions and financial obligations"
+    sub_topics: [income, employer_compensation, bank_accounts, debts_and_loans, assets_and_investments, transactions, insurance, taxes]
+  - topic: health
+    description: "Medical conditions, medications, providers, procedures and appointments"
+    sub_topics: [conditions, medications, providers, procedures, appointments, test_results, allergies]
+  - topic: housing
+    description: "Residence, tenancy, mortgage, utilities and property details"
+    sub_topics: [address, ownership_or_tenancy, mortgage_or_rent, utilities, property_details, home_insurance]
+  - topic: legal
+    description: "Legal matters, cases, filings, attorneys and obligations"
+    sub_topics: [cases, attorneys, filings_and_documents, hearings, obligations, disputes]
+  - topic: schedule
+    description: "Recurring routines, appointments and time commitments"
+    sub_topics: [recurring_routines, appointments, commitments, deadlines]
+  - topic: relationships
+    description: "Family, partner, friends and social connections"
+    sub_topics: [partner, family_members, children, friends, social_connections]
+  - topic: employment
+    description: "Job, employer, role, tenure and workplace matters"
+    sub_topics: [employer, job_title, tenure, responsibilities, workplace_matters]
+  - topic: education
+    description: "Qualifications, courses, training and study"
+    sub_topics: [qualifications, courses, training, study_habits, institutions]
+  - topic: mental_health
+    description: "Mental health, therapy, recovery and emotional state"
+    sub_topics: [therapy, recovery, support_groups, emotional_state, coping]
+  - topic: general
+    description: "Core identity: name, age, sex, contact details and address"
+    sub_topics: [name, age, sex, address, contact_details, identifiers]

@@ -1,0 +1,11 @@
+# Direct reference pins for the anonymous CIMemories artifact environment.
+# External services are pinned separately in docker-compose.yml and ARTIFACT.md.
+requests==2.31.0
+colorama==0.4.6
+flask==3.1.3
+graphiti-core==0.29.1
+# The Memobase SDK is needed only for live profile-memory execution.  Its
+# published releases require Python 3.11+, while offline verification and the
+# core client remain supported on Python 3.10.
+memobase==0.0.27; python_version >= "3.11"
+pytest==7.4.4
