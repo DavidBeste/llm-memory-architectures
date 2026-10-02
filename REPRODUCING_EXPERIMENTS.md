@@ -51,6 +51,11 @@ in `requirements-artifact.txt` then omits the Memobase SDK. The unit tests and
 artifact verifier mock or avoid that external service boundary. Python 3.10
 must not be used for live profile-memory reproduction.
 
+Source archives such as ZIP downloads may not preserve executable permissions.
+The commands below invoke repository shell scripts with `bash` so they work
+without changing file modes. To use direct invocation instead, run
+`chmod +x scripts/*.sh` once after extracting the archive.
+
 ## 3. Restore the fixed inputs
 
 The released dataset contains synthetic personas. Copy the sanitized dataset
@@ -108,6 +113,8 @@ export MEMOBASE_ROOT="$PWD/memobase"
 git -C "$MEMOBASE_ROOT" checkout 358c16bbc6d687937d79bc2f984a11c3be8da901
 git -C "$MEMOBASE_ROOT" apply \
   "$PWD/patches/memobase-v0.0.42-reasoning-models.patch"
+cp "$MEMOBASE_ROOT/src/server/.env.example" \
+  "$MEMOBASE_ROOT/src/server/.env"
 ```
 
 The patch contains both tracked source changes used by the experiments:
@@ -116,6 +123,10 @@ and requests a short visible answer, while
 `memobase_server/llms/openai_model_llm.py` handles reasoning-model parameters,
 budgets, and empty visible output. Local `config.yaml.*` backups and `.orig`
 files are deliberately excluded.
+
+The copied `.env` supplies the database, Redis, port, project, and access-token
+settings required by Memobase's Docker Compose file. Its default
+`ACCESS_TOKEN="secret"` matches the `MEMOBASE_API_KEY="secret"` exported above.
 
 Before each model family, copy the corresponding sanitized configuration,
 replace only its credential placeholders locally, and rebuild the API service:
@@ -148,11 +159,11 @@ family.
 Use a fresh shell or relaunch `letta-chat` whenever changing model families:
 
 ```bash
-scripts/start_cimemories_gpt_5_6_sol.sh
+bash scripts/start_cimemories_gpt_5_6_sol.sh
 # or
-scripts/start_cimemories_glm_5_3.sh
+bash scripts/start_cimemories_glm_5_3.sh
 # or
-scripts/start_cimemories_deepseek_v4.sh
+bash scripts/start_cimemories_deepseek_v4.sh
 ```
 
 Inside `letta-chat`, run:
@@ -180,16 +191,16 @@ and reranks only the query-selected Past Events, retaining at most 20 events.
 The helper prints the exact commands without making network calls:
 
 ```bash
-scripts/reproduce_cimemories_experiments.sh gpt responses
-scripts/reproduce_cimemories_experiments.sh glm responses
-scripts/reproduce_cimemories_experiments.sh deepseek responses
+bash scripts/reproduce_cimemories_experiments.sh gpt responses
+bash scripts/reproduce_cimemories_experiments.sh glm responses
+bash scripts/reproduce_cimemories_experiments.sh deepseek responses
 ```
 
 Add `--execute` only after the matching Memobase configuration is active and
 `/check_local_backends` has passed:
 
 ```bash
-scripts/reproduce_cimemories_experiments.sh deepseek responses --execute
+bash scripts/reproduce_cimemories_experiments.sh deepseek responses --execute
 ```
 
 The exact response policies are:
@@ -205,7 +216,7 @@ architecture. Record the three printed dataset output directories, then
 generate one pre-rerank repetition from each:
 
 ```bash
-scripts/reproduce_cimemories_experiments.sh gpt pre \
+bash scripts/reproduce_cimemories_experiments.sh gpt pre \
   --pipeline research_outputs/<GPT_LIST_DATASET_RUN> \
   --pipeline research_outputs/<GPT_GRAPH_DATASET_RUN> \
   --pipeline research_outputs/<GPT_PROFILE_DATASET_RUN> \
@@ -220,9 +231,9 @@ than starting a differently configured experiment.
 ## 9. Check response-stage completeness
 
 ```bash
-scripts/reproduce_cimemories_experiments.sh gpt status --execute
-scripts/reproduce_cimemories_experiments.sh glm status --execute
-scripts/reproduce_cimemories_experiments.sh deepseek status --execute
+bash scripts/reproduce_cimemories_experiments.sh gpt status --execute
+bash scripts/reproduce_cimemories_experiments.sh glm status --execute
+bash scripts/reproduce_cimemories_experiments.sh deepseek status --execute
 ```
 
 Expected coverage for every model and architecture is `post 10/10` and
@@ -244,7 +255,7 @@ model-architecture cells. Identify the selected persona-0 pipeline directory
 for list, graph, and profile in each model family, then run:
 
 ```bash
-scripts/reproduce_cimemories_experiments.sh gpt memory \
+bash scripts/reproduce_cimemories_experiments.sh gpt memory \
   --list-pipeline <GPT_PERSONA0_LIST_PIPELINE> \
   --graph-pipeline <GPT_PERSONA0_GRAPH_PIPELINE> \
   --profile-pipeline <GPT_PERSONA0_PROFILE_PIPELINE> \
@@ -266,7 +277,7 @@ paper's explicitly scoped persona-0 direct-memory case study is complete.
 This step is offline and makes no model calls:
 
 ```bash
-scripts/reproduce_cimemories_experiments.sh all report --execute
+bash scripts/reproduce_cimemories_experiments.sh all report --execute
 ```
 
 The command requires a complete 3-model by 3-architecture by 10-persona

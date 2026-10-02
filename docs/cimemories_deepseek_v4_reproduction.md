@@ -145,7 +145,7 @@ credentials are validated by the backend check.
 
 ```bash
 cd /path/to/anonymous-artifact-repository
-scripts/start_cimemories_deepseek_v4.sh
+bash scripts/start_cimemories_deepseek_v4.sh
 ```
 
 This starts a fresh `letta-chat` process with the complete DeepSeek agent,

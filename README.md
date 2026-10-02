@@ -318,19 +318,23 @@ template for a different deployment or experiment.
 
 Run exactly one architecture per session:
 
+Source archives such as ZIP downloads may not preserve executable permissions.
+Invoke the launchers with `bash` as shown below, or optionally restore direct
+invocation once with `chmod +x scripts/*.sh`.
+
 ```bash
-scripts/run_cimemories_memory_experiment.sh list
-scripts/run_cimemories_memory_experiment.sh graph
-scripts/run_cimemories_memory_experiment.sh profile
+bash scripts/run_cimemories_memory_experiment.sh list
+bash scripts/run_cimemories_memory_experiment.sh graph
+bash scripts/run_cimemories_memory_experiment.sh profile
 ```
 
 For an inexpensive end-to-end check, add `--persona 0`. This uses the same
 configuration and evaluates all 49 scenarios for only that zero-based persona:
 
 ```bash
-scripts/run_cimemories_memory_experiment.sh list --persona 0
-scripts/run_cimemories_memory_experiment.sh graph --persona 0
-scripts/run_cimemories_memory_experiment.sh profile --persona 0
+bash scripts/run_cimemories_memory_experiment.sh list --persona 0
+bash scripts/run_cimemories_memory_experiment.sh graph --persona 0
+bash scripts/run_cimemories_memory_experiment.sh profile --persona 0
 ```
 
 The defaults are `cimemories_raw.json`, `labels_qwen.json`, GPT-5.6 Sol with
@@ -350,7 +354,7 @@ memory stage and therefore does not call the semantic memory judge.
 Inspect the generated command without starting a run:
 
 ```bash
-scripts/run_cimemories_memory_experiment.sh list --dry-run
+bash scripts/run_cimemories_memory_experiment.sh list --dry-run
 ```
 
 Pass `--resume-compatible` only when intentionally reusing stages with the same

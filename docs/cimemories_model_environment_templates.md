@@ -13,7 +13,7 @@ that both exist, source the selected template, hide credential values in their
 status output, and start `letta-chat` in the repository root. For example:
 
 ```bash
-scripts/start_cimemories_glm_5_3.sh
+bash scripts/start_cimemories_glm_5_3.sh
 ```
 
 To configure the current shell persistently instead of immediately launching

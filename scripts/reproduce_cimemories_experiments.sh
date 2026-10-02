@@ -222,7 +222,7 @@ command -v letta-chat >/dev/null 2>&1 || {
 
 if [[ -n "$launcher" && "$stage" != status ]]; then
   printf '%s\n' "Executing through ${launcher}. Provider calls may incur charges."
-  printf '%s\n' "${commands[@]}" | "$launcher"
+  printf '%s\n' "${commands[@]}" | bash "$launcher"
 else
   printf '%s\n' "${commands[@]}" | letta-chat
 fi

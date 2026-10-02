@@ -130,7 +130,7 @@ repository, construct a clean tree without its history or unrelated untracked
 files:
 
 ```bash
-scripts/prepare_anonymous_repository.sh \
+bash scripts/prepare_anonymous_repository.sh \
   ../anonymous-cimemories-artifact \
   research_outputs/cimemories-anonymous-github
 ```

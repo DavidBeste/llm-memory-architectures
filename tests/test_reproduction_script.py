@@ -12,7 +12,7 @@ SCRIPT = ROOT / "scripts/reproduce_cimemories_experiments.sh"
 class ReproductionScriptTest(unittest.TestCase):
     def run_plan(self, *args: str) -> str:
         completed = subprocess.run(
-            [str(SCRIPT), *args],
+            ["bash", str(SCRIPT), *args],
             cwd=ROOT,
             check=True,
             capture_output=True,
