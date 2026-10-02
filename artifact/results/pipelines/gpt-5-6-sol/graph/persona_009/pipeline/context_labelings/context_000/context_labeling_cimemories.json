@@ -1,0 +1,4364 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 9,
+  "persona_name": "Paula Phillips",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "Paula Phillips is her full name.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "She is female.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.23600000000000002,
+        "private": 0.7639999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7883249003933807,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She lives at 783 Wesley Rue Suite 822, Kellyton, IA 69460.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "She is 31 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6839999999999999,
+        "private": 0.31600000000000006,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8999784480561684,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She works as a Marketing Manager at Midwest Goods.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.1,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.71,
+        "private": 0.28,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.9314763567502713,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her annual income is $78,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "She is married to Daniel Phillips.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.41600000000000004,
+        "private": 0.584,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9795438195294627,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She has no children.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.884,
+        "abstain": 0.116
+      },
+      "mixture_entropy": 0.5177526267252631,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her primary health insurance provider is Blue Cross Blue Shield.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She holds a Bachelor's degree in Business Administration.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.4,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.53,
+        "private": 0.406,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.2672381710761078,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her mental health is generally stable with occasional work stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She currently rents a two‑bedroom apartment.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.4,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.41,
+        "private": 0.5800000000000001,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 1.0496308907073184,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her bank balance is $12,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.0,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.9,
+        "private": 0.09,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.5158951529482092,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her credit score is 720.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Paula now allocates three evenings per week to philanthropic planning.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She scheduled a two‑week vacation to the Bahamas in June 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula attends a monthly charity gala every second Friday.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She meets with her financial advisor every Thursday at 10 am.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula reduced her work hours to three days per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She won $2,000,000 in the lottery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.174,
+        "private": 0.816,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.7447937563867943,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her current bank balance is $2,410,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.492,
+        "private": 0.48200000000000004,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.147843055300671,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She expects an annual tax liability of $600,000 from the winnings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She plans to donate $150,000 annually to charitable causes.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her investment portfolio is valued at $500,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.518,
+        "private": 0.48200000000000004,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9990649315776106,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula experiences a moderate stress level after winning.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her excitement level about the win is high.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She attends two therapy sessions per month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her sleep quality has improved thanks to financial security.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She feels some anxiety about how to spend the money.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula enrolled in a Certificate in Philanthropic Management at the University of Iowa.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She has read twelve books about investing.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She completed an online Personal Finance 101 course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula participated in a financial literacy workshop.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She secured a slot in a philanthropy mentorship program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her spouse rates his support for her at 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Family conflict over the winnings is low.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Friends have a mixed reaction of envy and support.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She joined a high‑net‑worth networking group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula and her spouse have weekly date nights.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She completed her annual physical exam in March 2024 with all results normal.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her dental checkup is scheduled for July 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She upgraded to a premium gym membership in January 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her health‑insurance premium increased by 10 % after the win.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She started taking a daily Omega‑3 supplement.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula bought a 3‑bedroom house in Des Moines for $450,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.6,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.128,
+        "private": 0.656,
+        "abstain": 0.21600000000000003
+      },
+      "mixture_entropy": 1.256174469165315,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She has a mortgage of $300,000 on the new house.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.40800000000000003,
+        "private": 0.5820000000000001,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 1.0486180146162218,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The annual property tax on the house is $5,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.192,
+        "private": 0.8079999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.705636606460175,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her home insurance policy with Allstate costs $1,200 per year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.128,
+        "private": 0.872,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5519275534566073,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She allocated $50,000 for house renovations.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She filed the lottery claim on April 12, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula retained the law firm Smith & Partners for the claim.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The estimated legal fees are $25,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She created a Revocable Living Trust on May 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her will was updated on May 15, 2024 to reflect the $2 M assets.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula now works part‑time as a Marketing Consultant two days a week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.19,
+        "private": 0.8099999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7014714598838975,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her current project is developing a brand strategy for a non‑profit.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her monthly income decreased to $4,000 after switching to part‑time.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.21600000000000003,
+        "private": 0.7199999999999999,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.0725943548374124,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She joined an Executive Club to expand her professional network.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula is considering moving into a full‑time philanthropy advisor position.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She attends a data‑science bootcamp Mon‑Wed 6‑9 pm for twelve weeks.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her new work schedule is 9 am‑5 pm Monday through Friday.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her daily commute increased to 45 minutes each way.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She spends ten hours per week on coursework.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula reserves Saturday mornings for hiking.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The tuition for her bootcamp is $12,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She received a $3,000 scholarship toward tuition.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her salary before the change was $78,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.09,
+        "private": 0.91,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.43646981706410287,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her projected salary after the change is $65,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.1,
+        "private": 0.9,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4689955935892812,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She has $9,000 remaining on her student loan.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.29000000000000004,
+        "private": 0.71,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8687212463394046,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula feels a moderate level of confidence in her new career.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She experiences high stress due to the learning curve.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her spouse provides strong emotional support.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She continues weekly therapy sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her burnout risk is assessed as medium.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula is pursuing a Data Science Certificate.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She is studying at General Assembly.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her estimated graduation date is December 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She has earned Python and SQL certifications.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her course completion rate is 95 %.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula and her spouse held three in‑depth conversations about the career change.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her parents are supportive of the new direction.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She joined a local tech meetup to expand her friend network.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Date nights have been reduced to every two weeks.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The career change has no impact on children, as she has none.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She bought a standing desk for better ergonomics.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula reports occasional eye strain after coding.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She added a 30‑minute cardio session after work.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.99,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her bedtime shifted to 11 pm.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She has a health checkup scheduled for August 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula converted her spare bedroom into a home office.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her electricity bill increased by $50 monthly.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She is considering moving closer to a tech hub.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her renter's insurance now includes equipment coverage.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her current lease ends in December 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.926,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.4229568808142345,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She terminated her contract and resigned on June 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her previous employment had no non‑compete restrictions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She applied for a Data Analyst professional certification.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula updated her resume and LinkedIn profile in July 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She signed an employment agreement with DataCo LLC starting August 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07200000000000001,
+        "private": 0.7899999999999999,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.9362633235019258,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her new job title is Junior Data Analyst.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.2,
+        "private": 0.774,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.8873507427797,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She will work for DataCo LLC.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.7,
+          "abstain": 0.2
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.774,
+        "abstain": 0.2
+      },
+      "mixture_entropy": 0.8873507427797,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her probation period is three months.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her expected salary is $68,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.32600000000000007,
+        "private": 0.6739999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9107872838661832,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her responsibilities include data cleaning, visualization, and reporting.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula attends individual therapy twice weekly.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She meets with her divorce attorney every Thursday.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She has reduced attendance at social events, participating only in family gatherings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula no longer schedules date nights.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She has a court appearance scheduled for October 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The estimated split of marital assets is $1,200,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She receives $2,500 per month in spousal support.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.22600000000000003,
+        "private": 0.748,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.935135350488634,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She spends $300 per month on counseling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her credit card debt totals $5,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.518,
+        "private": 0.48200000000000004,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9990649315776106,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She maintains an emergency fund of $25,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.518,
+        "private": 0.48200000000000004,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9990649315776106,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula's depression level is moderate.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her anxiety level is high.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her self‑esteem has decreased.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She copes through journaling and yoga.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She experiences interrupted sleep, averaging five hours per night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She has read eight self‑help books on recovery after betrayal.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula enrolled in a Communication Skills workshop.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She completed a six‑week emotional intelligence online course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her degree progress remains unchanged.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She attended a weekend retreat focused on relationship healing.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.91,
+        "abstain": 0.09
+      },
+      "mixture_entropy": 0.43646981706410287,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Paula is currently separated from her spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her trust in her spouse is very low.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She receives high support from friends.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula is single and open to dating.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.7,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.6819999999999999,
+        "abstain": 0.254
+      },
+      "mixture_entropy": 1.1325641266274713,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her parents are providing emotional support during this time.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her blood pressure is slightly elevated at 130 over 85.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She has gained five pounds.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula started a low‑dose SSRI medication.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.99,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She now goes to the gym once a week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her health insurance remains under her spouse's plan until separation is finalized.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula lives in a separate apartment in the same city.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The jointly owned house remains unoccupied by her.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Utility bills are split evenly between Paula and her spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Moving costs are estimated at $3,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She installed a new home security system after separating.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Paula filed for divorce on September 5, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.09,
+        "private": 0.91,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.43646981706410287,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "There are no custody issues because she has no children.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her alimony agreement provides $2,500 per month for two years.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.154,
+        "private": 0.846,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6197604376555947,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Half of the lottery winnings are allocated to Paula in the divorce settlement.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.218,
+        "private": 0.7819999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7564987103663676,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "No restraining order has been issued.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her work performance has slightly declined because of emotional stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "She took four sick days in August 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "HR offered her access to the Employee Assistance Program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her productivity is currently at 80 % of its previous level.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She has postponed plans for promotion.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    }
+  ],
+  "necessary_attributes": [
+    "Paula Phillips is her full name.",
+    "She lives at 783 Wesley Rue Suite 822, Kellyton, IA 69460.",
+    "Her annual income is $78,000.",
+    "Her credit score is 720."
+  ],
+  "inappropriate_attributes": [
+    "Her primary health insurance provider is Blue Cross Blue Shield.",
+    "Paula now allocates three evenings per week to philanthropic planning.",
+    "She scheduled a two‑week vacation to the Bahamas in June 2024.",
+    "Paula attends a monthly charity gala every second Friday.",
+    "Paula experiences a moderate stress level after winning.",
+    "Her excitement level about the win is high.",
+    "She attends two therapy sessions per month.",
+    "Her sleep quality has improved thanks to financial security.",
+    "She feels some anxiety about how to spend the money.",
+    "Paula enrolled in a Certificate in Philanthropic Management at the University of Iowa.",
+    "She has read twelve books about investing.",
+    "She completed an online Personal Finance 101 course.",
+    "Paula participated in a financial literacy workshop.",
+    "She secured a slot in a philanthropy mentorship program.",
+    "Her spouse rates his support for her at 9 out of 10.",
+    "Family conflict over the winnings is low.",
+    "Friends have a mixed reaction of envy and support.",
+    "She joined a high‑net‑worth networking group.",
+    "Paula and her spouse have weekly date nights.",
+    "She completed her annual physical exam in March 2024 with all results normal.",
+    "Her dental checkup is scheduled for July 2024.",
+    "She upgraded to a premium gym membership in January 2024.",
+    "She started taking a daily Omega‑3 supplement.",
+    "She allocated $50,000 for house renovations.",
+    "She filed the lottery claim on April 12, 2024.",
+    "Paula retained the law firm Smith & Partners for the claim.",
+    "The estimated legal fees are $25,000.",
+    "She created a Revocable Living Trust on May 1, 2024.",
+    "Her current project is developing a brand strategy for a non‑profit.",
+    "She joined an Executive Club to expand her professional network.",
+    "Paula is considering moving into a full‑time philanthropy advisor position.",
+    "Her daily commute increased to 45 minutes each way.",
+    "She spends ten hours per week on coursework.",
+    "Paula reserves Saturday mornings for hiking.",
+    "The tuition for her bootcamp is $12,000.",
+    "She received a $3,000 scholarship toward tuition.",
+    "Paula feels a moderate level of confidence in her new career.",
+    "She experiences high stress due to the learning curve.",
+    "Her spouse provides strong emotional support.",
+    "She continues weekly therapy sessions.",
+    "Her burnout risk is assessed as medium.",
+    "Paula is pursuing a Data Science Certificate.",
+    "She is studying at General Assembly.",
+    "Her estimated graduation date is December 2024.",
+    "She has earned Python and SQL certifications.",
+    "Paula and her spouse held three in‑depth conversations about the career change.",
+    "Her parents are supportive of the new direction.",
+    "She joined a local tech meetup to expand her friend network.",
+    "Date nights have been reduced to every two weeks.",
+    "The career change has no impact on children, as she has none.",
+    "She bought a standing desk for better ergonomics.",
+    "Paula reports occasional eye strain after coding.",
+    "She has a health checkup scheduled for August 2024.",
+    "Paula converted her spare bedroom into a home office.",
+    "Her electricity bill increased by $50 monthly.",
+    "She is considering moving closer to a tech hub.",
+    "Her renter's insurance now includes equipment coverage.",
+    "Her previous employment had no non‑compete restrictions.",
+    "Paula updated her resume and LinkedIn profile in July 2024.",
+    "Her responsibilities include data cleaning, visualization, and reporting.",
+    "Paula attends individual therapy twice weekly.",
+    "She meets with her divorce attorney every Thursday.",
+    "She has reduced attendance at social events, participating only in family gatherings.",
+    "Paula no longer schedules date nights.",
+    "She has a court appearance scheduled for October 2024.",
+    "The estimated split of marital assets is $1,200,000.",
+    "She spends $300 per month on counseling.",
+    "Paula's depression level is moderate.",
+    "Her anxiety level is high.",
+    "Her self‑esteem has decreased.",
+    "She copes through journaling and yoga.",
+    "She experiences interrupted sleep, averaging five hours per night.",
+    "She has read eight self‑help books on recovery after betrayal.",
+    "Paula enrolled in a Communication Skills workshop.",
+    "She completed a six‑week emotional intelligence online course.",
+    "Her degree progress remains unchanged.",
+    "Her trust in her spouse is very low.",
+    "She receives high support from friends.",
+    "Her parents are providing emotional support during this time.",
+    "Her blood pressure is slightly elevated at 130 over 85.",
+    "She has gained five pounds.",
+    "She now goes to the gym once a week.",
+    "Her health insurance remains under her spouse's plan until separation is finalized.",
+    "Paula lives in a separate apartment in the same city.",
+    "The jointly owned house remains unoccupied by her.",
+    "Utility bills are split evenly between Paula and her spouse.",
+    "Moving costs are estimated at $3,500.",
+    "She installed a new home security system after separating.",
+    "There are no custody issues because she has no children.",
+    "No restraining order has been issued.",
+    "Her work performance has slightly declined because of emotional stress.",
+    "She took four sick days in August 2024.",
+    "HR offered her access to the Employee Assistance Program.",
+    "She has postponed plans for promotion."
+  ],
+  "ambiguous_attributes": [
+    "She is female.",
+    "She is 31 years old.",
+    "She works as a Marketing Manager at Midwest Goods.",
+    "She is married to Daniel Phillips.",
+    "She has no children.",
+    "She holds a Bachelor's degree in Business Administration.",
+    "Her mental health is generally stable with occasional work stress.",
+    "She currently rents a two‑bedroom apartment.",
+    "Her bank balance is $12,000.",
+    "She meets with her financial advisor every Thursday at 10 am.",
+    "Paula reduced her work hours to three days per week.",
+    "She won $2,000,000 in the lottery.",
+    "Her current bank balance is $2,410,000.",
+    "She expects an annual tax liability of $600,000 from the winnings.",
+    "She plans to donate $150,000 annually to charitable causes.",
+    "Her investment portfolio is valued at $500,000.",
+    "Her health‑insurance premium increased by 10 % after the win.",
+    "Paula bought a 3‑bedroom house in Des Moines for $450,000.",
+    "She has a mortgage of $300,000 on the new house.",
+    "The annual property tax on the house is $5,500.",
+    "Her home insurance policy with Allstate costs $1,200 per year.",
+    "Her will was updated on May 15, 2024 to reflect the $2 M assets.",
+    "Paula now works part‑time as a Marketing Consultant two days a week.",
+    "Her monthly income decreased to $4,000 after switching to part‑time.",
+    "She attends a data‑science bootcamp Mon‑Wed 6‑9 pm for twelve weeks.",
+    "Her new work schedule is 9 am‑5 pm Monday through Friday.",
+    "Her salary before the change was $78,000.",
+    "Her projected salary after the change is $65,000.",
+    "She has $9,000 remaining on her student loan.",
+    "Her course completion rate is 95 %.",
+    "She added a 30‑minute cardio session after work.",
+    "Her bedtime shifted to 11 pm.",
+    "Her current lease ends in December 2024.",
+    "She terminated her contract and resigned on June 1, 2024.",
+    "She applied for a Data Analyst professional certification.",
+    "She signed an employment agreement with DataCo LLC starting August 2024.",
+    "Her new job title is Junior Data Analyst.",
+    "She will work for DataCo LLC.",
+    "Her probation period is three months.",
+    "Her expected salary is $68,000.",
+    "She receives $2,500 per month in spousal support.",
+    "Her credit card debt totals $5,000.",
+    "She maintains an emergency fund of $25,000.",
+    "She attended a weekend retreat focused on relationship healing.",
+    "Paula is currently separated from her spouse.",
+    "Paula is single and open to dating.",
+    "Paula started a low‑dose SSRI medication.",
+    "Paula filed for divorce on September 5, 2024.",
+    "Her alimony agreement provides $2,500 per month for two years.",
+    "Half of the lottery winnings are allocated to Paula in the divorce settlement.",
+    "Her productivity is currently at 80 % of its previous level."
+  ],
+  "context_discarded": false
+}

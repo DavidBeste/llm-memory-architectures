@@ -1,0 +1,957 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1168" height="1376" viewBox="0 0 1168 1376">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:22px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}.zero{stroke:#344054;stroke-dasharray:4 4}</style>
+<text class="title" x="24" y="32">Scenario-domain reranking effects: Exposed attributes</text>
+<text class="sub" x="24" y="51">Rows are recipient/task domains; cells average paired effects across available personas</text>
+<style>.domain-label{font-size:14px}.domain-value{font-size:13px}.domain-head{font-size:13px;font-weight:600}</style>
+<text class="domain-head" x="356.0" y="92" text-anchor="middle">DeepSeek-V4</text>
+<text class="domain-head" x="356.0" y="111" text-anchor="middle">List</text>
+<text class="domain-head" x="448.0" y="92" text-anchor="middle">DeepSeek-V4</text>
+<text class="domain-head" x="448.0" y="111" text-anchor="middle">Graph</text>
+<text class="domain-head" x="540.0" y="92" text-anchor="middle">DeepSeek-V4</text>
+<text class="domain-head" x="540.0" y="111" text-anchor="middle">Profile</text>
+<text class="domain-head" x="632.0" y="92" text-anchor="middle">GPT-5.6-sol</text>
+<text class="domain-head" x="632.0" y="111" text-anchor="middle">List</text>
+<text class="domain-head" x="724.0" y="92" text-anchor="middle">GPT-5.6-sol</text>
+<text class="domain-head" x="724.0" y="111" text-anchor="middle">Graph</text>
+<text class="domain-head" x="816.0" y="92" text-anchor="middle">GPT-5.6-sol</text>
+<text class="domain-head" x="816.0" y="111" text-anchor="middle">Profile</text>
+<text class="domain-head" x="908.0" y="92" text-anchor="middle">GLM-5.3</text>
+<text class="domain-head" x="908.0" y="111" text-anchor="middle">List</text>
+<text class="domain-head" x="1000.0" y="92" text-anchor="middle">GLM-5.3</text>
+<text class="domain-head" x="1000.0" y="111" text-anchor="middle">Graph</text>
+<text class="domain-head" x="1092.0" y="92" text-anchor="middle">GLM-5.3</text>
+<text class="domain-head" x="1092.0" y="111" text-anchor="middle">Profile</text>
+<text class="domain-label" x="300" y="155" text-anchor="end">0: Bank Loan Officer — Apply for personal loan</text>
+<rect x="310" y="138" width="89" height="22" rx="2" fill="rgb(241, 224, 225)"/>
+<text class="domain-value" x="354.5" y="154" text-anchor="middle">+1.5</text>
+<rect x="402" y="138" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="446.5" y="154" text-anchor="middle">+0.3</text>
+<rect x="494" y="138" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="538.5" y="154" text-anchor="middle">-0.7</text>
+<rect x="586" y="138" width="89" height="22" rx="2" fill="rgb(237, 206, 208)"/>
+<text class="domain-value" x="630.5" y="154" text-anchor="middle">+2.7</text>
+<rect x="678" y="138" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="722.5" y="154" text-anchor="middle">-0.4</text>
+<rect x="770" y="138" width="89" height="22" rx="2" fill="rgb(229, 238, 234)"/>
+<text class="domain-value" x="814.5" y="154" text-anchor="middle">-1.0</text>
+<rect x="862" y="138" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="906.5" y="154" text-anchor="middle">-1.5</text>
+<rect x="954" y="138" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="998.5" y="154" text-anchor="middle">+0.3</text>
+<rect x="1046" y="138" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="1090.5" y="154" text-anchor="middle">-1.1</text>
+<text class="domain-label" x="300" y="179" text-anchor="end">1: Credit Union Representative — Consolidate …</text>
+<rect x="310" y="162" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="354.5" y="178" text-anchor="middle">-0.6</text>
+<rect x="402" y="162" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="446.5" y="178" text-anchor="middle">+0.9</text>
+<rect x="494" y="162" width="89" height="22" rx="2" fill="rgb(218, 233, 226)"/>
+<text class="domain-value" x="538.5" y="178" text-anchor="middle">-1.6</text>
+<rect x="586" y="162" width="89" height="22" rx="2" fill="rgb(237, 207, 209)"/>
+<text class="domain-value" x="630.5" y="178" text-anchor="middle">+2.6</text>
+<rect x="678" y="162" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="722.5" y="178" text-anchor="middle">+0.8</text>
+<rect x="770" y="162" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="814.5" y="178" text-anchor="middle">+0.3</text>
+<rect x="862" y="162" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="906.5" y="178" text-anchor="middle">-0.4</text>
+<rect x="954" y="162" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="998.5" y="178" text-anchor="middle">-1.8</text>
+<rect x="1046" y="162" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="1090.5" y="178" text-anchor="middle">+0.1</text>
+<text class="domain-label" x="300" y="203" text-anchor="end">2: Financial Advisor — Plan investment portfo…</text>
+<rect x="310" y="186" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="354.5" y="202" text-anchor="middle">-1.8</text>
+<rect x="402" y="186" width="89" height="22" rx="2" fill="rgb(243, 230, 231)"/>
+<text class="domain-value" x="446.5" y="202" text-anchor="middle">+1.1</text>
+<rect x="494" y="186" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="538.5" y="202" text-anchor="middle">-0.6</text>
+<rect x="586" y="186" width="89" height="22" rx="2" fill="rgb(238, 210, 212)"/>
+<text class="domain-value" x="630.5" y="202" text-anchor="middle">+2.4</text>
+<rect x="678" y="186" width="89" height="22" rx="2" fill="rgb(243, 229, 230)"/>
+<text class="domain-value" x="722.5" y="202" text-anchor="middle">+1.2</text>
+<rect x="770" y="186" width="89" height="22" rx="2" fill="rgb(225, 236, 231)"/>
+<text class="domain-value" x="814.5" y="202" text-anchor="middle">-1.2</text>
+<rect x="862" y="186" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="906.5" y="202" text-anchor="middle">-0.9</text>
+<rect x="954" y="186" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="998.5" y="202" text-anchor="middle">-0.3</text>
+<rect x="1046" y="186" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="1090.5" y="202" text-anchor="middle">-0.5</text>
+<text class="domain-label" x="300" y="227" text-anchor="end">3: Spouse — Discuss major purchase decision</text>
+<rect x="310" y="210" width="89" height="22" rx="2" fill="rgb(240, 219, 221)"/>
+<text class="domain-value" x="354.5" y="226" text-anchor="middle">+1.8</text>
+<rect x="402" y="210" width="89" height="22" rx="2" fill="rgb(233, 240, 237)"/>
+<text class="domain-value" x="446.5" y="226" text-anchor="middle">-0.8</text>
+<rect x="494" y="210" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="538.5" y="226" text-anchor="middle">-2.4</text>
+<rect x="586" y="210" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="630.5" y="226" text-anchor="middle">+1.0</text>
+<rect x="678" y="210" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="722.5" y="226" text-anchor="middle">+0.6</text>
+<rect x="770" y="210" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="814.5" y="226" text-anchor="middle">-0.3</text>
+<rect x="862" y="210" width="89" height="22" rx="2" fill="rgb(243, 229, 230)"/>
+<text class="domain-value" x="906.5" y="226" text-anchor="middle">+1.2</text>
+<rect x="954" y="210" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="998.5" y="226" text-anchor="middle">+1.3</text>
+<rect x="1046" y="210" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="1090.5" y="226" text-anchor="middle">-0.7</text>
+<text class="domain-label" x="300" y="251" text-anchor="end">4: Business Partner — Review financial obliga…</text>
+<rect x="310" y="234" width="89" height="22" rx="2" fill="rgb(218, 233, 226)"/>
+<text class="domain-value" x="354.5" y="250" text-anchor="middle">-1.6</text>
+<rect x="402" y="234" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="446.5" y="250" text-anchor="middle">+0.5</text>
+<rect x="494" y="234" width="89" height="22" rx="2" fill="rgb(218, 233, 226)"/>
+<text class="domain-value" x="538.5" y="250" text-anchor="middle">-1.6</text>
+<rect x="586" y="234" width="89" height="22" rx="2" fill="rgb(236, 202, 205)"/>
+<text class="domain-value" x="630.5" y="250" text-anchor="middle">+2.9</text>
+<rect x="678" y="234" width="89" height="22" rx="2" fill="rgb(235, 198, 201)"/>
+<text class="domain-value" x="722.5" y="250" text-anchor="middle">+3.2</text>
+<rect x="770" y="234" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="814.5" y="250" text-anchor="middle">+0.5</text>
+<rect x="862" y="234" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="906.5" y="250" text-anchor="middle">+0.5</text>
+<rect x="954" y="234" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="998.5" y="250" text-anchor="middle">+1.3</text>
+<rect x="1046" y="234" width="89" height="22" rx="2" fill="rgb(218, 233, 226)"/>
+<text class="domain-value" x="1090.5" y="250" text-anchor="middle">-1.6</text>
+<text class="domain-label" x="300" y="275" text-anchor="end">5: Mortgage Broker — Refinance existing mortg…</text>
+<rect x="310" y="258" width="89" height="22" rx="2" fill="rgb(240, 216, 218)"/>
+<text class="domain-value" x="354.5" y="274" text-anchor="middle">+2.0</text>
+<rect x="402" y="258" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="446.5" y="274" text-anchor="middle">-0.6</text>
+<rect x="494" y="258" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="538.5" y="274" text-anchor="middle">+0.9</text>
+<rect x="586" y="258" width="89" height="22" rx="2" fill="rgb(239, 215, 217)"/>
+<text class="domain-value" x="630.5" y="274" text-anchor="middle">+2.1</text>
+<rect x="678" y="258" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="722.5" y="274" text-anchor="middle">+0.3</text>
+<rect x="770" y="258" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="274" text-anchor="middle">+0.2</text>
+<rect x="862" y="258" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="906.5" y="274" text-anchor="middle">+0.7</text>
+<rect x="954" y="258" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="998.5" y="274" text-anchor="middle">-1.4</text>
+<rect x="1046" y="258" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="1090.5" y="274" text-anchor="middle">+0.4</text>
+<text class="domain-label" x="300" y="299" text-anchor="end">6: IRS Agent — Resolve tax discrepancy</text>
+<rect x="310" y="282" width="89" height="22" rx="2" fill="rgb(241, 221, 222)"/>
+<text class="domain-value" x="354.5" y="298" text-anchor="middle">+1.7</text>
+<rect x="402" y="282" width="89" height="22" rx="2" fill="rgb(200, 224, 213)"/>
+<text class="domain-value" x="446.5" y="298" text-anchor="middle">-2.6</text>
+<rect x="494" y="282" width="89" height="22" rx="2" fill="rgb(213, 230, 222)"/>
+<text class="domain-value" x="538.5" y="298" text-anchor="middle">-1.9</text>
+<rect x="586" y="282" width="89" height="22" rx="2" fill="rgb(238, 209, 211)"/>
+<text class="domain-value" x="630.5" y="298" text-anchor="middle">+2.5</text>
+<rect x="678" y="282" width="89" height="22" rx="2" fill="rgb(243, 229, 230)"/>
+<text class="domain-value" x="722.5" y="298" text-anchor="middle">+1.2</text>
+<rect x="770" y="282" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="814.5" y="298" text-anchor="middle">+0.9</text>
+<rect x="862" y="282" width="89" height="22" rx="2" fill="rgb(217, 232, 225)"/>
+<text class="domain-value" x="906.5" y="298" text-anchor="middle">-1.7</text>
+<rect x="954" y="282" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="998.5" y="298" text-anchor="middle">-1.8</text>
+<rect x="1046" y="282" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="1090.5" y="298" text-anchor="middle">-0.5</text>
+<text class="domain-label" x="300" y="323" text-anchor="end">7: Primary Care Doctor — Annual physical exam</text>
+<rect x="310" y="306" width="89" height="22" rx="2" fill="rgb(236, 199, 202)"/>
+<text class="domain-value" x="354.5" y="322" text-anchor="middle">+3.1</text>
+<rect x="402" y="306" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="446.5" y="322" text-anchor="middle">+0.0</text>
+<rect x="494" y="306" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="538.5" y="322" text-anchor="middle">-0.6</text>
+<rect x="586" y="306" width="89" height="22" rx="2" fill="rgb(238, 210, 212)"/>
+<text class="domain-value" x="630.5" y="322" text-anchor="middle">+2.4</text>
+<rect x="678" y="306" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="722.5" y="322" text-anchor="middle">+0.5</text>
+<rect x="770" y="306" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="322" text-anchor="middle">+0.2</text>
+<rect x="862" y="306" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="906.5" y="322" text-anchor="middle">+0.5</text>
+<rect x="954" y="306" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="998.5" y="322" text-anchor="middle">+0.9</text>
+<rect x="1046" y="306" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="1090.5" y="322" text-anchor="middle">-0.9</text>
+<text class="domain-label" x="300" y="347" text-anchor="end">8: Specialist Physician — Initial consultatio…</text>
+<rect x="310" y="330" width="89" height="22" rx="2" fill="rgb(241, 221, 222)"/>
+<text class="domain-value" x="354.5" y="346" text-anchor="middle">+1.7</text>
+<rect x="402" y="330" width="89" height="22" rx="2" fill="rgb(240, 216, 218)"/>
+<text class="domain-value" x="446.5" y="346" text-anchor="middle">+2.0</text>
+<rect x="494" y="330" width="89" height="22" rx="2" fill="rgb(213, 230, 222)"/>
+<text class="domain-value" x="538.5" y="346" text-anchor="middle">-1.9</text>
+<rect x="586" y="330" width="89" height="22" rx="2" fill="rgb(233, 187, 191)"/>
+<text class="domain-value" x="630.5" y="346" text-anchor="middle">+3.9</text>
+<rect x="678" y="330" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="722.5" y="346" text-anchor="middle">-0.2</text>
+<rect x="770" y="330" width="89" height="22" rx="2" fill="rgb(211, 229, 221)"/>
+<text class="domain-value" x="814.5" y="346" text-anchor="middle">-2.0</text>
+<rect x="862" y="330" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="906.5" y="346" text-anchor="middle">-0.2</text>
+<rect x="954" y="330" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="998.5" y="346" text-anchor="middle">-0.2</text>
+<rect x="1046" y="330" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="1090.5" y="346" text-anchor="middle">-1.3</text>
+<text class="domain-label" x="300" y="371" text-anchor="end">9: Emergency Room Intake — Explain current sy…</text>
+<rect x="310" y="354" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="354.5" y="370" text-anchor="middle">-0.4</text>
+<rect x="402" y="354" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="446.5" y="370" text-anchor="middle">-0.9</text>
+<rect x="494" y="354" width="89" height="22" rx="2" fill="rgb(206, 227, 217)"/>
+<text class="domain-value" x="538.5" y="370" text-anchor="middle">-2.3</text>
+<rect x="586" y="354" width="89" height="22" rx="2" fill="rgb(240, 218, 219)"/>
+<text class="domain-value" x="630.5" y="370" text-anchor="middle">+1.9</text>
+<rect x="678" y="354" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="722.5" y="370" text-anchor="middle">+1.0</text>
+<rect x="770" y="354" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="370" text-anchor="middle">+0.2</text>
+<rect x="862" y="354" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="906.5" y="370" text-anchor="middle">-2.4</text>
+<rect x="954" y="354" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="998.5" y="370" text-anchor="middle">-0.3</text>
+<rect x="1046" y="354" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="1090.5" y="370" text-anchor="middle">-1.3</text>
+<text class="domain-label" x="300" y="395" text-anchor="end">10: Mental Health Counselor — Intake assessme…</text>
+<rect x="310" y="378" width="89" height="22" rx="2" fill="rgb(173, 211, 193)"/>
+<text class="domain-value" x="354.5" y="394" text-anchor="middle">-4.1</text>
+<rect x="402" y="378" width="89" height="22" rx="2" fill="rgb(208, 228, 218)"/>
+<text class="domain-value" x="446.5" y="394" text-anchor="middle">-2.2</text>
+<rect x="494" y="378" width="89" height="22" rx="2" fill="rgb(225, 236, 231)"/>
+<text class="domain-value" x="538.5" y="394" text-anchor="middle">-1.2</text>
+<rect x="586" y="378" width="89" height="22" rx="2" fill="rgb(232, 186, 189)"/>
+<text class="domain-value" x="630.5" y="394" text-anchor="middle">+4.0</text>
+<rect x="678" y="378" width="89" height="22" rx="2" fill="rgb(237, 207, 209)"/>
+<text class="domain-value" x="722.5" y="394" text-anchor="middle">+2.6</text>
+<rect x="770" y="378" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="814.5" y="394" text-anchor="middle">-0.7</text>
+<rect x="862" y="378" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="906.5" y="394" text-anchor="middle">+0.1</text>
+<rect x="954" y="378" width="89" height="22" rx="2" fill="rgb(206, 227, 217)"/>
+<text class="domain-value" x="998.5" y="394" text-anchor="middle">-2.3</text>
+<rect x="1046" y="378" width="89" height="22" rx="2" fill="rgb(206, 227, 217)"/>
+<text class="domain-value" x="1090.5" y="394" text-anchor="middle">-2.3</text>
+<text class="domain-label" x="300" y="419" text-anchor="end">11: Health Insurance Coordinator — Appeal den…</text>
+<rect x="310" y="402" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="354.5" y="418" text-anchor="middle">+0.8</text>
+<rect x="402" y="402" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="446.5" y="418" text-anchor="middle">-1.4</text>
+<rect x="494" y="402" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="538.5" y="418" text-anchor="middle">-1.1</text>
+<rect x="586" y="402" width="89" height="22" rx="2" fill="rgb(237, 207, 209)"/>
+<text class="domain-value" x="630.5" y="418" text-anchor="middle">+2.6</text>
+<rect x="678" y="402" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="722.5" y="418" text-anchor="middle">+0.6</text>
+<rect x="770" y="402" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="814.5" y="418" text-anchor="middle">-0.7</text>
+<rect x="862" y="402" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="906.5" y="418" text-anchor="middle">+0.3</text>
+<rect x="954" y="402" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="998.5" y="418" text-anchor="middle">+0.7</text>
+<rect x="1046" y="402" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="1090.5" y="418" text-anchor="middle">-0.7</text>
+<text class="domain-label" x="300" y="443" text-anchor="end">12: Occupational Health Nurse — Return to wor…</text>
+<rect x="310" y="426" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="354.5" y="442" text-anchor="middle">-1.5</text>
+<rect x="402" y="426" width="89" height="22" rx="2" fill="rgb(168, 208, 189)"/>
+<text class="domain-value" x="446.5" y="442" text-anchor="middle">-4.4</text>
+<rect x="494" y="426" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="538.5" y="442" text-anchor="middle">-0.9</text>
+<rect x="586" y="426" width="89" height="22" rx="2" fill="rgb(231, 181, 185)"/>
+<text class="domain-value" x="630.5" y="442" text-anchor="middle">+4.3</text>
+<rect x="678" y="426" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="722.5" y="442" text-anchor="middle">+1.3</text>
+<rect x="770" y="426" width="89" height="22" rx="2" fill="rgb(211, 229, 221)"/>
+<text class="domain-value" x="814.5" y="442" text-anchor="middle">-2.0</text>
+<rect x="862" y="426" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="906.5" y="442" text-anchor="middle">-1.3</text>
+<rect x="954" y="426" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="998.5" y="442" text-anchor="middle">+0.4</text>
+<rect x="1046" y="426" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="1090.5" y="442" text-anchor="middle">-0.4</text>
+<text class="domain-label" x="300" y="467" text-anchor="end">13: Sports Medicine Doctor — Discuss activity…</text>
+<rect x="310" y="450" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="354.5" y="466" text-anchor="middle">-2.4</text>
+<rect x="402" y="450" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="446.5" y="466" text-anchor="middle">+0.6</text>
+<rect x="494" y="450" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="538.5" y="466" text-anchor="middle">-0.9</text>
+<rect x="586" y="450" width="89" height="22" rx="2" fill="rgb(242, 226, 227)"/>
+<text class="domain-value" x="630.5" y="466" text-anchor="middle">+1.4</text>
+<rect x="678" y="450" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="722.5" y="466" text-anchor="middle">-0.4</text>
+<rect x="770" y="450" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="814.5" y="466" text-anchor="middle">-0.6</text>
+<rect x="862" y="450" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="906.5" y="466" text-anchor="middle">-0.5</text>
+<rect x="954" y="450" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="998.5" y="466" text-anchor="middle">-0.3</text>
+<rect x="1046" y="450" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="1090.5" y="466" text-anchor="middle">-0.9</text>
+<text class="domain-label" x="300" y="491" text-anchor="end">14: Pharmacist — Review medication history</text>
+<rect x="310" y="474" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="354.5" y="490" text-anchor="middle">+0.6</text>
+<rect x="402" y="474" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="446.5" y="490" text-anchor="middle">+0.4</text>
+<rect x="494" y="474" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="538.5" y="490" text-anchor="middle">-0.7</text>
+<rect x="586" y="474" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="630.5" y="490" text-anchor="middle">+0.6</text>
+<rect x="678" y="474" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="722.5" y="490" text-anchor="middle">+0.0</text>
+<rect x="770" y="474" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="814.5" y="490" text-anchor="middle">+0.3</text>
+<rect x="862" y="474" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="906.5" y="490" text-anchor="middle">-0.3</text>
+<rect x="954" y="474" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="998.5" y="490" text-anchor="middle">+0.9</text>
+<rect x="1046" y="474" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="1090.5" y="490" text-anchor="middle">+0.0</text>
+<text class="domain-label" x="300" y="515" text-anchor="end">15: Partner — Discuss relationship timeline</text>
+<rect x="310" y="498" width="89" height="22" rx="2" fill="rgb(213, 230, 222)"/>
+<text class="domain-value" x="354.5" y="514" text-anchor="middle">-1.9</text>
+<rect x="402" y="498" width="89" height="22" rx="2" fill="rgb(231, 181, 185)"/>
+<text class="domain-value" x="446.5" y="514" text-anchor="middle">+4.3</text>
+<rect x="494" y="498" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="538.5" y="514" text-anchor="middle">-1.1</text>
+<rect x="586" y="498" width="89" height="22" rx="2" fill="rgb(239, 215, 217)"/>
+<text class="domain-value" x="630.5" y="514" text-anchor="middle">+2.1</text>
+<rect x="678" y="498" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="722.5" y="514" text-anchor="middle">+0.2</text>
+<rect x="770" y="498" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="814.5" y="514" text-anchor="middle">+0.1</text>
+<rect x="862" y="498" width="89" height="22" rx="2" fill="rgb(229, 238, 234)"/>
+<text class="domain-value" x="906.5" y="514" text-anchor="middle">-1.0</text>
+<rect x="954" y="498" width="89" height="22" rx="2" fill="rgb(238, 212, 214)"/>
+<text class="domain-value" x="998.5" y="514" text-anchor="middle">+2.3</text>
+<rect x="1046" y="498" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="1090.5" y="514" text-anchor="middle">+0.4</text>
+<text class="domain-label" x="300" y="539" text-anchor="end">16: Marriage Counselor — Initial couples ther…</text>
+<rect x="310" y="522" width="89" height="22" rx="2" fill="rgb(241, 221, 222)"/>
+<text class="domain-value" x="354.5" y="538" text-anchor="middle">+1.7</text>
+<rect x="402" y="522" width="89" height="22" rx="2" fill="rgb(243, 229, 230)"/>
+<text class="domain-value" x="446.5" y="538" text-anchor="middle">+1.2</text>
+<rect x="494" y="522" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="538.5" y="538" text-anchor="middle">-2.4</text>
+<rect x="586" y="522" width="89" height="22" rx="2" fill="rgb(240, 216, 218)"/>
+<text class="domain-value" x="630.5" y="538" text-anchor="middle">+2.0</text>
+<rect x="678" y="522" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="722.5" y="538" text-anchor="middle">+0.7</text>
+<rect x="770" y="522" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="814.5" y="538" text-anchor="middle">-0.5</text>
+<rect x="862" y="522" width="89" height="22" rx="2" fill="rgb(236, 202, 205)"/>
+<text class="domain-value" x="906.5" y="538" text-anchor="middle">+2.9</text>
+<rect x="954" y="522" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="998.5" y="538" text-anchor="middle">-1.4</text>
+<rect x="1046" y="522" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="1090.5" y="538" text-anchor="middle">+0.2</text>
+<text class="domain-label" x="300" y="563" text-anchor="end">17: Close Friend — Explain recent life changes</text>
+<rect x="310" y="546" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="354.5" y="562" text-anchor="middle">+0.9</text>
+<rect x="402" y="546" width="89" height="22" rx="2" fill="rgb(211, 229, 221)"/>
+<text class="domain-value" x="446.5" y="562" text-anchor="middle">-2.0</text>
+<rect x="494" y="546" width="89" height="22" rx="2" fill="rgb(208, 228, 218)"/>
+<text class="domain-value" x="538.5" y="562" text-anchor="middle">-2.2</text>
+<rect x="586" y="546" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="630.5" y="562" text-anchor="middle">+1.3</text>
+<rect x="678" y="546" width="89" height="22" rx="2" fill="rgb(237, 204, 206)"/>
+<text class="domain-value" x="722.5" y="562" text-anchor="middle">+2.8</text>
+<rect x="770" y="546" width="89" height="22" rx="2" fill="rgb(240, 218, 219)"/>
+<text class="domain-value" x="814.5" y="562" text-anchor="middle">+1.9</text>
+<rect x="862" y="546" width="89" height="22" rx="2" fill="rgb(166, 207, 188)"/>
+<text class="domain-value" x="906.5" y="562" text-anchor="middle">-4.5</text>
+<rect x="954" y="546" width="89" height="22" rx="2" fill="rgb(173, 211, 193)"/>
+<text class="domain-value" x="998.5" y="562" text-anchor="middle">-4.1</text>
+<rect x="1046" y="546" width="89" height="22" rx="2" fill="rgb(165, 207, 187)"/>
+<text class="domain-value" x="1090.5" y="562" text-anchor="middle">-4.6</text>
+<text class="domain-label" x="300" y="587" text-anchor="end">18: Ex-Partner — Negotiate shared responsibil…</text>
+<rect x="310" y="570" width="89" height="22" rx="2" fill="rgb(240, 216, 218)"/>
+<text class="domain-value" x="354.5" y="586" text-anchor="middle">+2.0</text>
+<rect x="402" y="570" width="89" height="22" rx="2" fill="rgb(229, 238, 234)"/>
+<text class="domain-value" x="446.5" y="586" text-anchor="middle">-1.0</text>
+<rect x="494" y="570" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="538.5" y="586" text-anchor="middle">-0.5</text>
+<rect x="586" y="570" width="89" height="22" rx="2" fill="rgb(241, 222, 224)"/>
+<text class="domain-value" x="630.5" y="586" text-anchor="middle">+1.6</text>
+<rect x="678" y="570" width="89" height="22" rx="2" fill="rgb(242, 226, 227)"/>
+<text class="domain-value" x="722.5" y="586" text-anchor="middle">+1.4</text>
+<rect x="770" y="570" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="814.5" y="586" text-anchor="middle">+0.3</text>
+<rect x="862" y="570" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="906.5" y="586" text-anchor="middle">+0.0</text>
+<rect x="954" y="570" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="998.5" y="586" text-anchor="middle">+0.1</text>
+<rect x="1046" y="570" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="1090.5" y="586" text-anchor="middle">-0.6</text>
+<text class="domain-label" x="300" y="611" text-anchor="end">19: Family Member — Discuss living arrangemen…</text>
+<rect x="310" y="594" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="354.5" y="610" text-anchor="middle">+0.7</text>
+<rect x="402" y="594" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="446.5" y="610" text-anchor="middle">+0.0</text>
+<rect x="494" y="594" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="538.5" y="610" text-anchor="middle">-0.6</text>
+<rect x="586" y="594" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="630.5" y="610" text-anchor="middle">+0.3</text>
+<rect x="678" y="594" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="722.5" y="610" text-anchor="middle">+1.0</text>
+<rect x="770" y="594" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="814.5" y="610" text-anchor="middle">-0.2</text>
+<rect x="862" y="594" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="906.5" y="610" text-anchor="middle">+0.9</text>
+<rect x="954" y="594" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="998.5" y="610" text-anchor="middle">-0.3</text>
+<rect x="1046" y="594" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="1090.5" y="610" text-anchor="middle">-0.3</text>
+<text class="domain-label" x="300" y="635" text-anchor="end">20: Defense Attorney — Prepare case strategy</text>
+<rect x="310" y="618" width="89" height="22" rx="2" fill="rgb(186, 217, 202)"/>
+<text class="domain-value" x="354.5" y="634" text-anchor="middle">-3.4</text>
+<rect x="402" y="618" width="89" height="22" rx="2" fill="rgb(114, 182, 150)"/>
+<text class="domain-value" x="446.5" y="634" text-anchor="middle">-7.4</text>
+<rect x="494" y="618" width="89" height="22" rx="2" fill="rgb(213, 230, 222)"/>
+<text class="domain-value" x="538.5" y="634" text-anchor="middle">-1.9</text>
+<rect x="586" y="618" width="89" height="22" rx="2" fill="rgb(228, 167, 172)"/>
+<text class="domain-value" x="630.5" y="634" text-anchor="middle">+5.2</text>
+<rect x="678" y="618" width="89" height="22" rx="2" fill="rgb(235, 198, 201)"/>
+<text class="domain-value" x="722.5" y="634" text-anchor="middle">+3.2</text>
+<rect x="770" y="618" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="814.5" y="634" text-anchor="middle">-0.5</text>
+<rect x="862" y="618" width="89" height="22" rx="2" fill="rgb(238, 209, 211)"/>
+<text class="domain-value" x="906.5" y="634" text-anchor="middle">+2.5</text>
+<rect x="954" y="618" width="89" height="22" rx="2" fill="rgb(161, 205, 184)"/>
+<text class="domain-value" x="998.5" y="634" text-anchor="middle">-4.8</text>
+<rect x="1046" y="618" width="89" height="22" rx="2" fill="rgb(163, 206, 185)"/>
+<text class="domain-value" x="1090.5" y="634" text-anchor="middle">-4.7</text>
+<text class="domain-label" x="300" y="659" text-anchor="end">21: Civil Attorney — Document dispute details</text>
+<rect x="310" y="642" width="89" height="22" rx="2" fill="rgb(181, 214, 199)"/>
+<text class="domain-value" x="354.5" y="658" text-anchor="middle">-3.7</text>
+<rect x="402" y="642" width="89" height="22" rx="2" fill="rgb(39, 145, 95)"/>
+<text class="domain-value" x="446.5" y="658" text-anchor="middle">-11.6</text>
+<rect x="494" y="642" width="89" height="22" rx="2" fill="rgb(190, 219, 205)"/>
+<text class="domain-value" x="538.5" y="658" text-anchor="middle">-3.2</text>
+<rect x="586" y="642" width="89" height="22" rx="2" fill="rgb(241, 221, 222)"/>
+<text class="domain-value" x="630.5" y="658" text-anchor="middle">+1.7</text>
+<rect x="678" y="642" width="89" height="22" rx="2" fill="rgb(240, 218, 219)"/>
+<text class="domain-value" x="722.5" y="658" text-anchor="middle">+1.9</text>
+<rect x="770" y="642" width="89" height="22" rx="2" fill="rgb(161, 205, 184)"/>
+<text class="domain-value" x="814.5" y="658" text-anchor="middle">-4.8</text>
+<rect x="862" y="642" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="906.5" y="658" text-anchor="middle">-0.6</text>
+<rect x="954" y="642" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="998.5" y="658" text-anchor="middle">-0.4</text>
+<rect x="1046" y="642" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="1090.5" y="658" text-anchor="middle">-1.5</text>
+<text class="domain-label" x="300" y="683" text-anchor="end">22: Probation Officer — Monthly status update</text>
+<rect x="310" y="666" width="89" height="22" rx="2" fill="rgb(161, 205, 184)"/>
+<text class="domain-value" x="354.5" y="682" text-anchor="middle">-4.8</text>
+<rect x="402" y="666" width="89" height="22" rx="2" fill="rgb(170, 209, 191)"/>
+<text class="domain-value" x="446.5" y="682" text-anchor="middle">-4.3</text>
+<rect x="494" y="666" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="538.5" y="682" text-anchor="middle">-1.3</text>
+<rect x="586" y="666" width="89" height="22" rx="2" fill="rgb(236, 201, 204)"/>
+<text class="domain-value" x="630.5" y="682" text-anchor="middle">+3.0</text>
+<rect x="678" y="666" width="89" height="22" rx="2" fill="rgb(243, 229, 230)"/>
+<text class="domain-value" x="722.5" y="682" text-anchor="middle">+1.2</text>
+<rect x="770" y="666" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="814.5" y="682" text-anchor="middle">+0.9</text>
+<rect x="862" y="666" width="89" height="22" rx="2" fill="rgb(218, 233, 226)"/>
+<text class="domain-value" x="906.5" y="682" text-anchor="middle">-1.6</text>
+<rect x="954" y="666" width="89" height="22" rx="2" fill="rgb(208, 228, 218)"/>
+<text class="domain-value" x="998.5" y="682" text-anchor="middle">-2.2</text>
+<rect x="1046" y="666" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="1090.5" y="682" text-anchor="middle">+0.5</text>
+<text class="domain-label" x="300" y="707" text-anchor="end">23: Court Mediator — Settlement conference pr…</text>
+<rect x="310" y="690" width="89" height="22" rx="2" fill="rgb(243, 230, 231)"/>
+<text class="domain-value" x="354.5" y="706" text-anchor="middle">+1.1</text>
+<rect x="402" y="690" width="89" height="22" rx="2" fill="rgb(179, 214, 197)"/>
+<text class="domain-value" x="446.5" y="706" text-anchor="middle">-3.8</text>
+<rect x="494" y="690" width="89" height="22" rx="2" fill="rgb(175, 212, 195)"/>
+<text class="domain-value" x="538.5" y="706" text-anchor="middle">-4.0</text>
+<rect x="586" y="690" width="89" height="22" rx="2" fill="rgb(239, 215, 217)"/>
+<text class="domain-value" x="630.5" y="706" text-anchor="middle">+2.1</text>
+<rect x="678" y="690" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="722.5" y="706" text-anchor="middle">+0.8</text>
+<rect x="770" y="690" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="814.5" y="706" text-anchor="middle">+0.1</text>
+<rect x="862" y="690" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="906.5" y="706" text-anchor="middle">+0.0</text>
+<rect x="954" y="690" width="89" height="22" rx="2" fill="rgb(188, 218, 204)"/>
+<text class="domain-value" x="998.5" y="706" text-anchor="middle">-3.3</text>
+<rect x="1046" y="690" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="1090.5" y="706" text-anchor="middle">-0.3</text>
+<text class="domain-label" x="300" y="731" text-anchor="end">24: Admissions Committee — Address academic p…</text>
+<rect x="310" y="714" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="354.5" y="730" text-anchor="middle">-0.3</text>
+<rect x="402" y="714" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="446.5" y="730" text-anchor="middle">-0.9</text>
+<rect x="494" y="714" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="538.5" y="730" text-anchor="middle">-1.4</text>
+<rect x="586" y="714" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="630.5" y="730" text-anchor="middle">+0.9</text>
+<rect x="678" y="714" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="722.5" y="730" text-anchor="middle">+0.5</text>
+<rect x="770" y="714" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="814.5" y="730" text-anchor="middle">-0.4</text>
+<rect x="862" y="714" width="89" height="22" rx="2" fill="rgb(104, 177, 142)"/>
+<text class="domain-value" x="906.5" y="730" text-anchor="middle">-8.0</text>
+<rect x="954" y="714" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="998.5" y="730" text-anchor="middle">+1.3</text>
+<rect x="1046" y="714" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="1090.5" y="730" text-anchor="middle">-0.4</text>
+<text class="domain-label" x="300" y="755" text-anchor="end">25: Financial Aid Office — Document change in…</text>
+<rect x="310" y="738" width="89" height="22" rx="2" fill="rgb(232, 184, 188)"/>
+<text class="domain-value" x="354.5" y="754" text-anchor="middle">+4.1</text>
+<rect x="402" y="738" width="89" height="22" rx="2" fill="rgb(236, 202, 205)"/>
+<text class="domain-value" x="446.5" y="754" text-anchor="middle">+2.9</text>
+<rect x="494" y="738" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="538.5" y="754" text-anchor="middle">-1.8</text>
+<rect x="586" y="738" width="89" height="22" rx="2" fill="rgb(233, 187, 191)"/>
+<text class="domain-value" x="630.5" y="754" text-anchor="middle">+3.9</text>
+<rect x="678" y="738" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="722.5" y="754" text-anchor="middle">+0.2</text>
+<rect x="770" y="738" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="814.5" y="754" text-anchor="middle">-0.4</text>
+<rect x="862" y="738" width="89" height="22" rx="2" fill="rgb(229, 238, 234)"/>
+<text class="domain-value" x="906.5" y="754" text-anchor="middle">-1.0</text>
+<rect x="954" y="738" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="998.5" y="754" text-anchor="middle">-0.6</text>
+<rect x="1046" y="738" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="1090.5" y="754" text-anchor="middle">+0.0</text>
+<text class="domain-label" x="300" y="779" text-anchor="end">26: Academic Advisor — Modify degree plan</text>
+<rect x="310" y="762" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="354.5" y="778" text-anchor="middle">-1.1</text>
+<rect x="402" y="762" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="446.5" y="778" text-anchor="middle">-1.4</text>
+<rect x="494" y="762" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="538.5" y="778" text-anchor="middle">+0.1</text>
+<rect x="586" y="762" width="89" height="22" rx="2" fill="rgb(236, 202, 205)"/>
+<text class="domain-value" x="630.5" y="778" text-anchor="middle">+2.9</text>
+<rect x="678" y="762" width="89" height="22" rx="2" fill="rgb(240, 218, 219)"/>
+<text class="domain-value" x="722.5" y="778" text-anchor="middle">+1.9</text>
+<rect x="770" y="762" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="778" text-anchor="middle">+0.2</text>
+<rect x="862" y="762" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="906.5" y="778" text-anchor="middle">+0.5</text>
+<rect x="954" y="762" width="89" height="22" rx="2" fill="rgb(225, 236, 231)"/>
+<text class="domain-value" x="998.5" y="778" text-anchor="middle">-1.2</text>
+<rect x="1046" y="762" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="1090.5" y="778" text-anchor="middle">-0.5</text>
+<text class="domain-label" x="300" y="803" text-anchor="end">27: Department Chair — Request academic accom…</text>
+<rect x="310" y="786" width="89" height="22" rx="2" fill="rgb(242, 226, 227)"/>
+<text class="domain-value" x="354.5" y="802" text-anchor="middle">+1.4</text>
+<rect x="402" y="786" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="446.5" y="802" text-anchor="middle">+0.7</text>
+<rect x="494" y="786" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="538.5" y="802" text-anchor="middle">-1.8</text>
+<rect x="586" y="786" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="630.5" y="802" text-anchor="middle">+1.0</text>
+<rect x="678" y="786" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="722.5" y="802" text-anchor="middle">+0.7</text>
+<rect x="770" y="786" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="814.5" y="802" text-anchor="middle">-0.2</text>
+<rect x="862" y="786" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="906.5" y="802" text-anchor="middle">-1.5</text>
+<rect x="954" y="786" width="89" height="22" rx="2" fill="rgb(197, 222, 210)"/>
+<text class="domain-value" x="998.5" y="802" text-anchor="middle">-2.8</text>
+<rect x="1046" y="786" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="1090.5" y="802" text-anchor="middle">-0.3</text>
+<text class="domain-label" x="300" y="827" text-anchor="end">28: Campus Security — Report safety concern</text>
+<rect x="310" y="810" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="354.5" y="826" text-anchor="middle">+0.1</text>
+<rect x="402" y="810" width="89" height="22" rx="2" fill="rgb(243, 230, 231)"/>
+<text class="domain-value" x="446.5" y="826" text-anchor="middle">+1.1</text>
+<rect x="494" y="810" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="538.5" y="826" text-anchor="middle">-0.1</text>
+<rect x="586" y="810" width="89" height="22" rx="2" fill="rgb(241, 224, 225)"/>
+<text class="domain-value" x="630.5" y="826" text-anchor="middle">+1.5</text>
+<rect x="678" y="810" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="722.5" y="826" text-anchor="middle">+0.8</text>
+<rect x="770" y="810" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="814.5" y="826" text-anchor="middle">+0.3</text>
+<rect x="862" y="810" width="89" height="22" rx="2" fill="rgb(225, 236, 231)"/>
+<text class="domain-value" x="906.5" y="826" text-anchor="middle">-1.2</text>
+<rect x="954" y="810" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="998.5" y="826" text-anchor="middle">+0.7</text>
+<rect x="1046" y="810" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="1090.5" y="826" text-anchor="middle">-0.7</text>
+<text class="domain-label" x="300" y="851" text-anchor="end">29: Direct Supervisor — Request schedule modi…</text>
+<rect x="310" y="834" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="354.5" y="850" text-anchor="middle">+0.8</text>
+<rect x="402" y="834" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="446.5" y="850" text-anchor="middle">-0.7</text>
+<rect x="494" y="834" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="538.5" y="850" text-anchor="middle">-0.6</text>
+<rect x="586" y="834" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="630.5" y="850" text-anchor="middle">+1.0</text>
+<rect x="678" y="834" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="722.5" y="850" text-anchor="middle">-0.6</text>
+<rect x="770" y="834" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="850" text-anchor="middle">+0.2</text>
+<rect x="862" y="834" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="906.5" y="850" text-anchor="middle">+0.7</text>
+<rect x="954" y="834" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="998.5" y="850" text-anchor="middle">-1.4</text>
+<rect x="1046" y="834" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="1090.5" y="850" text-anchor="middle">-0.6</text>
+<text class="domain-label" x="300" y="875" text-anchor="end">30: HR Benefits Coordinator — Update life eve…</text>
+<rect x="310" y="858" width="89" height="22" rx="2" fill="rgb(237, 207, 209)"/>
+<text class="domain-value" x="354.5" y="874" text-anchor="middle">+2.6</text>
+<rect x="402" y="858" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="446.5" y="874" text-anchor="middle">-1.1</text>
+<rect x="494" y="858" width="89" height="22" rx="2" fill="rgb(233, 240, 237)"/>
+<text class="domain-value" x="538.5" y="874" text-anchor="middle">-0.8</text>
+<rect x="586" y="858" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="630.5" y="874" text-anchor="middle">+0.9</text>
+<rect x="678" y="858" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="722.5" y="874" text-anchor="middle">+0.2</text>
+<rect x="770" y="858" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="814.5" y="874" text-anchor="middle">-0.2</text>
+<rect x="862" y="858" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="906.5" y="874" text-anchor="middle">-0.5</text>
+<rect x="954" y="858" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="998.5" y="874" text-anchor="middle">-1.8</text>
+<rect x="1046" y="858" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="1090.5" y="874" text-anchor="middle">-2.4</text>
+<text class="domain-label" x="300" y="899" text-anchor="end">31: HR Investigator — Provide statement for w…</text>
+<rect x="310" y="882" width="89" height="22" rx="2" fill="rgb(156, 202, 180)"/>
+<text class="domain-value" x="354.5" y="898" text-anchor="middle">-5.1</text>
+<rect x="402" y="882" width="89" height="22" rx="2" fill="rgb(182, 215, 200)"/>
+<text class="domain-value" x="446.5" y="898" text-anchor="middle">-3.6</text>
+<rect x="494" y="882" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="538.5" y="898" text-anchor="middle">-0.9</text>
+<rect x="586" y="882" width="89" height="22" rx="2" fill="rgb(239, 215, 217)"/>
+<text class="domain-value" x="630.5" y="898" text-anchor="middle">+2.1</text>
+<rect x="678" y="882" width="89" height="22" rx="2" fill="rgb(241, 224, 225)"/>
+<text class="domain-value" x="722.5" y="898" text-anchor="middle">+1.5</text>
+<rect x="770" y="882" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="814.5" y="898" text-anchor="middle">-0.4</text>
+<rect x="862" y="882" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="906.5" y="898" text-anchor="middle">+0.8</text>
+<rect x="954" y="882" width="89" height="22" rx="2" fill="rgb(241, 221, 222)"/>
+<text class="domain-value" x="998.5" y="898" text-anchor="middle">+1.7</text>
+<rect x="1046" y="882" width="89" height="22" rx="2" fill="rgb(217, 232, 225)"/>
+<text class="domain-value" x="1090.5" y="898" text-anchor="middle">-1.7</text>
+<text class="domain-label" x="300" y="923" text-anchor="end">32: Performance Review Committee — Explain pr…</text>
+<rect x="310" y="906" width="89" height="22" rx="2" fill="rgb(218, 233, 226)"/>
+<text class="domain-value" x="354.5" y="922" text-anchor="middle">-1.6</text>
+<rect x="402" y="906" width="89" height="22" rx="2" fill="rgb(217, 232, 225)"/>
+<text class="domain-value" x="446.5" y="922" text-anchor="middle">-1.7</text>
+<rect x="494" y="906" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="538.5" y="922" text-anchor="middle">+0.4</text>
+<rect x="586" y="906" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="630.5" y="922" text-anchor="middle">-0.5</text>
+<rect x="678" y="906" width="89" height="22" rx="2" fill="rgb(229, 238, 234)"/>
+<text class="domain-value" x="722.5" y="922" text-anchor="middle">-1.0</text>
+<rect x="770" y="906" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="814.5" y="922" text-anchor="middle">-0.9</text>
+<rect x="862" y="906" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="906.5" y="922" text-anchor="middle">-1.3</text>
+<rect x="954" y="906" width="89" height="22" rx="2" fill="rgb(186, 217, 202)"/>
+<text class="domain-value" x="998.5" y="922" text-anchor="middle">-3.4</text>
+<rect x="1046" y="906" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="1090.5" y="922" text-anchor="middle">-2.4</text>
+<text class="domain-label" x="300" y="947" text-anchor="end">33: Potential Employer — Discuss employment h…</text>
+<rect x="310" y="930" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="354.5" y="946" text-anchor="middle">-0.9</text>
+<rect x="402" y="930" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="446.5" y="946" text-anchor="middle">-0.3</text>
+<rect x="494" y="930" width="89" height="22" rx="2" fill="rgb(217, 232, 225)"/>
+<text class="domain-value" x="538.5" y="946" text-anchor="middle">-1.7</text>
+<rect x="586" y="930" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="630.5" y="946" text-anchor="middle">+0.9</text>
+<rect x="678" y="930" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="722.5" y="946" text-anchor="middle">-1.1</text>
+<rect x="770" y="930" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="814.5" y="946" text-anchor="middle">+0.0</text>
+<rect x="862" y="930" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="906.5" y="946" text-anchor="middle">-1.4</text>
+<rect x="954" y="930" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="998.5" y="946" text-anchor="middle">+0.0</text>
+<rect x="1046" y="930" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="1090.5" y="946" text-anchor="middle">-1.3</text>
+<text class="domain-label" x="300" y="971" text-anchor="end">34: Team Lead — Request project reassignment</text>
+<rect x="310" y="954" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="354.5" y="970" text-anchor="middle">+0.3</text>
+<rect x="402" y="954" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="446.5" y="970" text-anchor="middle">+0.5</text>
+<rect x="494" y="954" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="538.5" y="970" text-anchor="middle">-0.4</text>
+<rect x="586" y="954" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="630.5" y="970" text-anchor="middle">+0.4</text>
+<rect x="678" y="954" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="722.5" y="970" text-anchor="middle">+0.6</text>
+<rect x="770" y="954" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="970" text-anchor="middle">+0.2</text>
+<rect x="862" y="954" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="906.5" y="970" text-anchor="middle">-0.3</text>
+<rect x="954" y="954" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="998.5" y="970" text-anchor="middle">-1.5</text>
+<rect x="1046" y="954" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="1090.5" y="970" text-anchor="middle">+0.0</text>
+<text class="domain-label" x="300" y="995" text-anchor="end">35: Shared Custody Coordinator — Modify visit…</text>
+<rect x="310" y="978" width="89" height="22" rx="2" fill="rgb(236, 199, 202)"/>
+<text class="domain-value" x="354.5" y="994" text-anchor="middle">+3.1</text>
+<rect x="402" y="978" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="446.5" y="994" text-anchor="middle">+0.7</text>
+<rect x="494" y="978" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="538.5" y="994" text-anchor="middle">-0.4</text>
+<rect x="586" y="978" width="89" height="22" rx="2" fill="rgb(239, 213, 215)"/>
+<text class="domain-value" x="630.5" y="994" text-anchor="middle">+2.2</text>
+<rect x="678" y="978" width="89" height="22" rx="2" fill="rgb(243, 230, 231)"/>
+<text class="domain-value" x="722.5" y="994" text-anchor="middle">+1.1</text>
+<rect x="770" y="978" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="814.5" y="994" text-anchor="middle">-0.5</text>
+<rect x="862" y="978" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="906.5" y="994" text-anchor="middle">-0.4</text>
+<rect x="954" y="978" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="998.5" y="994" text-anchor="middle">+0.0</text>
+<rect x="1046" y="978" width="89" height="22" rx="2" fill="rgb(233, 240, 237)"/>
+<text class="domain-value" x="1090.5" y="994" text-anchor="middle">-0.8</text>
+<text class="domain-label" x="300" y="1019" text-anchor="end">36: Medical Scheduler — Coordinate treatment …</text>
+<rect x="310" y="1002" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="354.5" y="1018" text-anchor="middle">-1.4</text>
+<rect x="402" y="1002" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="446.5" y="1018" text-anchor="middle">+0.6</text>
+<rect x="494" y="1002" width="89" height="22" rx="2" fill="rgb(213, 230, 222)"/>
+<text class="domain-value" x="538.5" y="1018" text-anchor="middle">-1.9</text>
+<rect x="586" y="1002" width="89" height="22" rx="2" fill="rgb(242, 226, 227)"/>
+<text class="domain-value" x="630.5" y="1018" text-anchor="middle">+1.4</text>
+<rect x="678" y="1002" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="722.5" y="1018" text-anchor="middle">+0.5</text>
+<rect x="770" y="1002" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="814.5" y="1018" text-anchor="middle">-0.6</text>
+<rect x="862" y="1002" width="89" height="22" rx="2" fill="rgb(245, 238, 238)"/>
+<text class="domain-value" x="906.5" y="1018" text-anchor="middle">+0.6</text>
+<rect x="954" y="1002" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="998.5" y="1018" text-anchor="middle">+0.9</text>
+<rect x="1046" y="1002" width="89" height="22" rx="2" fill="rgb(238, 243, 240)"/>
+<text class="domain-value" x="1090.5" y="1018" text-anchor="middle">-0.5</text>
+<text class="domain-label" x="300" y="1043" text-anchor="end">37: Court Clerk — Request hearing accommodati…</text>
+<rect x="310" y="1026" width="89" height="22" rx="2" fill="rgb(233, 240, 237)"/>
+<text class="domain-value" x="354.5" y="1042" text-anchor="middle">-0.8</text>
+<rect x="402" y="1026" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="446.5" y="1042" text-anchor="middle">+0.1</text>
+<rect x="494" y="1026" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="538.5" y="1042" text-anchor="middle">-0.4</text>
+<rect x="586" y="1026" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="630.5" y="1042" text-anchor="middle">+1.3</text>
+<rect x="678" y="1026" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="722.5" y="1042" text-anchor="middle">+0.9</text>
+<rect x="770" y="1026" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="814.5" y="1042" text-anchor="middle">+0.0</text>
+<rect x="862" y="1026" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="906.5" y="1042" text-anchor="middle">-1.1</text>
+<rect x="954" y="1026" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="998.5" y="1042" text-anchor="middle">-0.9</text>
+<rect x="1046" y="1026" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="1090.5" y="1042" text-anchor="middle">+0.0</text>
+<text class="domain-label" x="300" y="1067" text-anchor="end">38: Landlord — Negotiate lease terms</text>
+<rect x="310" y="1050" width="89" height="22" rx="2" fill="rgb(239, 213, 215)"/>
+<text class="domain-value" x="354.5" y="1066" text-anchor="middle">+2.2</text>
+<rect x="402" y="1050" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="446.5" y="1066" text-anchor="middle">-0.6</text>
+<rect x="494" y="1050" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="538.5" y="1066" text-anchor="middle">+0.4</text>
+<rect x="586" y="1050" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="630.5" y="1066" text-anchor="middle">+1.0</text>
+<rect x="678" y="1050" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="722.5" y="1066" text-anchor="middle">+0.0</text>
+<rect x="770" y="1050" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="814.5" y="1066" text-anchor="middle">+0.1</text>
+<rect x="862" y="1050" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="906.5" y="1066" text-anchor="middle">+1.3</text>
+<rect x="954" y="1050" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="998.5" y="1066" text-anchor="middle">+1.0</text>
+<rect x="1046" y="1050" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="1090.5" y="1066" text-anchor="middle">+0.2</text>
+<text class="domain-label" x="300" y="1091" text-anchor="end">39: Housing Authority — Update household comp…</text>
+<rect x="310" y="1074" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="354.5" y="1090" text-anchor="middle">-0.1</text>
+<rect x="402" y="1074" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="446.5" y="1090" text-anchor="middle">+0.4</text>
+<rect x="494" y="1074" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="538.5" y="1090" text-anchor="middle">-0.3</text>
+<rect x="586" y="1074" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="630.5" y="1090" text-anchor="middle">+1.3</text>
+<rect x="678" y="1074" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="722.5" y="1090" text-anchor="middle">+0.0</text>
+<rect x="770" y="1074" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="814.5" y="1090" text-anchor="middle">-0.2</text>
+<rect x="862" y="1074" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="906.5" y="1090" text-anchor="middle">-0.1</text>
+<rect x="954" y="1074" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="998.5" y="1090" text-anchor="middle">+0.1</text>
+<rect x="1046" y="1074" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="1090.5" y="1090" text-anchor="middle">-0.7</text>
+<text class="domain-label" x="300" y="1115" text-anchor="end">40: Property Insurance Agent — Update coverag…</text>
+<rect x="310" y="1098" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="354.5" y="1114" text-anchor="middle">-0.6</text>
+<rect x="402" y="1098" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="446.5" y="1114" text-anchor="middle">+0.1</text>
+<rect x="494" y="1098" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="538.5" y="1114" text-anchor="middle">-0.3</text>
+<rect x="586" y="1098" width="89" height="22" rx="2" fill="rgb(240, 219, 221)"/>
+<text class="domain-value" x="630.5" y="1114" text-anchor="middle">+1.8</text>
+<rect x="678" y="1098" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="722.5" y="1114" text-anchor="middle">+0.8</text>
+<rect x="770" y="1098" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="814.5" y="1114" text-anchor="middle">+0.0</text>
+<rect x="862" y="1098" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="906.5" y="1114" text-anchor="middle">+0.4</text>
+<rect x="954" y="1098" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="998.5" y="1114" text-anchor="middle">+1.3</text>
+<rect x="1046" y="1098" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="1090.5" y="1114" text-anchor="middle">-0.1</text>
+<text class="domain-label" x="300" y="1139" text-anchor="end">41: Building Management — Request unit modifi…</text>
+<rect x="310" y="1122" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="354.5" y="1138" text-anchor="middle">-0.4</text>
+<rect x="402" y="1122" width="89" height="22" rx="2" fill="rgb(231, 239, 235)"/>
+<text class="domain-value" x="446.5" y="1138" text-anchor="middle">-0.9</text>
+<rect x="494" y="1122" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="538.5" y="1138" text-anchor="middle">+0.2</text>
+<rect x="586" y="1122" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="630.5" y="1138" text-anchor="middle">+0.2</text>
+<rect x="678" y="1122" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="722.5" y="1138" text-anchor="middle">+0.9</text>
+<rect x="770" y="1122" width="89" height="22" rx="2" fill="rgb(246, 244, 244)"/>
+<text class="domain-value" x="814.5" y="1138" text-anchor="middle">+0.2</text>
+<rect x="862" y="1122" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="906.5" y="1138" text-anchor="middle">+0.1</text>
+<rect x="954" y="1122" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="998.5" y="1138" text-anchor="middle">-0.1</text>
+<rect x="1046" y="1122" width="89" height="22" rx="2" fill="rgb(242, 244, 243)"/>
+<text class="domain-value" x="1090.5" y="1138" text-anchor="middle">-0.3</text>
+<text class="domain-label" x="300" y="1163" text-anchor="end">42: Tenant Screening Company — Explain rental…</text>
+<rect x="310" y="1146" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="354.5" y="1162" text-anchor="middle">-0.1</text>
+<rect x="402" y="1146" width="89" height="22" rx="2" fill="rgb(241, 224, 225)"/>
+<text class="domain-value" x="446.5" y="1162" text-anchor="middle">+1.5</text>
+<rect x="494" y="1146" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="538.5" y="1162" text-anchor="middle">-1.4</text>
+<rect x="586" y="1146" width="89" height="22" rx="2" fill="rgb(244, 236, 237)"/>
+<text class="domain-value" x="630.5" y="1162" text-anchor="middle">+0.7</text>
+<rect x="678" y="1146" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="722.5" y="1162" text-anchor="middle">+0.3</text>
+<rect x="770" y="1146" width="89" height="22" rx="2" fill="rgb(234, 241, 238)"/>
+<text class="domain-value" x="814.5" y="1162" text-anchor="middle">-0.7</text>
+<rect x="862" y="1146" width="89" height="22" rx="2" fill="rgb(204, 226, 216)"/>
+<text class="domain-value" x="906.5" y="1162" text-anchor="middle">-2.4</text>
+<rect x="954" y="1146" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="998.5" y="1162" text-anchor="middle">-0.2</text>
+<rect x="1046" y="1146" width="89" height="22" rx="2" fill="rgb(224, 236, 230)"/>
+<text class="domain-value" x="1090.5" y="1162" text-anchor="middle">-1.3</text>
+<text class="domain-label" x="300" y="1187" text-anchor="end">43: Psychiatrist — Medication evaluation appo…</text>
+<rect x="310" y="1170" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="354.5" y="1186" text-anchor="middle">-0.1</text>
+<rect x="402" y="1170" width="89" height="22" rx="2" fill="rgb(247, 247, 247)"/>
+<text class="domain-value" x="446.5" y="1186" text-anchor="middle">+0.0</text>
+<rect x="494" y="1170" width="89" height="22" rx="2" fill="rgb(217, 232, 225)"/>
+<text class="domain-value" x="538.5" y="1186" text-anchor="middle">-1.7</text>
+<rect x="586" y="1170" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="630.5" y="1186" text-anchor="middle">+1.3</text>
+<rect x="678" y="1170" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="722.5" y="1186" text-anchor="middle">+1.3</text>
+<rect x="770" y="1170" width="89" height="22" rx="2" fill="rgb(245, 246, 246)"/>
+<text class="domain-value" x="814.5" y="1186" text-anchor="middle">-0.1</text>
+<rect x="862" y="1170" width="89" height="22" rx="2" fill="rgb(242, 226, 227)"/>
+<text class="domain-value" x="906.5" y="1186" text-anchor="middle">+1.4</text>
+<rect x="954" y="1170" width="89" height="22" rx="2" fill="rgb(243, 245, 244)"/>
+<text class="domain-value" x="998.5" y="1186" text-anchor="middle">-0.2</text>
+<rect x="1046" y="1170" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="1090.5" y="1186" text-anchor="middle">-1.5</text>
+<text class="domain-label" x="300" y="1211" text-anchor="end">44: Support Group Facilitator — Share persona…</text>
+<rect x="310" y="1194" width="89" height="22" rx="2" fill="rgb(243, 230, 231)"/>
+<text class="domain-value" x="354.5" y="1210" text-anchor="middle">+1.1</text>
+<rect x="402" y="1194" width="89" height="22" rx="2" fill="rgb(202, 225, 214)"/>
+<text class="domain-value" x="446.5" y="1210" text-anchor="middle">-2.5</text>
+<rect x="494" y="1194" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="538.5" y="1210" text-anchor="middle">-1.1</text>
+<rect x="586" y="1194" width="89" height="22" rx="2" fill="rgb(233, 190, 193)"/>
+<text class="domain-value" x="630.5" y="1210" text-anchor="middle">+3.7</text>
+<rect x="678" y="1194" width="89" height="22" rx="2" fill="rgb(245, 239, 240)"/>
+<text class="domain-value" x="722.5" y="1210" text-anchor="middle">+0.5</text>
+<rect x="770" y="1194" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="814.5" y="1210" text-anchor="middle">-1.8</text>
+<rect x="862" y="1194" width="89" height="22" rx="2" fill="rgb(241, 222, 224)"/>
+<text class="domain-value" x="906.5" y="1210" text-anchor="middle">+1.6</text>
+<rect x="954" y="1194" width="89" height="22" rx="2" fill="rgb(227, 237, 233)"/>
+<text class="domain-value" x="998.5" y="1210" text-anchor="middle">-1.1</text>
+<rect x="1046" y="1194" width="89" height="22" rx="2" fill="rgb(206, 227, 217)"/>
+<text class="domain-value" x="1090.5" y="1210" text-anchor="middle">-2.3</text>
+<text class="domain-label" x="300" y="1235" text-anchor="end">45: Crisis Counselor — Explain current stress…</text>
+<rect x="310" y="1218" width="89" height="22" rx="2" fill="rgb(195, 222, 209)"/>
+<text class="domain-value" x="354.5" y="1234" text-anchor="middle">-2.9</text>
+<rect x="402" y="1218" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="446.5" y="1234" text-anchor="middle">-0.6</text>
+<rect x="494" y="1218" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="538.5" y="1234" text-anchor="middle">-1.5</text>
+<rect x="586" y="1218" width="89" height="22" rx="2" fill="rgb(232, 186, 189)"/>
+<text class="domain-value" x="630.5" y="1234" text-anchor="middle">+4.0</text>
+<rect x="678" y="1218" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="722.5" y="1234" text-anchor="middle">+1.3</text>
+<rect x="770" y="1218" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="814.5" y="1234" text-anchor="middle">-0.4</text>
+<rect x="862" y="1218" width="89" height="22" rx="2" fill="rgb(220, 234, 227)"/>
+<text class="domain-value" x="906.5" y="1234" text-anchor="middle">-1.5</text>
+<rect x="954" y="1218" width="89" height="22" rx="2" fill="rgb(163, 206, 185)"/>
+<text class="domain-value" x="998.5" y="1234" text-anchor="middle">-4.7</text>
+<rect x="1046" y="1218" width="89" height="22" rx="2" fill="rgb(215, 231, 223)"/>
+<text class="domain-value" x="1090.5" y="1234" text-anchor="middle">-1.8</text>
+<text class="domain-label" x="300" y="1259" text-anchor="end">46: Immigration Attorney — Prepare status adj…</text>
+<rect x="310" y="1242" width="89" height="22" rx="2" fill="rgb(233, 190, 193)"/>
+<text class="domain-value" x="354.5" y="1258" text-anchor="middle">+3.7</text>
+<rect x="402" y="1242" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="446.5" y="1258" text-anchor="middle">+0.9</text>
+<rect x="494" y="1242" width="89" height="22" rx="2" fill="rgb(190, 219, 205)"/>
+<text class="domain-value" x="538.5" y="1258" text-anchor="middle">-3.2</text>
+<rect x="586" y="1242" width="89" height="22" rx="2" fill="rgb(227, 163, 167)"/>
+<text class="domain-value" x="630.5" y="1258" text-anchor="middle">+5.5</text>
+<rect x="678" y="1242" width="89" height="22" rx="2" fill="rgb(240, 216, 218)"/>
+<text class="domain-value" x="722.5" y="1258" text-anchor="middle">+2.0</text>
+<rect x="770" y="1242" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="814.5" y="1258" text-anchor="middle">-0.4</text>
+<rect x="862" y="1242" width="89" height="22" rx="2" fill="rgb(243, 232, 233)"/>
+<text class="domain-value" x="906.5" y="1258" text-anchor="middle">+1.0</text>
+<rect x="954" y="1242" width="89" height="22" rx="2" fill="rgb(242, 227, 228)"/>
+<text class="domain-value" x="998.5" y="1258" text-anchor="middle">+1.3</text>
+<rect x="1046" y="1242" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="1090.5" y="1258" text-anchor="middle">-1.4</text>
+<text class="domain-label" x="300" y="1283" text-anchor="end">47: USCIS Officer — Employment-based petition…</text>
+<rect x="310" y="1266" width="89" height="22" rx="2" fill="rgb(241, 224, 225)"/>
+<text class="domain-value" x="354.5" y="1282" text-anchor="middle">+1.5</text>
+<rect x="402" y="1266" width="89" height="22" rx="2" fill="rgb(199, 223, 212)"/>
+<text class="domain-value" x="446.5" y="1282" text-anchor="middle">-2.7</text>
+<rect x="494" y="1266" width="89" height="22" rx="2" fill="rgb(190, 219, 205)"/>
+<text class="domain-value" x="538.5" y="1282" text-anchor="middle">-3.2</text>
+<rect x="586" y="1266" width="89" height="22" rx="2" fill="rgb(236, 202, 205)"/>
+<text class="domain-value" x="630.5" y="1282" text-anchor="middle">+2.9</text>
+<rect x="678" y="1266" width="89" height="22" rx="2" fill="rgb(238, 210, 212)"/>
+<text class="domain-value" x="722.5" y="1282" text-anchor="middle">+2.4</text>
+<rect x="770" y="1266" width="89" height="22" rx="2" fill="rgb(246, 242, 243)"/>
+<text class="domain-value" x="814.5" y="1282" text-anchor="middle">+0.3</text>
+<rect x="862" y="1266" width="89" height="22" rx="2" fill="rgb(222, 235, 229)"/>
+<text class="domain-value" x="906.5" y="1282" text-anchor="middle">-1.4</text>
+<rect x="954" y="1266" width="89" height="22" rx="2" fill="rgb(156, 202, 180)"/>
+<text class="domain-value" x="998.5" y="1282" text-anchor="middle">-5.1</text>
+<rect x="1046" y="1266" width="89" height="22" rx="2" fill="rgb(193, 221, 208)"/>
+<text class="domain-value" x="1090.5" y="1282" text-anchor="middle">-3.0</text>
+<text class="domain-label" x="300" y="1307" text-anchor="end">48: Consular Officer — Visa renewal appointme…</text>
+<rect x="310" y="1290" width="89" height="22" rx="2" fill="rgb(244, 235, 235)"/>
+<text class="domain-value" x="354.5" y="1306" text-anchor="middle">+0.8</text>
+<rect x="402" y="1290" width="89" height="22" rx="2" fill="rgb(246, 241, 241)"/>
+<text class="domain-value" x="446.5" y="1306" text-anchor="middle">+0.4</text>
+<rect x="494" y="1290" width="89" height="22" rx="2" fill="rgb(236, 242, 239)"/>
+<text class="domain-value" x="538.5" y="1306" text-anchor="middle">-0.6</text>
+<rect x="586" y="1290" width="89" height="22" rx="2" fill="rgb(244, 233, 234)"/>
+<text class="domain-value" x="630.5" y="1306" text-anchor="middle">+0.9</text>
+<rect x="678" y="1290" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="722.5" y="1306" text-anchor="middle">+0.1</text>
+<rect x="770" y="1290" width="89" height="22" rx="2" fill="rgb(247, 245, 246)"/>
+<text class="domain-value" x="814.5" y="1306" text-anchor="middle">+0.1</text>
+<rect x="862" y="1290" width="89" height="22" rx="2" fill="rgb(243, 229, 230)"/>
+<text class="domain-value" x="906.5" y="1306" text-anchor="middle">+1.2</text>
+<rect x="954" y="1290" width="89" height="22" rx="2" fill="rgb(240, 243, 242)"/>
+<text class="domain-value" x="998.5" y="1306" text-anchor="middle">-0.4</text>
+<rect x="1046" y="1290" width="89" height="22" rx="2" fill="rgb(217, 232, 225)"/>
+<text class="domain-value" x="1090.5" y="1306" text-anchor="middle">-1.7</text>
+<text class="domain-label" x="24" y="1358">Green is desirable (recall up or exposure down); red is undesirable. Values are attributes per response.</text>
+</svg>

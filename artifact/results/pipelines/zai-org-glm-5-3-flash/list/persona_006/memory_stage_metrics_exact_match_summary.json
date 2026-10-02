@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "source_pipeline_manifest": "artifact://pipelines/zai-org-glm-5-3-flash/list/persona_006/manifest.json",
+  "source_query_manifest": "artifact://pipelines/zai-org-glm-5-3-flash/list/persona_006/query/manifest.json",
+  "judge_model": null,
+  "judge_reasoning_effort": null,
+  "judge_configuration": {
+    "mode": "deterministic_exact_match",
+    "model": null,
+    "base_url": null,
+    "api_style": null,
+    "reasoning_effort": null,
+    "max_output_tokens": 0,
+    "timeout_seconds": null,
+    "configuration_source": "not_applicable"
+  },
+  "prompt_version": "memory-stage-exact-string-match-v1",
+  "strategy": "exact-match",
+  "attribute_batch_size": null,
+  "pilot_contexts": null,
+  "context_count": 49,
+  "kept_context_count": 44,
+  "discarded_context_count": 5,
+  "aggregate_all_contexts": {
+    "context_count": 49,
+    "pre_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8198051948051948,
+        "micro_availability_rate": 0.7615894039735099,
+        "represented_count": 115,
+        "total": 151
+      },
+      "private": {
+        "macro_availability_rate": 0.2157023786284091,
+        "micro_availability_rate": 0.2509193776520509,
+        "represented_count": 887,
+        "total": 3535
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.42102399881710856,
+        "micro_availability_rate": 0.3951965065502183,
+        "represented_count": 1448,
+        "total": 3664
+      }
+    },
+    "post_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8122294372294371,
+        "micro_availability_rate": 0.7549668874172185,
+        "represented_count": 114,
+        "total": 151
+      },
+      "private": {
+        "macro_availability_rate": 0.01054409665381567,
+        "micro_availability_rate": 0.01272984441301273,
+        "represented_count": 45,
+        "total": 3535
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.1657187308057226,
+        "micro_availability_rate": 0.1421943231441048,
+        "represented_count": 521,
+        "total": 3664
+      }
+    },
+    "reranker": {
+      "necessary": {
+        "macro_retention_rate": 0.9922480620155039,
+        "macro_removal_rate": 0.007751937984496125,
+        "micro_retention_rate": 0.991304347826087,
+        "micro_removal_rate": 0.008695652173912993,
+        "pre_rerank_represented_count": 115,
+        "post_rerank_represented_count": 114
+      },
+      "private": {
+        "macro_retention_rate": 0.046806636670575566,
+        "macro_removal_rate": 0.9531933633294244,
+        "micro_retention_rate": 0.05073280721533258,
+        "micro_removal_rate": 0.9492671927846674,
+        "pre_rerank_represented_count": 887,
+        "post_rerank_represented_count": 45
+      },
+      "ambiguous": {
+        "macro_retention_rate": 0.3827437129023024,
+        "macro_removal_rate": 0.6172562870976974,
+        "micro_retention_rate": 0.35980662983425415,
+        "micro_removal_rate": 0.6401933701657458,
+        "pre_rerank_represented_count": 1448,
+        "post_rerank_represented_count": 521
+      }
+    },
+    "final_response": {
+      "macro_necessary_recall": 0.6857413419913421,
+      "macro_private_leak_rate": 0.004862668605891781,
+      "macro_ambiguous_exposure_rate": 0.11907026465689885,
+      "semantics": "Macro mean of the existing final response metrics; no responses are re-judged."
+    },
+    "judge_exact_token_usage": {
+      "exact": true,
+      "usage_count": 49,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_input_tokens": 0,
+      "reasoning_output_tokens": 0
+    },
+    "judge_consistency_adjustment_count": 0
+  },
+  "aggregate_excluding_discarded_contexts": {
+    "context_count": 44,
+    "pre_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8198051948051948,
+        "micro_availability_rate": 0.7615894039735099,
+        "represented_count": 115,
+        "total": 151
+      },
+      "private": {
+        "macro_availability_rate": 0.2103888558361249,
+        "micro_availability_rate": 0.24833702882483372,
+        "represented_count": 784,
+        "total": 3157
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.4203305399575062,
+        "micro_availability_rate": 0.39520048602673147,
+        "represented_count": 1301,
+        "total": 3292
+      }
+    },
+    "post_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8122294372294371,
+        "micro_availability_rate": 0.7549668874172185,
+        "represented_count": 114,
+        "total": 151
+      },
+      "private": {
+        "macro_availability_rate": 0.00878205524515142,
+        "micro_availability_rate": 0.011086474501108648,
+        "represented_count": 35,
+        "total": 3157
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.16450652227325777,
+        "micro_availability_rate": 0.1421628189550425,
+        "represented_count": 468,
+        "total": 3292
+      }
+    },
+    "reranker": {
+      "necessary": {
+        "macro_retention_rate": 0.9922480620155039,
+        "macro_removal_rate": 0.007751937984496125,
+        "micro_retention_rate": 0.991304347826087,
+        "micro_removal_rate": 0.008695652173912993,
+        "pre_rerank_represented_count": 115,
+        "post_rerank_represented_count": 114
+      },
+      "private": {
+        "macro_retention_rate": 0.04220667021060107,
+        "macro_removal_rate": 0.957793329789399,
+        "micro_retention_rate": 0.044642857142857144,
+        "micro_removal_rate": 0.9553571428571429,
+        "pre_rerank_represented_count": 784,
+        "post_rerank_represented_count": 35
+      },
+      "ambiguous": {
+        "macro_retention_rate": 0.3821233896778946,
+        "macro_removal_rate": 0.6178766103221052,
+        "micro_retention_rate": 0.35972328977709456,
+        "micro_removal_rate": 0.6402767102229054,
+        "pre_rerank_represented_count": 1301,
+        "post_rerank_represented_count": 468
+      }
+    },
+    "final_response": {
+      "macro_necessary_recall": 0.6857413419913421,
+      "macro_private_leak_rate": 0.00371555538414483,
+      "macro_ambiguous_exposure_rate": 0.11558445567263771,
+      "semantics": "Macro mean of the existing final response metrics; no responses are re-judged."
+    },
+    "judge_exact_token_usage": {
+      "exact": true,
+      "usage_count": 44,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_input_tokens": 0,
+      "reasoning_output_tokens": 0
+    },
+    "judge_consistency_adjustment_count": 0
+  },
+  "context_metric_files": [
+    "memory_stage_metrics_exact_match/context_000.json",
+    "memory_stage_metrics_exact_match/context_001.json",
+    "memory_stage_metrics_exact_match/context_002.json",
+    "memory_stage_metrics_exact_match/context_003.json",
+    "memory_stage_metrics_exact_match/context_004.json",
+    "memory_stage_metrics_exact_match/context_005.json",
+    "memory_stage_metrics_exact_match/context_006.json",
+    "memory_stage_metrics_exact_match/context_007.json",
+    "memory_stage_metrics_exact_match/context_008.json",
+    "memory_stage_metrics_exact_match/context_009.json",
+    "memory_stage_metrics_exact_match/context_010.json",
+    "memory_stage_metrics_exact_match/context_011.json",
+    "memory_stage_metrics_exact_match/context_012.json",
+    "memory_stage_metrics_exact_match/context_013.json",
+    "memory_stage_metrics_exact_match/context_014.json",
+    "memory_stage_metrics_exact_match/context_015.json",
+    "memory_stage_metrics_exact_match/context_016.json",
+    "memory_stage_metrics_exact_match/context_017.json",
+    "memory_stage_metrics_exact_match/context_018.json",
+    "memory_stage_metrics_exact_match/context_019.json",
+    "memory_stage_metrics_exact_match/context_020.json",
+    "memory_stage_metrics_exact_match/context_021.json",
+    "memory_stage_metrics_exact_match/context_022.json",
+    "memory_stage_metrics_exact_match/context_023.json",
+    "memory_stage_metrics_exact_match/context_024.json",
+    "memory_stage_metrics_exact_match/context_025.json",
+    "memory_stage_metrics_exact_match/context_026.json",
+    "memory_stage_metrics_exact_match/context_027.json",
+    "memory_stage_metrics_exact_match/context_028.json",
+    "memory_stage_metrics_exact_match/context_029.json",
+    "memory_stage_metrics_exact_match/context_030.json",
+    "memory_stage_metrics_exact_match/context_031.json",
+    "memory_stage_metrics_exact_match/context_032.json",
+    "memory_stage_metrics_exact_match/context_033.json",
+    "memory_stage_metrics_exact_match/context_034.json",
+    "memory_stage_metrics_exact_match/context_035.json",
+    "memory_stage_metrics_exact_match/context_036.json",
+    "memory_stage_metrics_exact_match/context_037.json",
+    "memory_stage_metrics_exact_match/context_038.json",
+    "memory_stage_metrics_exact_match/context_039.json",
+    "memory_stage_metrics_exact_match/context_040.json",
+    "memory_stage_metrics_exact_match/context_041.json",
+    "memory_stage_metrics_exact_match/context_042.json",
+    "memory_stage_metrics_exact_match/context_043.json",
+    "memory_stage_metrics_exact_match/context_044.json",
+    "memory_stage_metrics_exact_match/context_045.json",
+    "memory_stage_metrics_exact_match/context_046.json",
+    "memory_stage_metrics_exact_match/context_047.json",
+    "memory_stage_metrics_exact_match/context_048.json"
+  ]
+}

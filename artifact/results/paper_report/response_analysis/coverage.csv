@@ -1,0 +1,10 @@
+model,model_label,architecture,complete_personas,expected_personas,coverage_percent,persona_indices,missing_persona_indices,complete
+deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek-V4-Flash,list,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek-V4-Flash,graph,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek-V4-Flash,profile,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+gpt-5.6-sol,GPT-5.6-sol,list,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+gpt-5.6-sol,GPT-5.6-sol,graph,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+gpt-5.6-sol,GPT-5.6-sol,profile,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+zai-org/GLM-5.3-Flash,GLM-5.3-Flash,list,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+zai-org/GLM-5.3-Flash,GLM-5.3-Flash,graph,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True
+zai-org/GLM-5.3-Flash,GLM-5.3-Flash,profile,10,10,100.0,"0,1,2,3,4,5,6,7,8,9",,True

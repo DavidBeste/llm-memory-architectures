@@ -1,0 +1,4393 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 3,
+  "persona_name": "Jeffery Day",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "The user's name is Jeffery Day.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7,
+          "private": 0.0,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.0,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.0,
+          "abstain": 0.4
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.69,
+        "private": 0.0,
+        "abstain": 0.31000000000000005
+      },
+      "mixture_entropy": 0.8931734583778568,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery is 56 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.844,
+        "private": 0.156,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6246538232507122,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery's sex is male.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.78,
+        "private": 0.22,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7601675029619657,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery lives at 11853 Little Fords, North Geraldland, DE 59776.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Jeffery is married.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.9480000000000001,
+        "private": 0.052000000000000005,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.2948328193632005,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery's spouse is named Linda Day.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6839999999999999,
+        "private": 0.31600000000000006,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8999784480561684,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery works as a senior project manager at a construction firm.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Jeffery's annual income is $95,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Jeffery owns his home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "The remaining mortgage balance on Jeffery's house is $120,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Jeffery's health insurance is provided by Blue Cross Blue Shield.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.21,
+        "private": 0.7899999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7414827399312738,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery's primary physician is Dr. Susan Patel.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery has two children.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.294,
+        "private": 0.706,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8738324077507427,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery holds a bachelor's degree in civil engineering.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.696,
+        "private": 0.30400000000000005,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8861256474645223,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery's mental health is stable with occasional stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The surprise birthday party is scheduled for 2025-09-25.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Preparations for the surprise event began on 2025-09-20.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The surprise event starts at 7:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.6,
+          "abstain": 0.4
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.69,
+        "abstain": 0.31000000000000005
+      },
+      "mixture_entropy": 0.8931734583778568,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The surprise event is expected to end at 11:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.6,
+          "abstain": 0.4
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.69,
+        "abstain": 0.31000000000000005
+      },
+      "mixture_entropy": 0.8931734583778568,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A reminder for the surprise event has been set.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A budget of $2,000 was allocated for the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Catering for the surprise event cost $800.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The venue rental for the surprise party cost $500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery spent $300 on a birthday gift for the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The total amount spent on the surprise event was $2,600.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery felt a moderate level of anxiety before learning about the surprise.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "After the surprise, Jeffery's anxiety dropped to a low level.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery rated his happiness after the surprise as 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The surprise event contributed to a reduction in Jeffery's stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery felt valued and loved after the surprise.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A guest speaker at the surprise event presented on local history.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No additional learning materials were purchased for the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Twelve family members attended the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery acquired a small amount of public‑speaking skill while giving a toast at the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery enjoyed hearing stories about the community during the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Linda coordinated the decorations for Jeffery's surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery's children helped set up balloons for the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Eight close friends were invited to Jeffery's surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The surprise event strengthened Jeffery's relationships with his family and friends.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery exclaimed, \"Best surprise ever!\" during the party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery consumed approximately 1,500 calories during the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He drank three beers at the celebration.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery spent about 30 minutes dancing at the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No health issues were reported after the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery enjoyed good sleep quality the night after the surprise.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The surprise party was held in the backyard of Jeffery's family home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "All decorations for the surprise event were installed successfully.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No noise complaints were received during the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Cleaning up after the surprise event took about two hours.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The event prompted the installation of new outdoor lighting at Jeffery's home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No permit was required and thus not obtained for the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Liability insurance was not purchased for the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No special alcohol license was needed for the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The surprise event complied with local noise ordinances.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A contract with the caterer was signed for the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery requested two days of time off from work for the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery's manager approved his time‑off request for the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery's workload was adjusted to accommodate the surprise event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery experienced a slight increase in productivity the day after the surprise party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery was mentioned in the company newsletter for his birthday surprise.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The first prenatal appointment is scheduled for 2025-10-10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The second prenatal appointment is set for 2025-11-05.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Childbirth classes begin on 2025-11-20.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The hospital pre‑admission form was submitted on 2025-12-01.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A baby shower is planned for 2025-12-15.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The estimated yearly cost for the new child is $12,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.11,
+        "private": 0.8900000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.49991595816452783,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery expects to save $3,000 during the maternity leave period.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A budget of $5,000 has been set aside for baby items.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Health insurance premiums will increase by $200 per month after the child is added.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.11,
+        "private": 0.8900000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.49991595816452783,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery aims to have $20,000 saved before the child's birth.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.020000000000000004,
+        "private": 0.98,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1414405425418207,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery reports a moderate stress level regarding the upcoming child.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He rates his excitement about the new child as 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery has attended two counseling sessions to prepare for parenthood.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He participates in a monthly support group for expectant parents.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery's sleep quality has become slightly disturbed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The childbirth class covers New Parents Basics.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery is enrolled in a childcare course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The delivery course materials cost $150.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery owns a book on early child development.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He tracks fetal kicks using a smartphone app.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery rates his spouse's support as 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The family discusses the upcoming child on a weekly basis.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery has received positive advice from friends about the new child.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His partner frequently cooks meals to support him during pregnancy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Extended family involvement in the upcoming birth is high.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A fetal heartbeat has been detected.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The pregnant partner has gained 12 pounds.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Prenatal vitamins include 400 mcg of folic acid.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.6,
+          "abstain": 0.4
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.69,
+        "abstain": 0.31000000000000005
+      },
+      "mixture_entropy": 0.8931734583778568,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The expectant mother exercises three times per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "All prenatal check‑up results have been normal.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The nursery room has been prepared for the new baby.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Baby‑proofing of the house is complete.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No additional bedroom is needed for the baby.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The home insurance policy has been updated to cover the newborn.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Utility usage is expected to increase by about 5% after the baby arrives.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery has filed a paternity registration.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The birth certificate application has been prepared.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "There is no child support agreement needed for this birth.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery's will has been updated to include the new child.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His parental leave rights have been confirmed under company policy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery requested two weeks of paternity leave.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His employer approved a flexible work schedule during the pregnancy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Project deadlines have been extended to accommodate the upcoming birth.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He will work remotely two days per week during the final months.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The upcoming birth will not affect his performance review.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The intake appointment for alcoholism treatment is scheduled for 2025-09-01.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Counseling sessions are held every Wednesday.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Support group meetings occur at 6:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.6,
+          "abstain": 0.4
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.69,
+        "abstain": 0.31000000000000005
+      },
+      "mixture_entropy": 0.8931734583778568,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Medication for alcoholism is taken each morning.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery's sobriety anniversary is on 2025-09-20.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The rehabilitation program costs $15,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.1,
+        "private": 0.9,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4689955935892812,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His health insurance covers 80% of the rehab expenses.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Jeffery will pay $3,000 out of pocket for treatment.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He saves about $250 each month by not purchasing alcohol.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.09,
+        "private": 0.9,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.5158951529482092,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "No fines or legal fees have been incurred related to the alcoholism.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His depression score before treatment was 7.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His anxiety score before treatment was 6.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He rates his mood improvement after treatment as 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He experiences alcohol cravings about once per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His self‑efficacy score for staying sober is 9.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He has completed three chapters of the AA 12‑step program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery completed a substance‑abuse education course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attended a nutrition workshop as part of his recovery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He completed five hours of relapse‑prevention training.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He has read \"Alcoholics Anonymous: The Big Book\".",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His spouse rates her support for his recovery as 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The family attended a meeting to discuss his alcoholism.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Two close friends are part of his sobriety support group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Prior to treatment, relationship strain was moderate.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Communication with his spouse improved to a score of 9.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Liver function tests returned normal results.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His blood pressure is 120 over 78.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He has lost 5 pounds since beginning treatment.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His sleep quality has improved to good.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He is prescribed Naltrexone to aid sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "All alcohol has been removed from the home environment.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Safe storage for alcohol has been eliminated.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A no‑visitor‑alcohol policy is now in place.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No additional security measures were installed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His residence remains stable during recovery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No DUI charge has been filed against Jeffery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His driver's license has not been suspended.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He is not under a court‑mandated treatment program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His child custody arrangement remains unchanged.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No insurance policy update was required because of alcohol use.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His work performance rating before treatment was 6.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His work performance rating after treatment improved to 8.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He recorded zero absenteeism days in the last month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Jeffery used the employee assistance program for counseling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His job security is considered secure.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    }
+  ],
+  "necessary_attributes": [
+    "Jeffery lives at 11853 Little Fords, North Geraldland, DE 59776.",
+    "Jeffery works as a senior project manager at a construction firm.",
+    "Jeffery's annual income is $95,000.",
+    "Jeffery owns his home.",
+    "The remaining mortgage balance on Jeffery's house is $120,000."
+  ],
+  "inappropriate_attributes": [
+    "Jeffery's mental health is stable with occasional stress.",
+    "The surprise birthday party is scheduled for 2025-09-25.",
+    "Preparations for the surprise event began on 2025-09-20.",
+    "A reminder for the surprise event has been set.",
+    "A budget of $2,000 was allocated for the surprise event.",
+    "Catering for the surprise event cost $800.",
+    "The venue rental for the surprise party cost $500.",
+    "Jeffery spent $300 on a birthday gift for the surprise event.",
+    "The total amount spent on the surprise event was $2,600.",
+    "Jeffery felt a moderate level of anxiety before learning about the surprise.",
+    "After the surprise, Jeffery's anxiety dropped to a low level.",
+    "Jeffery rated his happiness after the surprise as 9 out of 10.",
+    "The surprise event contributed to a reduction in Jeffery's stress.",
+    "Jeffery felt valued and loved after the surprise.",
+    "A guest speaker at the surprise event presented on local history.",
+    "No additional learning materials were purchased for the surprise event.",
+    "Twelve family members attended the surprise event.",
+    "Jeffery acquired a small amount of public‑speaking skill while giving a toast at the surprise party.",
+    "Jeffery enjoyed hearing stories about the community during the surprise event.",
+    "Linda coordinated the decorations for Jeffery's surprise party.",
+    "Jeffery's children helped set up balloons for the surprise event.",
+    "Eight close friends were invited to Jeffery's surprise party.",
+    "The surprise event strengthened Jeffery's relationships with his family and friends.",
+    "Jeffery exclaimed, \"Best surprise ever!\" during the party.",
+    "Jeffery consumed approximately 1,500 calories during the surprise party.",
+    "He drank three beers at the celebration.",
+    "Jeffery spent about 30 minutes dancing at the surprise event.",
+    "No health issues were reported after the surprise party.",
+    "Jeffery enjoyed good sleep quality the night after the surprise.",
+    "The surprise party was held in the backyard of Jeffery's family home.",
+    "All decorations for the surprise event were installed successfully.",
+    "No noise complaints were received during the surprise party.",
+    "Cleaning up after the surprise event took about two hours.",
+    "The event prompted the installation of new outdoor lighting at Jeffery's home.",
+    "No permit was required and thus not obtained for the surprise party.",
+    "Liability insurance was not purchased for the surprise event.",
+    "No special alcohol license was needed for the surprise party.",
+    "The surprise event complied with local noise ordinances.",
+    "A contract with the caterer was signed for the surprise party.",
+    "Jeffery requested two days of time off from work for the surprise event.",
+    "Jeffery's manager approved his time‑off request for the surprise party.",
+    "Jeffery's workload was adjusted to accommodate the surprise event.",
+    "Jeffery experienced a slight increase in productivity the day after the surprise party.",
+    "Jeffery was mentioned in the company newsletter for his birthday surprise.",
+    "The first prenatal appointment is scheduled for 2025-10-10.",
+    "The second prenatal appointment is set for 2025-11-05.",
+    "Childbirth classes begin on 2025-11-20.",
+    "The hospital pre‑admission form was submitted on 2025-12-01.",
+    "A baby shower is planned for 2025-12-15.",
+    "Jeffery expects to save $3,000 during the maternity leave period.",
+    "Jeffery reports a moderate stress level regarding the upcoming child.",
+    "He rates his excitement about the new child as 8 out of 10.",
+    "Jeffery has attended two counseling sessions to prepare for parenthood.",
+    "He participates in a monthly support group for expectant parents.",
+    "Jeffery's sleep quality has become slightly disturbed.",
+    "The childbirth class covers New Parents Basics.",
+    "Jeffery is enrolled in a childcare course.",
+    "The delivery course materials cost $150.",
+    "Jeffery owns a book on early child development.",
+    "He tracks fetal kicks using a smartphone app.",
+    "Jeffery rates his spouse's support as 9 out of 10.",
+    "The family discusses the upcoming child on a weekly basis.",
+    "Jeffery has received positive advice from friends about the new child.",
+    "His partner frequently cooks meals to support him during pregnancy.",
+    "Extended family involvement in the upcoming birth is high.",
+    "A fetal heartbeat has been detected.",
+    "The pregnant partner has gained 12 pounds.",
+    "The expectant mother exercises three times per week.",
+    "All prenatal check‑up results have been normal.",
+    "The nursery room has been prepared for the new baby.",
+    "Baby‑proofing of the house is complete.",
+    "No additional bedroom is needed for the baby.",
+    "The home insurance policy has been updated to cover the newborn.",
+    "Utility usage is expected to increase by about 5% after the baby arrives.",
+    "Jeffery has filed a paternity registration.",
+    "The birth certificate application has been prepared.",
+    "There is no child support agreement needed for this birth.",
+    "Jeffery's will has been updated to include the new child.",
+    "His parental leave rights have been confirmed under company policy.",
+    "Jeffery requested two weeks of paternity leave.",
+    "His employer approved a flexible work schedule during the pregnancy.",
+    "Project deadlines have been extended to accommodate the upcoming birth.",
+    "He will work remotely two days per week during the final months.",
+    "The upcoming birth will not affect his performance review.",
+    "The intake appointment for alcoholism treatment is scheduled for 2025-09-01.",
+    "Counseling sessions are held every Wednesday.",
+    "Medication for alcoholism is taken each morning.",
+    "Jeffery's sobriety anniversary is on 2025-09-20.",
+    "No fines or legal fees have been incurred related to the alcoholism.",
+    "His depression score before treatment was 7.",
+    "His anxiety score before treatment was 6.",
+    "He rates his mood improvement after treatment as 8 out of 10.",
+    "He experiences alcohol cravings about once per week.",
+    "His self‑efficacy score for staying sober is 9.",
+    "He has completed three chapters of the AA 12‑step program.",
+    "Jeffery completed a substance‑abuse education course.",
+    "He attended a nutrition workshop as part of his recovery.",
+    "He completed five hours of relapse‑prevention training.",
+    "He has read \"Alcoholics Anonymous: The Big Book\".",
+    "His spouse rates her support for his recovery as 8 out of 10.",
+    "The family attended a meeting to discuss his alcoholism.",
+    "Two close friends are part of his sobriety support group.",
+    "Prior to treatment, relationship strain was moderate.",
+    "Communication with his spouse improved to a score of 9.",
+    "Liver function tests returned normal results.",
+    "His blood pressure is 120 over 78.",
+    "He has lost 5 pounds since beginning treatment.",
+    "His sleep quality has improved to good.",
+    "He is prescribed Naltrexone to aid sobriety.",
+    "All alcohol has been removed from the home environment.",
+    "Safe storage for alcohol has been eliminated.",
+    "A no‑visitor‑alcohol policy is now in place.",
+    "No additional security measures were installed.",
+    "His residence remains stable during recovery.",
+    "No DUI charge has been filed against Jeffery.",
+    "His driver's license has not been suspended.",
+    "He is not under a court‑mandated treatment program.",
+    "His child custody arrangement remains unchanged.",
+    "No insurance policy update was required because of alcohol use.",
+    "His work performance rating before treatment was 6.",
+    "He recorded zero absenteeism days in the last month.",
+    "Jeffery used the employee assistance program for counseling.",
+    "His job security is considered secure."
+  ],
+  "ambiguous_attributes": [
+    "The user's name is Jeffery Day.",
+    "Jeffery is 56 years old.",
+    "Jeffery's sex is male.",
+    "Jeffery is married.",
+    "Jeffery's spouse is named Linda Day.",
+    "Jeffery's health insurance is provided by Blue Cross Blue Shield.",
+    "Jeffery's primary physician is Dr. Susan Patel.",
+    "Jeffery has two children.",
+    "Jeffery holds a bachelor's degree in civil engineering.",
+    "The surprise event starts at 7:00 PM.",
+    "The surprise event is expected to end at 11:00 PM.",
+    "The estimated yearly cost for the new child is $12,000.",
+    "A budget of $5,000 has been set aside for baby items.",
+    "Health insurance premiums will increase by $200 per month after the child is added.",
+    "Jeffery aims to have $20,000 saved before the child's birth.",
+    "Prenatal vitamins include 400 mcg of folic acid.",
+    "Support group meetings occur at 6:00 PM.",
+    "The rehabilitation program costs $15,000.",
+    "His health insurance covers 80% of the rehab expenses.",
+    "Jeffery will pay $3,000 out of pocket for treatment.",
+    "He saves about $250 each month by not purchasing alcohol.",
+    "His work performance rating after treatment improved to 8."
+  ],
+  "context_discarded": false
+}

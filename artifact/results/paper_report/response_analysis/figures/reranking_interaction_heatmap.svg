@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="943" height="463" viewBox="0 0 943 463">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:22px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}.zero{stroke:#344054;stroke-dasharray:4 4}</style>
+<text class="title" x="24" y="32">Reranking interaction map</text>
+<text class="sub" x="24" y="51">Green denotes a desirable movement: recall up or disclosure down</text>
+<text class="tiny" x="320.0" y="74" text-anchor="middle">Necessary recall</text>
+<text class="tiny" x="490.0" y="74" text-anchor="middle">Inappropriate leakage</text>
+<text class="tiny" x="660.0" y="74" text-anchor="middle">Ambiguous exposure</text>
+<text class="tiny" x="830.0" y="74" text-anchor="middle">Exposed attributes</text>
+<text class="lab" x="225" y="114" text-anchor="end">DeepSeek-V4-Flash · List</text>
+<rect x="235" y="92" width="167" height="31" rx="4" fill="rgb(154, 201, 179)"/>
+<text class="lab" x="318.5" y="113" text-anchor="middle">+2.56 pp</text>
+<rect x="405" y="92" width="167" height="31" rx="4" fill="rgb(190, 219, 205)"/>
+<text class="lab" x="488.5" y="113" text-anchor="middle">-0.23 pp</text>
+<rect x="575" y="92" width="167" height="31" rx="4" fill="rgb(242, 225, 226)"/>
+<text class="lab" x="658.5" y="113" text-anchor="middle">+0.27 pp</text>
+<rect x="745" y="92" width="167" height="31" rx="4" fill="rgb(246, 247, 247)"/>
+<text class="lab" x="828.5" y="113" text-anchor="middle">-0.01</text>
+<text class="lab" x="225" y="148" text-anchor="end">DeepSeek-V4-Flash · Graph</text>
+<rect x="235" y="126" width="167" height="31" rx="4" fill="rgb(149, 199, 176)"/>
+<text class="lab" x="318.5" y="147" text-anchor="middle">+2.69 pp</text>
+<rect x="405" y="126" width="167" height="31" rx="4" fill="rgb(230, 239, 235)"/>
+<text class="lab" x="488.5" y="147" text-anchor="middle">-0.07 pp</text>
+<rect x="575" y="126" width="167" height="31" rx="4" fill="rgb(194, 221, 209)"/>
+<text class="lab" x="658.5" y="147" text-anchor="middle">-0.55 pp</text>
+<rect x="745" y="126" width="167" height="31" rx="4" fill="rgb(166, 207, 188)"/>
+<text class="lab" x="828.5" y="147" text-anchor="middle">-0.79*</text>
+<text class="lab" x="225" y="182" text-anchor="end">DeepSeek-V4-Flash · Profile</text>
+<rect x="235" y="160" width="167" height="31" rx="4" fill="rgb(227, 162, 167)"/>
+<text class="lab" x="318.5" y="181" text-anchor="middle">-2.73 pp*</text>
+<rect x="405" y="160" width="167" height="31" rx="4" fill="rgb(39, 145, 95)"/>
+<text class="lab" x="488.5" y="181" text-anchor="middle">-0.83 pp*</text>
+<rect x="575" y="160" width="167" height="31" rx="4" fill="rgb(153, 201, 179)"/>
+<text class="lab" x="658.5" y="181" text-anchor="middle">-0.99 pp*</text>
+<rect x="745" y="160" width="167" height="31" rx="4" fill="rgb(124, 187, 157)"/>
+<text class="lab" x="828.5" y="181" text-anchor="middle">-1.21*</text>
+<text class="lab" x="225" y="216" text-anchor="end">GPT-5.6-sol · List</text>
+<rect x="235" y="194" width="167" height="31" rx="4" fill="rgb(39, 145, 95)"/>
+<text class="lab" x="318.5" y="215" text-anchor="middle">+5.73 pp*</text>
+<rect x="405" y="194" width="167" height="31" rx="4" fill="rgb(239, 213, 215)"/>
+<text class="lab" x="488.5" y="215" text-anchor="middle">+0.16 pp*</text>
+<rect x="575" y="194" width="167" height="31" rx="4" fill="rgb(204, 69, 79)"/>
+<text class="lab" x="658.5" y="215" text-anchor="middle">+2.19 pp*</text>
+<rect x="745" y="194" width="167" height="31" rx="4" fill="rgb(204, 69, 79)"/>
+<text class="lab" x="828.5" y="215" text-anchor="middle">+2.04*</text>
+<text class="lab" x="225" y="250" text-anchor="end">GPT-5.6-sol · Graph</text>
+<rect x="235" y="228" width="167" height="31" rx="4" fill="rgb(197, 222, 210)"/>
+<text class="lab" x="318.5" y="249" text-anchor="middle">+1.38 pp</text>
+<rect x="405" y="228" width="167" height="31" rx="4" fill="rgb(246, 244, 244)"/>
+<text class="lab" x="488.5" y="249" text-anchor="middle">+0.01 pp</text>
+<rect x="575" y="228" width="167" height="31" rx="4" fill="rgb(228, 168, 172)"/>
+<text class="lab" x="658.5" y="249" text-anchor="middle">+0.97 pp*</text>
+<rect x="745" y="228" width="167" height="31" rx="4" fill="rgb(229, 173, 177)"/>
+<text class="lab" x="828.5" y="249" text-anchor="middle">+0.84*</text>
+<text class="lab" x="225" y="284" text-anchor="end">GPT-5.6-sol · Profile</text>
+<rect x="235" y="262" width="167" height="31" rx="4" fill="rgb(234, 192, 195)"/>
+<text class="lab" x="318.5" y="283" text-anchor="middle">-1.77 pp</text>
+<rect x="405" y="262" width="167" height="31" rx="4" fill="rgb(230, 239, 235)"/>
+<text class="lab" x="488.5" y="283" text-anchor="middle">-0.07 pp*</text>
+<rect x="575" y="262" width="167" height="31" rx="4" fill="rgb(214, 231, 223)"/>
+<text class="lab" x="658.5" y="283" text-anchor="middle">-0.35 pp*</text>
+<rect x="745" y="262" width="167" height="31" rx="4" fill="rgb(217, 232, 225)"/>
+<text class="lab" x="828.5" y="283" text-anchor="middle">-0.29*</text>
+<text class="lab" x="225" y="318" text-anchor="end">GLM-5.3-Flash · List</text>
+<rect x="235" y="296" width="167" height="31" rx="4" fill="rgb(241, 221, 223)"/>
+<text class="lab" x="318.5" y="317" text-anchor="middle">-0.83 pp</text>
+<rect x="405" y="296" width="167" height="31" rx="4" fill="rgb(225, 236, 231)"/>
+<text class="lab" x="488.5" y="317" text-anchor="middle">-0.09 pp</text>
+<rect x="575" y="296" width="167" height="31" rx="4" fill="rgb(210, 229, 220)"/>
+<text class="lab" x="658.5" y="317" text-anchor="middle">-0.39 pp</text>
+<rect x="745" y="296" width="167" height="31" rx="4" fill="rgb(206, 227, 217)"/>
+<text class="lab" x="828.5" y="317" text-anchor="middle">-0.40</text>
+<text class="lab" x="225" y="352" text-anchor="end">GLM-5.3-Flash · Graph</text>
+<rect x="235" y="330" width="167" height="31" rx="4" fill="rgb(233, 240, 237)"/>
+<text class="lab" x="318.5" y="351" text-anchor="middle">+0.38 pp</text>
+<rect x="405" y="330" width="167" height="31" rx="4" fill="rgb(159, 204, 183)"/>
+<text class="lab" x="488.5" y="351" text-anchor="middle">-0.35 pp</text>
+<rect x="575" y="330" width="167" height="31" rx="4" fill="rgb(211, 229, 221)"/>
+<text class="lab" x="658.5" y="351" text-anchor="middle">-0.38 pp</text>
+<rect x="745" y="330" width="167" height="31" rx="4" fill="rgb(177, 212, 196)"/>
+<text class="lab" x="828.5" y="351" text-anchor="middle">-0.69*</text>
+<text class="lab" x="225" y="386" text-anchor="end">GLM-5.3-Flash · Profile</text>
+<rect x="235" y="364" width="167" height="31" rx="4" fill="rgb(230, 176, 180)"/>
+<text class="lab" x="318.5" y="385" text-anchor="middle">-2.29 pp</text>
+<rect x="405" y="364" width="167" height="31" rx="4" fill="rgb(115, 182, 150)"/>
+<text class="lab" x="488.5" y="385" text-anchor="middle">-0.53 pp*</text>
+<rect x="575" y="364" width="167" height="31" rx="4" fill="rgb(172, 210, 192)"/>
+<text class="lab" x="658.5" y="385" text-anchor="middle">-0.79 pp*</text>
+<rect x="745" y="364" width="167" height="31" rx="4" fill="rgb(147, 198, 174)"/>
+<text class="lab" x="828.5" y="385" text-anchor="middle">-0.98*</text>
+<text class="tiny" x="24" y="443">* hierarchical 95% interval excludes zero. Color direction is metric-aware; printed signs are raw post-minus-pre effects.</text>
+</svg>

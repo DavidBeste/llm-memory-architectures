@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="407" viewBox="0 0 1120 407">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:22px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}.zero{stroke:#344054;stroke-dasharray:4 4}</style>
+<text class="title" x="24" y="32">Reranking effects with hierarchical 95% intervals</text>
+<text class="sub" x="24" y="51">Post minus pre; intervals account for personas and contexts</text>
+<text class="lab" x="427.5" y="76" text-anchor="middle" font-weight="700">Necessary recall</text>
+<line class="zero" x1="427.5" y1="88" x2="427.5" y2="369"/>
+<line x1="382.6197991849091" y1="102" x2="604.829080047575" y2="102" stroke="#2a9d8f" stroke-width="2"/>
+<circle cx="493.55853854744845" cy="102" r="4.5" fill="#2a9d8f"/>
+<text class="lab" x="175" y="106" text-anchor="end">DeepSeek-V4-Flash · Graph</text>
+<line x1="388.7436580825342" y1="130" x2="612.5303853805311" y2="130" stroke="#e76f51" stroke-width="2"/>
+<circle cx="490.29629382762295" cy="130" r="4.5" fill="#e76f51"/>
+<text class="lab" x="175" y="134" text-anchor="end">DeepSeek-V4-Flash · List</text>
+<line x1="300.01500087404247" y1="158" x2="414.4571966319508" y2="158" stroke="#4568dc" stroke-width="2"/>
+<circle cx="360.59537039723773" cy="158" r="4.5" fill="#4568dc"/>
+<text class="lab" x="175" y="162" text-anchor="end">DeepSeek-V4-Flash · Profile</text>
+<line x1="382.00217976021696" y1="186" x2="543.5937142788014" y2="186" stroke="#2a9d8f" stroke-width="2"/>
+<circle cx="461.2898175300344" cy="186" r="4.5" fill="#2a9d8f"/>
+<text class="lab" x="175" y="190" text-anchor="end">GPT-5.6-sol · Graph</text>
+<line x1="458.1422430244449" y1="214" x2="670.0" y2="214" stroke="#e76f51" stroke-width="2"/>
+<circle cx="568.022684265447" cy="214" r="4.5" fill="#e76f51"/>
+<text class="lab" x="175" y="218" text-anchor="end">GPT-5.6-sol · List</text>
+<line x1="269.3362723702842" y1="242" x2="485.61796137731784" y2="242" stroke="#4568dc" stroke-width="2"/>
+<circle cx="384.0594887168561" cy="242" r="4.5" fill="#4568dc"/>
+<text class="lab" x="175" y="246" text-anchor="end">GPT-5.6-sol · Profile</text>
+<line x1="341.6545513447368" y1="270" x2="534.134841058379" y2="270" stroke="#2a9d8f" stroke-width="2"/>
+<circle cx="436.82512624644335" cy="270" r="4.5" fill="#2a9d8f"/>
+<text class="lab" x="175" y="274" text-anchor="end">GLM-5.3-Flash · Graph</text>
+<line x1="328.62285215328427" y1="298" x2="482.27596520250995" y2="298" stroke="#e76f51" stroke-width="2"/>
+<circle cx="407.15114361332786" cy="298" r="4.5" fill="#e76f51"/>
+<text class="lab" x="175" y="302" text-anchor="end">GLM-5.3-Flash · List</text>
+<line x1="290.998102392371" y1="326" x2="434.3698969859651" y2="326" stroke="#4568dc" stroke-width="2"/>
+<circle cx="371.43143237439733" cy="326" r="4.5" fill="#4568dc"/>
+<text class="lab" x="175" y="330" text-anchor="end">GLM-5.3-Flash · Profile</text>
+<text class="tiny" x="185" y="391">-0.10</text>
+<text class="tiny" x="670" y="391" text-anchor="end">+0.10</text>
+<text class="lab" x="962.5" y="76" text-anchor="middle" font-weight="700">Exposed attributes</text>
+<line class="zero" x1="962.5" y1="88" x2="962.5" y2="369"/>
+<line x1="807.9273369565218" y1="102" x2="956.8117934782608" y2="102" stroke="#2a9d8f" stroke-width="2"/>
+<circle cx="880.6826086956522" cy="102" r="4.5" fill="#2a9d8f"/>
+<line x1="886.3708152173913" y1="130" x2="1030.4105434782607" y2="130" stroke="#e76f51" stroke-width="2"/>
+<circle cx="961.8673913043478" cy="130" r="4.5" fill="#e76f51"/>
+<line x1="787.9" y1="158" x2="883.8456521739131" y2="158" stroke="#4568dc" stroke-width="2"/>
+<circle cx="837.8760869565217" cy="158" r="4.5" fill="#4568dc"/>
+<line x1="1021.3326086956522" y1="186" x2="1078.0565217391304" y2="186" stroke="#2a9d8f" stroke-width="2"/>
+<circle cx="1049.5891304347826" cy="186" r="4.5" fill="#2a9d8f"/>
+<line x1="1142.7934782608695" y1="214" x2="1205.0" y2="214" stroke="#e76f51" stroke-width="2"/>
+<circle cx="1172.9478260869564" cy="214" r="4.5" fill="#e76f51"/>
+<line x1="904.0891304347826" y1="242" x2="960.6021739130434" y2="242" stroke="#4568dc" stroke-width="2"/>
+<circle cx="932.5565217391304" cy="242" r="4.5" fill="#4568dc"/>
+<line x1="839.9742391304347" y1="270" x2="940.7804347826087" y2="270" stroke="#2a9d8f" stroke-width="2"/>
+<circle cx="891.2260869565217" cy="270" r="4.5" fill="#2a9d8f"/>
+<line x1="853.9021739130435" y1="298" x2="984.6413043478261" y2="298" stroke="#e76f51" stroke-width="2"/>
+<circle cx="920.7478260869565" cy="298" r="4.5" fill="#e76f51"/>
+<line x1="813.4152173913044" y1="326" x2="903.8835326086955" y2="326" stroke="#4568dc" stroke-width="2"/>
+<circle cx="861.0717391304348" cy="326" r="4.5" fill="#4568dc"/>
+<text class="tiny" x="720" y="391">-2.35</text>
+<text class="tiny" x="1205" y="391" text-anchor="end">+2.35</text>
+</svg>

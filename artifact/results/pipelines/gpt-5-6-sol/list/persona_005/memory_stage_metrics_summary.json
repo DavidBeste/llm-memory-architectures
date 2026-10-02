@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "source_pipeline_manifest": "artifact://pipelines/gpt-5-6-sol/list/persona_005/pipeline/manifest.json",
+  "source_query_manifest": "artifact://pipelines/gpt-5-6-sol/list/persona_005/query/manifest.json",
+  "judge_model": "gpt-5-nano",
+  "judge_reasoning_effort": "minimal",
+  "prompt_version": "memory-stage-attribute-entailment-indices-v2",
+  "context_count": 49,
+  "kept_context_count": 34,
+  "discarded_context_count": 15,
+  "aggregate_all_contexts": {
+    "context_count": 49,
+    "pre_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.3780487804878049,
+        "micro_availability_rate": 0.35106382978723405,
+        "represented_count": 33,
+        "total": 94
+      },
+      "private": {
+        "macro_availability_rate": 0.29183134188462095,
+        "micro_availability_rate": 0.3140646335912608,
+        "represented_count": 690,
+        "total": 2197
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.29499989882523814,
+        "micro_availability_rate": 0.2731616119651018,
+        "represented_count": 1315,
+        "total": 4814
+      }
+    },
+    "post_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.3048780487804878,
+        "micro_availability_rate": 0.2872340425531915,
+        "represented_count": 27,
+        "total": 94
+      },
+      "private": {
+        "macro_availability_rate": 0.09331100144258975,
+        "micro_availability_rate": 0.058716431497496585,
+        "represented_count": 129,
+        "total": 2197
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.10169958460261135,
+        "micro_availability_rate": 0.11508101371001246,
+        "represented_count": 554,
+        "total": 4814
+      }
+    },
+    "reranker": {
+      "necessary": {
+        "macro_retention_rate": 0.8333333333333334,
+        "macro_removal_rate": 0.16666666666666666,
+        "micro_retention_rate": 0.8181818181818182,
+        "micro_removal_rate": 0.18181818181818177,
+        "pre_rerank_represented_count": 33,
+        "post_rerank_represented_count": 27
+      },
+      "private": {
+        "macro_retention_rate": 0.33434250661090414,
+        "macro_removal_rate": 0.665657493389096,
+        "micro_retention_rate": 0.18695652173913044,
+        "micro_removal_rate": 0.8130434782608695,
+        "pre_rerank_represented_count": 690,
+        "post_rerank_represented_count": 129
+      },
+      "ambiguous": {
+        "macro_retention_rate": 0.4117625439725941,
+        "macro_removal_rate": 0.5882374560274058,
+        "micro_retention_rate": 0.42129277566539924,
+        "micro_removal_rate": 0.5787072243346008,
+        "pre_rerank_represented_count": 1315,
+        "post_rerank_represented_count": 554
+      }
+    },
+    "final_response": {
+      "macro_necessary_recall": 0.37378048780487805,
+      "macro_private_leak_rate": 0.002167363634471326,
+      "macro_ambiguous_exposure_rate": 0.05569742067784774,
+      "semantics": "Macro mean of the existing final response metrics; no responses are re-judged."
+    },
+    "judge_exact_token_usage": {
+      "exact": true,
+      "usage_count": 49,
+      "input_tokens": 312799,
+      "output_tokens": 9125,
+      "total_tokens": 321924,
+      "cached_input_tokens": 196864,
+      "reasoning_output_tokens": 0
+    },
+    "judge_consistency_adjustment_count": 0
+  },
+  "aggregate_excluding_discarded_contexts": {
+    "context_count": 34,
+    "pre_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.38235294117647056,
+        "micro_availability_rate": 0.34615384615384615,
+        "represented_count": 27,
+        "total": 78
+      },
+      "private": {
+        "macro_availability_rate": 0.2728658223072332,
+        "micro_availability_rate": 0.29581294181620443,
+        "represented_count": 544,
+        "total": 1839
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.29592391496502984,
+        "micro_availability_rate": 0.2744772651842018,
+        "represented_count": 827,
+        "total": 3013
+      }
+    },
+    "post_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.29411764705882354,
+        "micro_availability_rate": 0.2692307692307692,
+        "represented_count": 21,
+        "total": 78
+      },
+      "private": {
+        "macro_availability_rate": 0.09820191375400511,
+        "micro_availability_rate": 0.06307775965198477,
+        "represented_count": 116,
+        "total": 1839
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.11437244142672283,
+        "micro_availability_rate": 0.13674078991038832,
+        "represented_count": 412,
+        "total": 3013
+      }
+    },
+    "reranker": {
+      "necessary": {
+        "macro_retention_rate": 0.8,
+        "macro_removal_rate": 0.2,
+        "micro_retention_rate": 0.7777777777777778,
+        "micro_removal_rate": 0.2222222222222222,
+        "pre_rerank_represented_count": 27,
+        "post_rerank_represented_count": 21
+      },
+      "private": {
+        "macro_retention_rate": 0.3958729527370189,
+        "macro_removal_rate": 0.6041270472629812,
+        "micro_retention_rate": 0.21323529411764705,
+        "micro_removal_rate": 0.7867647058823529,
+        "pre_rerank_represented_count": 544,
+        "post_rerank_represented_count": 116
+      },
+      "ambiguous": {
+        "macro_retention_rate": 0.4667151248128141,
+        "macro_removal_rate": 0.5332848751871859,
+        "micro_retention_rate": 0.49818621523579204,
+        "micro_removal_rate": 0.5018137847642079,
+        "pre_rerank_represented_count": 827,
+        "post_rerank_represented_count": 412
+      }
+    },
+    "final_response": {
+      "macro_necessary_recall": 0.395343137254902,
+      "macro_private_leak_rate": 0.0015925585917273962,
+      "macro_ambiguous_exposure_rate": 0.06033360897456963,
+      "semantics": "Macro mean of the existing final response metrics; no responses are re-judged."
+    },
+    "judge_exact_token_usage": {
+      "exact": true,
+      "usage_count": 34,
+      "input_tokens": 216849,
+      "output_tokens": 6377,
+      "total_tokens": 223226,
+      "cached_input_tokens": 135808,
+      "reasoning_output_tokens": 0
+    },
+    "judge_consistency_adjustment_count": 0
+  },
+  "context_metric_files": [
+    "memory_stage_metrics/context_000.json",
+    "memory_stage_metrics/context_001.json",
+    "memory_stage_metrics/context_002.json",
+    "memory_stage_metrics/context_003.json",
+    "memory_stage_metrics/context_004.json",
+    "memory_stage_metrics/context_005.json",
+    "memory_stage_metrics/context_006.json",
+    "memory_stage_metrics/context_007.json",
+    "memory_stage_metrics/context_008.json",
+    "memory_stage_metrics/context_009.json",
+    "memory_stage_metrics/context_010.json",
+    "memory_stage_metrics/context_011.json",
+    "memory_stage_metrics/context_012.json",
+    "memory_stage_metrics/context_013.json",
+    "memory_stage_metrics/context_014.json",
+    "memory_stage_metrics/context_015.json",
+    "memory_stage_metrics/context_016.json",
+    "memory_stage_metrics/context_017.json",
+    "memory_stage_metrics/context_018.json",
+    "memory_stage_metrics/context_019.json",
+    "memory_stage_metrics/context_020.json",
+    "memory_stage_metrics/context_021.json",
+    "memory_stage_metrics/context_022.json",
+    "memory_stage_metrics/context_023.json",
+    "memory_stage_metrics/context_024.json",
+    "memory_stage_metrics/context_025.json",
+    "memory_stage_metrics/context_026.json",
+    "memory_stage_metrics/context_027.json",
+    "memory_stage_metrics/context_028.json",
+    "memory_stage_metrics/context_029.json",
+    "memory_stage_metrics/context_030.json",
+    "memory_stage_metrics/context_031.json",
+    "memory_stage_metrics/context_032.json",
+    "memory_stage_metrics/context_033.json",
+    "memory_stage_metrics/context_034.json",
+    "memory_stage_metrics/context_035.json",
+    "memory_stage_metrics/context_036.json",
+    "memory_stage_metrics/context_037.json",
+    "memory_stage_metrics/context_038.json",
+    "memory_stage_metrics/context_039.json",
+    "memory_stage_metrics/context_040.json",
+    "memory_stage_metrics/context_041.json",
+    "memory_stage_metrics/context_042.json",
+    "memory_stage_metrics/context_043.json",
+    "memory_stage_metrics/context_044.json",
+    "memory_stage_metrics/context_045.json",
+    "memory_stage_metrics/context_046.json",
+    "memory_stage_metrics/context_047.json",
+    "memory_stage_metrics/context_048.json"
+  ]
+}

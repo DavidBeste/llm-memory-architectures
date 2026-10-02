@@ -1,0 +1,4 @@
+architecture,pipeline_cells,model_count,persona_count,memory_preparation_seconds,generation_seconds,deployed_seconds,deployed_p95_seconds,reported_exact_tokens_per_query,initialization_seconds,available_token_cells,reported_token_cells,complete_usage_ledger_cells
+list,30,3,10,4.9508368,8.863152333333334,13.894332766666667,24.919569133333333,4554.01984,9.528913766666667,27,25,0
+graph,30,3,10,6.305959033333333,9.9194307,16.3071956,30.252493366666666,5856.1354,352.16672293333335,30,25,0
+profile,30,3,10,4.2366416,8.969424766666666,13.286391233333333,25.1719352,5307.64796,222.44172806666668,28,25,0

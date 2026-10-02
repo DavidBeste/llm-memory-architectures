@@ -1,0 +1,4160 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 1,
+  "persona_name": "Troy Salazar",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "The user's full name is Troy Salazar.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.6,
+          "private": 0.0,
+          "abstain": 0.4
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.0,
+          "abstain": 0.6
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.0,
+          "abstain": 0.3
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.48200000000000004,
+        "private": 0.0,
+        "abstain": 0.518
+      },
+      "mixture_entropy": 0.9990649315776106,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Troy Salazar identifies as male.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His mailing address is 02516 Walker Grove Apt. 200, Alvarezmouth, AR 88611.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.0,
+          "abstain": 0.2
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.0,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.0,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.8,
+        "private": 0.0,
+        "abstain": 0.2
+      },
+      "mixture_entropy": 0.7219280948873623,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Troy is currently 66 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.6,
+          "private": 0.3,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.1,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.0,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6839999999999999,
+        "private": 0.14200000000000002,
+        "abstain": 0.174
+      },
+      "mixture_entropy": 1.2136369052327893,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He is married.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.3,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.3,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.496,
+        "private": 0.43000000000000005,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 1.3032804403301868,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His primary care physician is Dr. Lena Ortiz.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.974,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Troy is currently retired.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.0,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.99,
+        "private": 0.0,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "During his weight loss journey, Troy walks for 30 minutes each morning.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He spends about 45 minutes each evening preparing his meals.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attends the gym four times a week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He aims for 7.5 hours of sleep each night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His monthly progress check is scheduled for the first Monday of each month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He pays $55 per month for his gym membership.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.28400000000000003,
+        "private": 0.716,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8608440062015498,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Each nutritionist session costs $120.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.28400000000000003,
+        "private": 0.716,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8608440062015498,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He enrolled in a 12‑week diet program that cost $350.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.22,
+        "private": 0.716,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.0794730511654542,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He spends roughly $45 each month on weight‑loss supplements.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.22,
+        "private": 0.716,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.0794730511654542,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A comprehensive medical check‑up related to the program cost $200.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.22,
+        "private": 0.716,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.0794730511654542,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His self‑esteem rating rose to 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He reports a stress level of 4 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His motivation score is 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He feels a body‑image satisfaction of 7 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His PHQ‑9 depression screen score is 3, indicating minimal depression.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He completed an online Certificate in Applied Nutrition.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He attended a Basic Personal Trainer Workshop.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He logged 12 hours of weight‑loss webinars.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.8520000000000001,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7508570247162569,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He read the book \"The Obesity Code\" by Dr. Jason Fung.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He attended a low‑calorie cooking class at the community center.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.8520000000000001,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7508570247162569,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His spouse rates their support for his journey at 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He meets his friends weekly on Fridays for dinner.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attends a bi‑weekly local weight‑loss support group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He holds a monthly video call with his adult children to discuss his health goals.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.974,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He talks to his personal coach twice per week by phone.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "At the start of his journey, Troy weighed 102 kilograms.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "After several months, his weight decreased to 85 kilograms.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His initial Body Mass Index was 35.2.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His current Body Mass Index is 29.3.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.974,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His blood pressure prior to starting the program was 150 over 95 millimeters of mercury.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He installed a kitchen organizer to better manage healthy foods.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He allocated a dedicated two‑foot shelf in his refrigerator for fresh produce.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.8520000000000001,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7508570247162569,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He purchased adjustable dumbbells and resistance bands for a home gym.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His home is 0.6 miles from the nearest park, making walks convenient.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He installed a secure bike rack on his balcony for cycling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He signed a medical clearance form on February 10, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His weight‑loss program contract is identified as WL-2023‑07.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.788,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.932608352817378,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His health insurance approved coverage for nutritionist visits up to $500 per year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.11,
+        "private": 0.8900000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.49991595816452783,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He provided written consent for physiotherapy on March 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He signed liability waiver LV-2023‑15 for gym use.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.788,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.932608352817378,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He used five days of paid time off to attend medical appointments.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.238,
+        "private": 0.762,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7916985001248851,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His employer allowed a 30‑minute extension of his lunch break for meal preparation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.788,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.932608352817378,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He takes advantage of a flexible schedule, working from 8 am to 4 pm.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He attended a workplace stress‑management workshop on September 12, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.788,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.932608352817378,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "An occupational health assessment was completed on April 20, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The first HR meeting regarding the allegation took place on February 5, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He was interviewed twice, each for 90 minutes, on February 12 and February 19, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He began weekly counseling sessions on Wednesdays at 3 pm starting February 14, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The deadline to submit his written response was March 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The final disciplinary hearing was scheduled for April 10, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He incurred $1,200 in legal fees related to the allegation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.174,
+        "private": 0.8260000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6667737919919464,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The employee assistance program cost him $250 for ten counseling sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.174,
+        "private": 0.8260000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6667737919919464,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A $3,500 year‑end bonus is currently being withheld pending investigation outcome.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.5,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.33799999999999997,
+        "private": 0.598,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.226334034028242,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He lost 12 hours of overtime pay during the investigation period.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.402,
+        "private": 0.598,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.972108503637691,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His insurance does not cover legal expenses, making them a personal cost.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.164,
+        "private": 0.836,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6437935214851034,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He rates his anxiety at 7 out of 10 during the investigation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His PHQ‑9 depression screen score is 10, indicating mild depression.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He rates his sleep quality as 5 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He practices mindfulness meditation for 20 minutes each day to cope.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His GAD‑7 anxiety score improved from 6 to 3 in three months.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.936,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He completed an eight‑hour mandatory harassment training on November 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.862,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7164537566707422,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He attended a legal‑procedure workshop on January 20, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.862,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7164537566707422,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He completed 12 hours of conflict‑resolution coursework.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.862,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7164537566707422,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He viewed three webinars focusing on workplace rights.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He earned a Certificate in Workplace Ethics in 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He contacted his union representative on February 6, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His manager provided neutral support, indicating a low level of involvement.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Two coworkers submitted statements supporting him.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He has weekly phone calls with family throughout the investigation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His friend John Miller has been a primary confidant during this time.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He experiences an average of three awakenings each night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He reports having four headaches per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His average blood pressure during the investigation was 135 over 85 mmHg.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He noted a 20% reduction in daily calorie intake due to stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His physician increased his antihypertensive dosage on February 18, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He temporarily lived with his daughter for two weeks in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He installed a smart door lock on February 22, 2024, for added security.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.1,
+        "private": 0.9,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4689955935892812,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He placed a white‑noise machine in his bedroom to improve sleep.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.862,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7164537566707422,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He converted a spare room into a quiet office to work from home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He limited non‑essential visitors to his home throughout the investigation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.862,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.7164537566707422,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The formal complaint was logged under ID MAL‑2024‑00123.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.7,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.7979999999999999,
+        "abstain": 0.128
+      },
+      "mixture_entropy": 0.9173692765001129,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The investigation remained ongoing on April 5, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A final decision is expected by May 15, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He retained attorney Laura Chen on February 8, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.158,
+        "private": 0.842,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6295033782281994,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He submitted three affidavits and supporting emails as evidence.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His job title is Senior Maintenance Supervisor.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.5,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6219999999999999,
+        "private": 0.352,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.0932135032088555,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He works in the Facilities Management department.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.4,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.3,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.584,
+        "private": 0.32600000000000007,
+        "abstain": 0.09
+      },
+      "mixture_entropy": 1.2929745853271548,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He is currently on paid administrative leave while the investigation proceeds.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.522,
+        "private": 0.478,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9986030202378096,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He has worked for the company for 22 years.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.776,
+        "private": 0.224,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7674044165839726,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His annual salary before the allegation was $78,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.786,
+        "private": 0.21400000000000002,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7490593447969769,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She began weekly therapy sessions on Tuesdays at 4 pm starting January 23, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Medical examinations were conducted on January 15 and February 20, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The pre‑trial conference is set for June 10, 2024, with trial on September 5, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She attends a bi‑weekly survivor support group on Saturdays at 10 am.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She used two weeks of FMLA leave in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Therapy costs total $2,400 for twelve sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Medical expenses for the forensic exam and follow‑up amounted to $850.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her health insurance covered $500 of the therapy costs.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She paid a $3,000 retainer to her attorney.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She received $1,200 in paid FMLA leave benefits.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her PTSD Checklist score is 28, indicating moderate severity.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her PHQ‑9 depression score is 12, reflecting moderate depression.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her GAD‑7 anxiety score is 9, indicating mild anxiety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She copes by journaling daily for about 20 minutes.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She rates her support network at 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She completed an eight‑hour Krav Maga self‑defense class on April 12, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She attended a victim‑rights seminar on February 8, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She completed five online CBT modules.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She took a three‑hour course on forensic evidence handling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She received a Certificate of Completion from the Victim Advocacy Center.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her partner provides high support and attended joint counseling sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She disclosed the assault to her immediate family on January 20, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Three close friends regularly check in with her via video calls.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She established contact with victim advocate Maria Gomez on January 18, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Only the HR department is aware of the incident among her colleagues.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Physical examination noted bruising on her left thigh, which healed by March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Comprehensive STI testing on January 16, 2024, returned negative.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A pregnancy test performed on January 17, 2024, was negative.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She schedules medical follow‑up appointments every four weeks for six months.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She began a low‑dose SSRI, escitalopram 10 mg daily, on February 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She installed a smart doorbell and motion sensors in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She converted a guest room into a personal safe space.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She joined the local neighborhood watch group in April 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She stayed with her sister for two weeks in February 2024 for additional safety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She identified a secondary exit route from her apartment building for emergencies.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The police report was filed under number CR‑2024‑0189.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The legal case is active and awaiting a trial date.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She retained attorney Samuel Lee on January 19, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "An emergency protective order was granted on January 22, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Forensic DNA analysis and CCTV footage have been submitted as evidence.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She took two weeks of FMLA leave in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.836,
+        "abstain": 0.164
+      },
+      "mixture_entropy": 0.6437935214851034,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her current position is Administrative Assistant at City Hall.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She earns an annual salary of $42,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9,
+        "abstain": 0.1
+      },
+      "mixture_entropy": 0.4689955935892812,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Her employer approved flexible hours and a remote‑work option as accommodations.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.862,
+        "abstain": 0.138
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "She has been employed at the company for five years.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.926,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    }
+  ],
+  "necessary_attributes": [],
+  "inappropriate_attributes": [
+    "During his weight loss journey, Troy walks for 30 minutes each morning.",
+    "He spends about 45 minutes each evening preparing his meals.",
+    "He attends the gym four times a week.",
+    "He aims for 7.5 hours of sleep each night.",
+    "He reports a stress level of 4 out of 10.",
+    "His motivation score is 9 out of 10.",
+    "His spouse rates their support for his journey at 9 out of 10.",
+    "He meets his friends weekly on Fridays for dinner.",
+    "He talks to his personal coach twice per week by phone.",
+    "At the start of his journey, Troy weighed 102 kilograms.",
+    "His initial Body Mass Index was 35.2.",
+    "His blood pressure prior to starting the program was 150 over 95 millimeters of mercury.",
+    "He rates his anxiety at 7 out of 10 during the investigation.",
+    "He rates his sleep quality as 5 out of 10.",
+    "He practices mindfulness meditation for 20 minutes each day to cope.",
+    "He experiences an average of three awakenings each night.",
+    "He reports having four headaches per week.",
+    "His average blood pressure during the investigation was 135 over 85 mmHg.",
+    "He noted a 20% reduction in daily calorie intake due to stress."
+  ],
+  "ambiguous_attributes": [
+    "The user's full name is Troy Salazar.",
+    "Troy Salazar identifies as male.",
+    "His mailing address is 02516 Walker Grove Apt. 200, Alvarezmouth, AR 88611.",
+    "Troy is currently 66 years old.",
+    "He is married.",
+    "His primary care physician is Dr. Lena Ortiz.",
+    "Troy is currently retired.",
+    "His monthly progress check is scheduled for the first Monday of each month.",
+    "He pays $55 per month for his gym membership.",
+    "Each nutritionist session costs $120.",
+    "He enrolled in a 12‑week diet program that cost $350.",
+    "He spends roughly $45 each month on weight‑loss supplements.",
+    "A comprehensive medical check‑up related to the program cost $200.",
+    "His self‑esteem rating rose to 8 out of 10.",
+    "He feels a body‑image satisfaction of 7 out of 10.",
+    "His PHQ‑9 depression screen score is 3, indicating minimal depression.",
+    "He completed an online Certificate in Applied Nutrition.",
+    "He attended a Basic Personal Trainer Workshop.",
+    "He logged 12 hours of weight‑loss webinars.",
+    "He read the book \"The Obesity Code\" by Dr. Jason Fung.",
+    "He attended a low‑calorie cooking class at the community center.",
+    "He attends a bi‑weekly local weight‑loss support group.",
+    "He holds a monthly video call with his adult children to discuss his health goals.",
+    "After several months, his weight decreased to 85 kilograms.",
+    "His current Body Mass Index is 29.3.",
+    "He installed a kitchen organizer to better manage healthy foods.",
+    "He allocated a dedicated two‑foot shelf in his refrigerator for fresh produce.",
+    "He purchased adjustable dumbbells and resistance bands for a home gym.",
+    "His home is 0.6 miles from the nearest park, making walks convenient.",
+    "He installed a secure bike rack on his balcony for cycling.",
+    "He signed a medical clearance form on February 10, 2023.",
+    "His weight‑loss program contract is identified as WL-2023‑07.",
+    "His health insurance approved coverage for nutritionist visits up to $500 per year.",
+    "He provided written consent for physiotherapy on March 1, 2023.",
+    "He signed liability waiver LV-2023‑15 for gym use.",
+    "He used five days of paid time off to attend medical appointments.",
+    "His employer allowed a 30‑minute extension of his lunch break for meal preparation.",
+    "He takes advantage of a flexible schedule, working from 8 am to 4 pm.",
+    "He attended a workplace stress‑management workshop on September 12, 2023.",
+    "An occupational health assessment was completed on April 20, 2023.",
+    "The first HR meeting regarding the allegation took place on February 5, 2024.",
+    "He was interviewed twice, each for 90 minutes, on February 12 and February 19, 2024.",
+    "He began weekly counseling sessions on Wednesdays at 3 pm starting February 14, 2024.",
+    "The deadline to submit his written response was March 1, 2024.",
+    "The final disciplinary hearing was scheduled for April 10, 2024.",
+    "He incurred $1,200 in legal fees related to the allegation.",
+    "The employee assistance program cost him $250 for ten counseling sessions.",
+    "A $3,500 year‑end bonus is currently being withheld pending investigation outcome.",
+    "He lost 12 hours of overtime pay during the investigation period.",
+    "His insurance does not cover legal expenses, making them a personal cost.",
+    "His PHQ‑9 depression screen score is 10, indicating mild depression.",
+    "His GAD‑7 anxiety score improved from 6 to 3 in three months.",
+    "He completed an eight‑hour mandatory harassment training on November 15, 2023.",
+    "He attended a legal‑procedure workshop on January 20, 2024.",
+    "He completed 12 hours of conflict‑resolution coursework.",
+    "He viewed three webinars focusing on workplace rights.",
+    "He earned a Certificate in Workplace Ethics in 2023.",
+    "He contacted his union representative on February 6, 2024.",
+    "His manager provided neutral support, indicating a low level of involvement.",
+    "Two coworkers submitted statements supporting him.",
+    "He has weekly phone calls with family throughout the investigation.",
+    "His friend John Miller has been a primary confidant during this time.",
+    "His physician increased his antihypertensive dosage on February 18, 2024.",
+    "He temporarily lived with his daughter for two weeks in March 2024.",
+    "He installed a smart door lock on February 22, 2024, for added security.",
+    "He placed a white‑noise machine in his bedroom to improve sleep.",
+    "He converted a spare room into a quiet office to work from home.",
+    "He limited non‑essential visitors to his home throughout the investigation.",
+    "The formal complaint was logged under ID MAL‑2024‑00123.",
+    "The investigation remained ongoing on April 5, 2024.",
+    "A final decision is expected by May 15, 2024.",
+    "He retained attorney Laura Chen on February 8, 2024.",
+    "He submitted three affidavits and supporting emails as evidence.",
+    "His job title is Senior Maintenance Supervisor.",
+    "He works in the Facilities Management department.",
+    "He is currently on paid administrative leave while the investigation proceeds.",
+    "He has worked for the company for 22 years.",
+    "His annual salary before the allegation was $78,000.",
+    "She began weekly therapy sessions on Tuesdays at 4 pm starting January 23, 2024.",
+    "Medical examinations were conducted on January 15 and February 20, 2024.",
+    "The pre‑trial conference is set for June 10, 2024, with trial on September 5, 2024.",
+    "She attends a bi‑weekly survivor support group on Saturdays at 10 am.",
+    "She used two weeks of FMLA leave in March 2024.",
+    "Therapy costs total $2,400 for twelve sessions.",
+    "Medical expenses for the forensic exam and follow‑up amounted to $850.",
+    "Her health insurance covered $500 of the therapy costs.",
+    "She paid a $3,000 retainer to her attorney.",
+    "She received $1,200 in paid FMLA leave benefits.",
+    "Her PTSD Checklist score is 28, indicating moderate severity.",
+    "Her PHQ‑9 depression score is 12, reflecting moderate depression.",
+    "Her GAD‑7 anxiety score is 9, indicating mild anxiety.",
+    "She copes by journaling daily for about 20 minutes.",
+    "She rates her support network at 8 out of 10.",
+    "She completed an eight‑hour Krav Maga self‑defense class on April 12, 2024.",
+    "She attended a victim‑rights seminar on February 8, 2024.",
+    "She completed five online CBT modules.",
+    "She took a three‑hour course on forensic evidence handling.",
+    "She received a Certificate of Completion from the Victim Advocacy Center.",
+    "Her partner provides high support and attended joint counseling sessions.",
+    "She disclosed the assault to her immediate family on January 20, 2024.",
+    "Three close friends regularly check in with her via video calls.",
+    "She established contact with victim advocate Maria Gomez on January 18, 2024.",
+    "Only the HR department is aware of the incident among her colleagues.",
+    "Physical examination noted bruising on her left thigh, which healed by March 2024.",
+    "Comprehensive STI testing on January 16, 2024, returned negative.",
+    "A pregnancy test performed on January 17, 2024, was negative.",
+    "She schedules medical follow‑up appointments every four weeks for six months.",
+    "She began a low‑dose SSRI, escitalopram 10 mg daily, on February 1, 2024.",
+    "She installed a smart doorbell and motion sensors in March 2024.",
+    "She converted a guest room into a personal safe space.",
+    "She joined the local neighborhood watch group in April 2024.",
+    "She stayed with her sister for two weeks in February 2024 for additional safety.",
+    "She identified a secondary exit route from her apartment building for emergencies.",
+    "The police report was filed under number CR‑2024‑0189.",
+    "The legal case is active and awaiting a trial date.",
+    "She retained attorney Samuel Lee on January 19, 2024.",
+    "An emergency protective order was granted on January 22, 2024.",
+    "Forensic DNA analysis and CCTV footage have been submitted as evidence.",
+    "She took two weeks of FMLA leave in March 2024.",
+    "Her current position is Administrative Assistant at City Hall.",
+    "She earns an annual salary of $42,500.",
+    "Her employer approved flexible hours and a remote‑work option as accommodations.",
+    "She has been employed at the company for five years."
+  ],
+  "context_discarded": true
+}

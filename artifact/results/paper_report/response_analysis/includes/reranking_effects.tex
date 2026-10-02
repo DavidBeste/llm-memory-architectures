@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Model & Memory & $\Delta$ Necessary & $\Delta$ Inappropriate & $\Delta$ Ambiguous & $\Delta$ Exposed \\
+\midrule
+DeepSeek-V4-Flash & Graph & +2.69 pp & -0.07 pp & -0.55 pp & \textbf{-0.79} \\
+DeepSeek-V4-Flash & List & +2.56 pp & -0.23 pp & +0.27 pp & -0.01 \\
+DeepSeek-V4-Flash & Profile & \textbf{-2.73 pp} & \textbf{-0.83 pp} & \textbf{-0.99 pp} & \textbf{-1.21} \\
+GPT-5.6-sol & Graph & +1.38 pp & +0.01 pp & \textbf{+0.97 pp} & \textbf{+0.84} \\
+GPT-5.6-sol & List & \textbf{+5.73 pp} & \textbf{+0.16 pp} & \textbf{+2.19 pp} & \textbf{+2.04} \\
+GPT-5.6-sol & Profile & -1.77 pp & \textbf{-0.07 pp} & \textbf{-0.35 pp} & \textbf{-0.29} \\
+GLM-5.3-Flash & Graph & +0.38 pp & -0.35 pp & -0.38 pp & \textbf{-0.69} \\
+GLM-5.3-Flash & List & -0.83 pp & -0.09 pp & -0.39 pp & -0.40 \\
+GLM-5.3-Flash & Profile & -2.29 pp & \textbf{-0.53 pp} & \textbf{-0.79 pp} & \textbf{-0.98} \\
+\bottomrule
+\end{tabular}
+\caption{Paired post-minus-pre reranking effects. Bold values have hierarchical 95\% intervals excluding zero.}
+\label{tab:cimemories-reranking-effects}
+\end{table*}

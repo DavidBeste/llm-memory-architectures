@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "source_pipeline_manifest": "artifact://pipelines/gpt-5-6-sol/graph/persona_000/pipeline/manifest.json",
+  "source_query_manifest": "artifact://pipelines/gpt-5-6-sol/graph/persona_000/query/manifest.json",
+  "judge_model": "gpt-6-sol",
+  "judge_reasoning_effort": "none",
+  "judge_configuration": {
+    "mode": "llm_semantic_judge",
+    "model": "gpt-6-sol",
+    "base_url": "https://api.openai.com/v1",
+    "api_style": "responses",
+    "reasoning_effort": "none",
+    "max_output_tokens": 4096,
+    "timeout_seconds": 300,
+    "stream_chat_completions": false,
+    "configuration_source": "dedicated_memory_stage_environment"
+  },
+  "prompt_version": "memory-stage-attribute-entailment-indices-v3",
+  "strategy": "monolithic",
+  "attribute_batch_size": null,
+  "pilot_contexts": 10,
+  "context_count": 10,
+  "kept_context_count": 10,
+  "discarded_context_count": 0,
+  "aggregate_all_contexts": {
+    "context_count": 10,
+    "pre_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8933333333333333,
+        "micro_availability_rate": 0.8809523809523809,
+        "represented_count": 37,
+        "total": 42
+      },
+      "private": {
+        "macro_availability_rate": 0.43189271674580504,
+        "micro_availability_rate": 0.37209302325581395,
+        "represented_count": 288,
+        "total": 774
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.45963450643408343,
+        "micro_availability_rate": 0.4541284403669725,
+        "represented_count": 297,
+        "total": 654
+      }
+    },
+    "post_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8533333333333333,
+        "micro_availability_rate": 0.8333333333333334,
+        "represented_count": 35,
+        "total": 42
+      },
+      "private": {
+        "macro_availability_rate": 0.14478775429788182,
+        "micro_availability_rate": 0.12532299741602068,
+        "represented_count": 97,
+        "total": 774
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.30235581397437433,
+        "micro_availability_rate": 0.28593272171253825,
+        "represented_count": 187,
+        "total": 654
+      }
+    },
+    "reranker": {
+      "necessary": {
+        "macro_retention_rate": 0.95,
+        "macro_removal_rate": 0.05,
+        "micro_retention_rate": 0.9459459459459459,
+        "micro_removal_rate": 0.05405405405405406,
+        "pre_rerank_represented_count": 37,
+        "post_rerank_represented_count": 35
+      },
+      "private": {
+        "macro_retention_rate": 0.3310700897543003,
+        "macro_removal_rate": 0.6689299102456998,
+        "micro_retention_rate": 0.3368055555555556,
+        "micro_removal_rate": 0.6631944444444444,
+        "pre_rerank_represented_count": 288,
+        "post_rerank_represented_count": 97
+      },
+      "ambiguous": {
+        "macro_retention_rate": 0.6527213674007153,
+        "macro_removal_rate": 0.3472786325992848,
+        "micro_retention_rate": 0.6296296296296297,
+        "micro_removal_rate": 0.37037037037037035,
+        "pre_rerank_represented_count": 297,
+        "post_rerank_represented_count": 187
+      }
+    },
+    "final_response": {
+      "macro_necessary_recall": 0.6568333333333334,
+      "macro_private_leak_rate": 0.00040404040404040404,
+      "macro_ambiguous_exposure_rate": 0.04252321796414377,
+      "semantics": "Macro mean of the existing final response metrics; no responses are re-judged."
+    },
+    "judge_exact_token_usage": {
+      "exact": true,
+      "usage_count": 10,
+      "input_tokens": 70424,
+      "output_tokens": 2451,
+      "total_tokens": 72875,
+      "cached_input_tokens": 0,
+      "reasoning_output_tokens": 0
+    },
+    "judge_consistency_adjustment_count": 0
+  },
+  "aggregate_excluding_discarded_contexts": {
+    "context_count": 10,
+    "pre_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8933333333333333,
+        "micro_availability_rate": 0.8809523809523809,
+        "represented_count": 37,
+        "total": 42
+      },
+      "private": {
+        "macro_availability_rate": 0.43189271674580504,
+        "micro_availability_rate": 0.37209302325581395,
+        "represented_count": 288,
+        "total": 774
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.45963450643408343,
+        "micro_availability_rate": 0.4541284403669725,
+        "represented_count": 297,
+        "total": 654
+      }
+    },
+    "post_rerank": {
+      "necessary": {
+        "macro_availability_rate": 0.8533333333333333,
+        "micro_availability_rate": 0.8333333333333334,
+        "represented_count": 35,
+        "total": 42
+      },
+      "private": {
+        "macro_availability_rate": 0.14478775429788182,
+        "micro_availability_rate": 0.12532299741602068,
+        "represented_count": 97,
+        "total": 774
+      },
+      "ambiguous": {
+        "macro_availability_rate": 0.30235581397437433,
+        "micro_availability_rate": 0.28593272171253825,
+        "represented_count": 187,
+        "total": 654
+      }
+    },
+    "reranker": {
+      "necessary": {
+        "macro_retention_rate": 0.95,
+        "macro_removal_rate": 0.05,
+        "micro_retention_rate": 0.9459459459459459,
+        "micro_removal_rate": 0.05405405405405406,
+        "pre_rerank_represented_count": 37,
+        "post_rerank_represented_count": 35
+      },
+      "private": {
+        "macro_retention_rate": 0.3310700897543003,
+        "macro_removal_rate": 0.6689299102456998,
+        "micro_retention_rate": 0.3368055555555556,
+        "micro_removal_rate": 0.6631944444444444,
+        "pre_rerank_represented_count": 288,
+        "post_rerank_represented_count": 97
+      },
+      "ambiguous": {
+        "macro_retention_rate": 0.6527213674007153,
+        "macro_removal_rate": 0.3472786325992848,
+        "micro_retention_rate": 0.6296296296296297,
+        "micro_removal_rate": 0.37037037037037035,
+        "pre_rerank_represented_count": 297,
+        "post_rerank_represented_count": 187
+      }
+    },
+    "final_response": {
+      "macro_necessary_recall": 0.6568333333333334,
+      "macro_private_leak_rate": 0.00040404040404040404,
+      "macro_ambiguous_exposure_rate": 0.04252321796414377,
+      "semantics": "Macro mean of the existing final response metrics; no responses are re-judged."
+    },
+    "judge_exact_token_usage": {
+      "exact": true,
+      "usage_count": 10,
+      "input_tokens": 70424,
+      "output_tokens": 2451,
+      "total_tokens": 72875,
+      "cached_input_tokens": 0,
+      "reasoning_output_tokens": 0
+    },
+    "judge_consistency_adjustment_count": 0
+  },
+  "context_metric_files": [
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_000.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_001.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_002.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_003.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_004.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_005.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_006.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_007.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_008.json",
+    "memory_stage_metrics__judge_gpt-6-sol_config-004_pilot_10/context_009.json"
+  ]
+}

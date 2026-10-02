@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "command": "export_cimemories_integrated_paper_artifacts",
+  "dataset_filter": "cimemories_raw",
+  "models": [
+    "gpt-5.6-sol",
+    "zai-org/GLM-5.3-Flash",
+    "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "architectures": [
+    "list",
+    "graph",
+    "profile"
+  ],
+  "response_persona_scope": 10,
+  "memory_persona": 0,
+  "memory_judge_model": "gpt-6-sol",
+  "response_repeat_policy": {
+    "post_repeat_limit": 1,
+    "selection": "lowest_repeat_idx_then_record_index",
+    "pre_rerank_unchanged": true
+  },
+  "response_bundle": "response_analysis/manifest.json",
+  "efficiency": {
+    "aggregation": "macro_mean_over_model_persona_pipeline_cells",
+    "stage": "post_rerank_deployed_pipeline",
+    "preparation_scope": "retrieval_and_explicit_reranking",
+    "token_scope": "exact_provider_reported_generation_and_preparation",
+    "unreported_backend_operations_excluded": true
+  },
+  "memory_complete": true,
+  "missing_memory_conditions": [],
+  "artifacts": [
+    "REPORT.html",
+    "integrated_artifact_inputs.json",
+    "response_analysis/",
+    "efficiency_analysis/architecture_efficiency.csv",
+    "efficiency_analysis/pipeline_efficiency.csv",
+    "memory_analysis/context_metrics.csv",
+    "memory_analysis/condition_metrics.csv",
+    "memory_analysis/reranking_effects.csv",
+    "memory_analysis/architecture_contrasts.csv",
+    "memory_analysis/model_contrasts.csv",
+    "memory_analysis/interaction_contrasts.csv",
+    "memory_analysis/coverage.csv",
+    "memory_analysis/provenance.csv",
+    "cross_stage_analysis/memory_response_contexts.csv",
+    "cross_stage_analysis/memory_response_alignment.csv",
+    "figures/direct_memory_trajectories.svg",
+    "figures/memory_representation_density.svg",
+    "figures/memory_to_response_alignment.svg",
+    "includes/paper_preamble.tex",
+    "includes/architecture_efficiency.tex",
+    "includes/direct_memory_operating_points.tex",
+    "includes/direct_memory_retention.tex",
+    "includes/memory_response_alignment.tex",
+    "includes/all_direct_memory_artifacts.tex",
+    "includes/all_integrated_artifacts.tex",
+    "includes/direct_memory_trajectories.tex",
+    "includes/memory_representation_density.tex",
+    "includes/memory_to_response_alignment.tex"
+  ]
+}

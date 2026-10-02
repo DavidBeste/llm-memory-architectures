@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="410" viewBox="0 0 1260 410">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:23px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px;fill:#667085}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}</style>
+<text class="title" x="24" y="32">Post-rerank memory-to-response alignment</text>
+<text class="sub" x="24" y="51">Dumbbells connect attribute availability in returned memory to attribute appearance in the generated response</text>
+<text class="lab" x="335.0" y="70" text-anchor="middle" font-weight="700">Necessary</text>
+<line class="grid" x1="185.0" y1="82" x2="185.0" y2="332"/>
+<text class="tiny" x="185.0" y="351" text-anchor="middle">0</text>
+<line class="grid" x1="245.0" y1="82" x2="245.0" y2="332"/>
+<text class="tiny" x="245.0" y="351" text-anchor="middle">20</text>
+<line class="grid" x1="305.0" y1="82" x2="305.0" y2="332"/>
+<text class="tiny" x="305.0" y="351" text-anchor="middle">40</text>
+<line class="grid" x1="365.0" y1="82" x2="365.0" y2="332"/>
+<text class="tiny" x="365.0" y="351" text-anchor="middle">60</text>
+<line class="grid" x1="425.0" y1="82" x2="425.0" y2="332"/>
+<text class="tiny" x="425.0" y="351" text-anchor="middle">80</text>
+<line class="grid" x1="485.0" y1="82" x2="485.0" y2="332"/>
+<text class="tiny" x="485.0" y="351" text-anchor="middle">100</text>
+<line x1="361.40022675736964" y1="96" x2="323.62811791383217" y2="96" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="361.40022675736964" cy="96" r="4.5" fill="#3559a8"/>
+<rect x="319.62811791383217" y="92" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="99" text-anchor="end">GPT-5.6-sol · List</text>
+<line x1="433.9909297052154" y1="123" x2="364.9263038548753" y2="123" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="433.9909297052154" cy="123" r="4.5" fill="#3559a8"/>
+<rect x="360.9263038548753" y="119" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="126" text-anchor="end">GPT-5.6-sol · Graph</text>
+<line x1="379.9716553287982" y1="150" x2="303.265306122449" y2="150" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="379.9716553287982" cy="150" r="4.5" fill="#3559a8"/>
+<rect x="299.265306122449" y="146" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="153" text-anchor="end">GPT-5.6-sol · Profile</text>
+<line x1="363.18594104308386" y1="177" x2="343.08390022675735" y2="177" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="363.18594104308386" cy="177" r="4.5" fill="#3559a8"/>
+<rect x="339.08390022675735" y="173" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="180" text-anchor="end">GLM-5.3-Flash · List</text>
+<line x1="419.53514739229024" y1="204" x2="412.83446712018144" y2="204" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="419.53514739229024" cy="204" r="4.5" fill="#3559a8"/>
+<rect x="408.83446712018144" y="200" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="207" text-anchor="end">GLM-5.3-Flash · Graph</text>
+<line x1="348.8038548752835" y1="231" x2="332.3072562358277" y2="231" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="348.8038548752835" cy="231" r="4.5" fill="#3559a8"/>
+<rect x="328.3072562358277" y="227" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="234" text-anchor="end">GLM-5.3-Flash · Profile</text>
+<line x1="357.5736961451247" y1="258" x2="340.90702947845807" y2="258" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="357.5736961451247" cy="258" r="4.5" fill="#3559a8"/>
+<rect x="336.90702947845807" y="254" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="261" text-anchor="end">DeepSeek-V4-Flash · List</text>
+<line x1="354.29138321995464" y1="285" x2="317.08049886621313" y2="285" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="354.29138321995464" cy="285" r="4.5" fill="#3559a8"/>
+<rect x="313.08049886621313" y="281" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="288" text-anchor="end">DeepSeek-V4-Flash · Graph</text>
+<line x1="354.33106575963717" y1="312" x2="336.13378684807253" y2="312" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="354.33106575963717" cy="312" r="4.5" fill="#3559a8"/>
+<rect x="332.13378684807253" y="308" width="8" height="8" fill="#d65f45"/>
+<text class="tiny" x="175" y="315" text-anchor="end">DeepSeek-V4-Flash · Profile</text>
+<text class="lab" x="690.0" y="70" text-anchor="middle" font-weight="700">Private</text>
+<line class="grid" x1="540.0" y1="82" x2="540.0" y2="332"/>
+<text class="tiny" x="540.0" y="351" text-anchor="middle">0</text>
+<line class="grid" x1="600.0" y1="82" x2="600.0" y2="332"/>
+<text class="tiny" x="600.0" y="351" text-anchor="middle">20</text>
+<line class="grid" x1="660.0" y1="82" x2="660.0" y2="332"/>
+<text class="tiny" x="660.0" y="351" text-anchor="middle">40</text>
+<line class="grid" x1="720.0" y1="82" x2="720.0" y2="332"/>
+<text class="tiny" x="720.0" y="351" text-anchor="middle">60</text>
+<line class="grid" x1="780.0" y1="82" x2="780.0" y2="332"/>
+<text class="tiny" x="780.0" y="351" text-anchor="middle">80</text>
+<line class="grid" x1="840.0" y1="82" x2="840.0" y2="332"/>
+<text class="tiny" x="840.0" y="351" text-anchor="middle">100</text>
+<line x1="541.1924707069936" y1="96" x2="540.6782066943022" y2="96" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="541.1924707069936" cy="96" r="4.5" fill="#3559a8"/>
+<rect x="536.6782066943022" y="92" width="8" height="8" fill="#d65f45"/>
+<line x1="563.2099016781709" y1="123" x2="540.1302648719062" y2="123" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="563.2099016781709" cy="123" r="4.5" fill="#3559a8"/>
+<rect x="536.1302648719062" y="119" width="8" height="8" fill="#d65f45"/>
+<line x1="683.2896932574845" y1="150" x2="540.4487024011642" y2="150" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="683.2896932574845" cy="150" r="4.5" fill="#3559a8"/>
+<rect x="536.4487024011642" y="146" width="8" height="8" fill="#d65f45"/>
+<line x1="542.7340939383654" y1="177" x2="541.2706610007327" y2="177" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="542.7340939383654" cy="177" r="4.5" fill="#3559a8"/>
+<rect x="537.2706610007327" y="173" width="8" height="8" fill="#d65f45"/>
+<line x1="547.4514398042322" y1="204" x2="541.8390208774618" y2="204" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="547.4514398042322" cy="204" r="4.5" fill="#3559a8"/>
+<rect x="537.8390208774618" y="200" width="8" height="8" fill="#d65f45"/>
+<line x1="551.2865526797328" y1="231" x2="540.4363971152371" y2="231" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="551.2865526797328" cy="231" r="4.5" fill="#3559a8"/>
+<rect x="536.4363971152371" y="227" width="8" height="8" fill="#d65f45"/>
+<line x1="549.7693404219674" y1="258" x2="541.3858534240819" y2="258" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="549.7693404219674" cy="258" r="4.5" fill="#3559a8"/>
+<rect x="537.3858534240819" y="254" width="8" height="8" fill="#d65f45"/>
+<line x1="558.3763524284223" y1="285" x2="542.4941683883744" y2="285" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="558.3763524284223" cy="285" r="4.5" fill="#3559a8"/>
+<rect x="538.4941683883744" y="281" width="8" height="8" fill="#d65f45"/>
+<line x1="552.358090182163" y1="312" x2="540.9862318132995" y2="312" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="552.358090182163" cy="312" r="4.5" fill="#3559a8"/>
+<rect x="536.9862318132995" y="308" width="8" height="8" fill="#d65f45"/>
+<text class="lab" x="1045.0" y="70" text-anchor="middle" font-weight="700">Ambiguous</text>
+<line class="grid" x1="895.0" y1="82" x2="895.0" y2="332"/>
+<text class="tiny" x="895.0" y="351" text-anchor="middle">0</text>
+<line class="grid" x1="955.0" y1="82" x2="955.0" y2="332"/>
+<text class="tiny" x="955.0" y="351" text-anchor="middle">20</text>
+<line class="grid" x1="1015.0" y1="82" x2="1015.0" y2="332"/>
+<text class="tiny" x="1015.0" y="351" text-anchor="middle">40</text>
+<line class="grid" x1="1075.0" y1="82" x2="1075.0" y2="332"/>
+<text class="tiny" x="1075.0" y="351" text-anchor="middle">60</text>
+<line class="grid" x1="1135.0" y1="82" x2="1135.0" y2="332"/>
+<text class="tiny" x="1135.0" y="351" text-anchor="middle">80</text>
+<line class="grid" x1="1195.0" y1="82" x2="1195.0" y2="332"/>
+<text class="tiny" x="1195.0" y="351" text-anchor="middle">100</text>
+<line x1="922.7132498667855" y1="96" x2="909.0129534388344" y2="96" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="922.7132498667855" cy="96" r="4.5" fill="#3559a8"/>
+<rect x="905.0129534388344" y="92" width="8" height="8" fill="#d65f45"/>
+<line x1="954.9575888639479" y1="123" x2="907.9369777148714" y2="123" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="954.9575888639479" cy="123" r="4.5" fill="#3559a8"/>
+<rect x="903.9369777148714" y="119" width="8" height="8" fill="#d65f45"/>
+<line x1="1041.2462671988653" y1="150" x2="904.2139504145753" y2="150" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="1041.2462671988653" cy="150" r="4.5" fill="#3559a8"/>
+<rect x="900.2139504145753" y="146" width="8" height="8" fill="#d65f45"/>
+<line x1="934.1368618577778" y1="177" x2="918.6259483182411" y2="177" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="934.1368618577778" cy="177" r="4.5" fill="#3559a8"/>
+<rect x="914.6259483182411" y="173" width="8" height="8" fill="#d65f45"/>
+<line x1="930.4968305461507" y1="204" x2="918.071284269071" y2="204" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="930.4968305461507" cy="204" r="4.5" fill="#3559a8"/>
+<rect x="914.071284269071" y="200" width="8" height="8" fill="#d65f45"/>
+<line x1="920.4242606372968" y1="231" x2="902.9576673292149" y2="231" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="920.4242606372968" cy="231" r="4.5" fill="#3559a8"/>
+<rect x="898.9576673292149" y="227" width="8" height="8" fill="#d65f45"/>
+<line x1="945.3345146081302" y1="258" x2="918.7871914237269" y2="258" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="945.3345146081302" cy="258" r="4.5" fill="#3559a8"/>
+<rect x="914.7871914237269" y="254" width="8" height="8" fill="#d65f45"/>
+<line x1="936.7744270643235" y1="285" x2="914.4660311735311" y2="285" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="936.7744270643235" cy="285" r="4.5" fill="#3559a8"/>
+<rect x="910.4660311735311" y="281" width="8" height="8" fill="#d65f45"/>
+<line x1="922.7827327415661" y1="312" x2="902.7498232802199" y2="312" stroke="#98a2b3" stroke-width="2"/>
+<circle cx="922.7827327415661" cy="312" r="4.5" fill="#3559a8"/>
+<rect x="898.7498232802199" y="308" width="8" height="8" fill="#d65f45"/>
+<circle cx="980" cy="35" r="4.5" fill="#3559a8"/><text class="tiny" x="990" y="39">Returned memory</text>
+<rect x="1080" y="31" width="8" height="8" fill="#d65f45"/><text class="tiny" x="1093" y="39">Generated response</text>
+</svg>

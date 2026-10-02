@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="480" viewBox="0 0 1260 480">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:23px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px;fill:#667085}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}</style>
+<text class="title" x="24" y="32">Direct-memory privacy–utility trajectories</text>
+<text class="sub" x="24" y="51">Private availability on x; necessary availability on y; arrows show pre → post reranking</text>
+<text class="lab" x="247.0" y="78" text-anchor="middle" font-weight="700">List</text>
+<line class="grid" x1="72.0" y1="92" x2="72.0" y2="402"/>
+<line class="grid" x1="72" y1="402.0" x2="422" y2="402.0"/>
+<text class="tiny" x="72.0" y="418" text-anchor="middle">0</text>
+<text class="tiny" x="64" y="405.0" text-anchor="end">0</text>
+<line class="grid" x1="142.0" y1="92" x2="142.0" y2="402"/>
+<line class="grid" x1="72" y1="340.0" x2="422" y2="340.0"/>
+<text class="tiny" x="142.0" y="418" text-anchor="middle">20</text>
+<text class="tiny" x="64" y="343.0" text-anchor="end">20</text>
+<line class="grid" x1="212.0" y1="92" x2="212.0" y2="402"/>
+<line class="grid" x1="72" y1="278.0" x2="422" y2="278.0"/>
+<text class="tiny" x="212.0" y="418" text-anchor="middle">40</text>
+<text class="tiny" x="64" y="281.0" text-anchor="end">40</text>
+<line class="grid" x1="282.0" y1="92" x2="282.0" y2="402"/>
+<line class="grid" x1="72" y1="216.0" x2="422" y2="216.0"/>
+<text class="tiny" x="282.0" y="418" text-anchor="middle">60</text>
+<text class="tiny" x="64" y="219.0" text-anchor="end">60</text>
+<line class="grid" x1="352.0" y1="92" x2="352.0" y2="402"/>
+<line class="grid" x1="72" y1="154.0" x2="422" y2="154.0"/>
+<text class="tiny" x="352.0" y="418" text-anchor="middle">80</text>
+<text class="tiny" x="64" y="157.0" text-anchor="end">80</text>
+<line class="grid" x1="422.0" y1="92" x2="422.0" y2="402"/>
+<line class="grid" x1="72" y1="92.0" x2="422" y2="92.0"/>
+<text class="tiny" x="422.0" y="418" text-anchor="middle">100</text>
+<text class="tiny" x="64" y="95.0" text-anchor="end">100</text>
+<line class="axis" x1="72" y1="402" x2="422" y2="402"/>
+<line class="axis" x1="72" y1="92" x2="72" y2="402"/>
+<line x1="151.61703831144465" y1="216.64436885865456" x2="73.3912158248259" y2="219.71976568405142" stroke="#3559a8" stroke-width="2.5"/>
+<circle cx="151.61703831144465" cy="216.64436885865456" r="5" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="73.3912158248259" cy="219.71976568405142" r="5" fill="#3559a8"/>
+<line x1="151.61703831144465" y1="216.64436885865456" x2="75.18977626142632" y2="217.87452758881332" stroke="#d65f45" stroke-width="2.5"/>
+<circle cx="151.61703831144465" cy="216.64436885865456" r="5" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="75.18977626142632" cy="217.87452758881332" r="5" fill="#d65f45"/>
+<line x1="151.61703831144465" y1="216.64436885865456" x2="83.39756382562858" y2="223.67384731670447" stroke="#2b8a6e" stroke-width="2.5"/>
+<circle cx="151.61703831144465" cy="216.64436885865456" r="5" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="83.39756382562858" cy="223.67384731670447" r="5" fill="#2b8a6e"/>
+<text class="lab" x="652.0" y="78" text-anchor="middle" font-weight="700">Graph</text>
+<line class="grid" x1="477.0" y1="92" x2="477.0" y2="402"/>
+<line class="grid" x1="477" y1="402.0" x2="827" y2="402.0"/>
+<text class="tiny" x="477.0" y="418" text-anchor="middle">0</text>
+<line class="grid" x1="547.0" y1="92" x2="547.0" y2="402"/>
+<line class="grid" x1="477" y1="340.0" x2="827" y2="340.0"/>
+<text class="tiny" x="547.0" y="418" text-anchor="middle">20</text>
+<line class="grid" x1="617.0" y1="92" x2="617.0" y2="402"/>
+<line class="grid" x1="477" y1="278.0" x2="827" y2="278.0"/>
+<text class="tiny" x="617.0" y="418" text-anchor="middle">40</text>
+<line class="grid" x1="687.0" y1="92" x2="687.0" y2="402"/>
+<line class="grid" x1="477" y1="216.0" x2="827" y2="216.0"/>
+<text class="tiny" x="687.0" y="418" text-anchor="middle">60</text>
+<line class="grid" x1="757.0" y1="92" x2="757.0" y2="402"/>
+<line class="grid" x1="477" y1="154.0" x2="827" y2="154.0"/>
+<text class="tiny" x="757.0" y="418" text-anchor="middle">80</text>
+<line class="grid" x1="827.0" y1="92" x2="827.0" y2="402"/>
+<line class="grid" x1="477" y1="92.0" x2="827" y2="92.0"/>
+<text class="tiny" x="827.0" y="418" text-anchor="middle">100</text>
+<line class="axis" x1="477" y1="402" x2="827" y2="402"/>
+<line class="axis" x1="477" y1="92" x2="477" y2="402"/>
+<line x1="615.475844917722" y1="127.20011337868479" x2="504.0782186245328" y2="144.70937263794406" stroke="#3559a8" stroke-width="2.5"/>
+<circle cx="615.475844917722" cy="127.20011337868479" r="5" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="504.0782186245328" cy="144.70937263794406" r="5" fill="#3559a8"/>
+<line x1="575.8547608033346" y1="158.1708238851096" x2="485.69334643827085" y2="159.64701436130008" stroke="#d65f45" stroke-width="2.5"/>
+<circle cx="575.8547608033346" cy="158.1708238851096" r="5" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="485.69334643827085" cy="159.64701436130008" r="5" fill="#d65f45"/>
+<line x1="575.966230741192" y1="216.53892668178383" x2="498.43907783315933" y2="227.06557067271353" stroke="#2b8a6e" stroke-width="2.5"/>
+<circle cx="575.966230741192" cy="216.53892668178383" r="5" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="498.43907783315933" cy="227.06557067271353" r="5" fill="#2b8a6e"/>
+<text class="lab" x="1057.0" y="78" text-anchor="middle" font-weight="700">Profile</text>
+<line class="grid" x1="882.0" y1="92" x2="882.0" y2="402"/>
+<line class="grid" x1="882" y1="402.0" x2="1232" y2="402.0"/>
+<text class="tiny" x="882.0" y="418" text-anchor="middle">0</text>
+<line class="grid" x1="952.0" y1="92" x2="952.0" y2="402"/>
+<line class="grid" x1="882" y1="340.0" x2="1232" y2="340.0"/>
+<text class="tiny" x="952.0" y="418" text-anchor="middle">20</text>
+<line class="grid" x1="1022.0" y1="92" x2="1022.0" y2="402"/>
+<line class="grid" x1="882" y1="278.0" x2="1232" y2="278.0"/>
+<text class="tiny" x="1022.0" y="418" text-anchor="middle">40</text>
+<line class="grid" x1="1092.0" y1="92" x2="1092.0" y2="402"/>
+<line class="grid" x1="882" y1="216.0" x2="1232" y2="216.0"/>
+<text class="tiny" x="1092.0" y="418" text-anchor="middle">60</text>
+<line class="grid" x1="1162.0" y1="92" x2="1162.0" y2="402"/>
+<line class="grid" x1="882" y1="154.0" x2="1232" y2="154.0"/>
+<text class="tiny" x="1162.0" y="418" text-anchor="middle">80</text>
+<line class="grid" x1="1232.0" y1="92" x2="1232.0" y2="402"/>
+<line class="grid" x1="882" y1="92.0" x2="1232" y2="92.0"/>
+<text class="tiny" x="1232.0" y="418" text-anchor="middle">100</text>
+<line class="axis" x1="882" y1="402" x2="1232" y2="402"/>
+<line class="axis" x1="882" y1="92" x2="882" y2="402"/>
+<line x1="1080.6018745179476" y1="196.0479969765684" x2="1049.1713088003985" y2="200.52928949357522" stroke="#3559a8" stroke-width="2.5"/>
+<circle cx="1080.6018745179476" cy="196.0479969765684" r="5" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="1049.1713088003985" cy="200.52928949357522" r="5" fill="#3559a8"/>
+<line x1="895.1676447930216" y1="232.73601662887376" x2="895.1676447930216" y2="232.73601662887376" stroke="#d65f45" stroke-width="2.5"/>
+<circle cx="895.1676447930216" cy="232.73601662887376" r="5" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="895.1676447930216" cy="232.73601662887376" r="5" fill="#d65f45"/>
+<line x1="896.4937597211353" y1="227.02456538170824" x2="896.4177718791901" y2="227.02456538170824" stroke="#2b8a6e" stroke-width="2.5"/>
+<circle cx="896.4937597211353" cy="227.02456538170824" r="5" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="896.4177718791901" cy="227.02456538170824" r="5" fill="#2b8a6e"/>
+<text class="lab" x="630.0" y="453" text-anchor="middle">Private attributes available in returned memory (%)</text>
+<text class="lab" transform="translate(18 247.0) rotate(-90)" text-anchor="middle">Necessary attributes available (%)</text>
+<circle cx="855" cy="35" r="5" fill="#3559a8"/><text class="tiny" x="864" y="39">GPT-5.6-sol</text>
+<circle cx="985" cy="35" r="5" fill="#d65f45"/><text class="tiny" x="994" y="39">GLM-5.3-Flash</text>
+<circle cx="1115" cy="35" r="5" fill="#2b8a6e"/><text class="tiny" x="1124" y="39">DeepSeek-V4-Flash</text>
+</svg>

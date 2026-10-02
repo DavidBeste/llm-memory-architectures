@@ -1,0 +1,10 @@
+model,model_label,architecture,persona_idx,complete,memory_stage_summary
+gpt-5.6-sol,GPT-5.6-sol,list,0,True,artifact://pipelines/gpt-5-6-sol/list/persona_000/memory_stage_metrics_exact_match_summary.json
+gpt-5.6-sol,GPT-5.6-sol,graph,0,True,artifact://pipelines/gpt-5-6-sol/graph/persona_000/memory_stage_metrics__judge_gpt-6-sol_config-004_summary.json
+gpt-5.6-sol,GPT-5.6-sol,profile,0,True,artifact://pipelines/gpt-5-6-sol/profile/persona_000/memory_stage_metrics__judge_gpt-6-sol_config-004_summary.json
+zai-org/GLM-5.3-Flash,GLM-5.3-Flash,list,0,True,artifact://pipelines/zai-org-glm-5-3-flash/list/persona_000/memory_stage_metrics_exact_match_summary.json
+zai-org/GLM-5.3-Flash,GLM-5.3-Flash,graph,0,True,artifact://pipelines/zai-org-glm-5-3-flash/graph/persona_000/memory_stage_metrics__judge_gpt-6-sol_config-004_summary.json
+zai-org/GLM-5.3-Flash,GLM-5.3-Flash,profile,0,True,artifact://pipelines/zai-org-glm-5-3-flash/profile/persona_000/memory_stage_metrics__judge_gpt-6-sol_config-004_summary.json
+deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek-V4-Flash,list,0,True,artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/list/persona_000/memory_stage_metrics_exact_match_summary.json
+deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek-V4-Flash,graph,0,True,artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/graph/persona_000/memory_stage_metrics__judge_gpt-6-sol_config-004_summary.json
+deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek-V4-Flash,profile,0,True,artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_000/memory_stage_metrics__judge_gpt-6-sol_config-004_summary.json

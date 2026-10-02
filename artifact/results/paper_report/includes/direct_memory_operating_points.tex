@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Memory & Facts & Attrs. & Necessary & Private & Ambiguous \\
+\midrule
+GPT-5.6-sol & List & 50.0$\rightarrow$8.7 & 50.0$\rightarrow$8.7 & 59.8$\rightarrow$58.8 & 22.7$\rightarrow$0.4 & 43.3$\rightarrow$9.2 \\
+GPT-5.6-sol & Graph & 50.0$\rightarrow$5.2 & 61.5$\rightarrow$21.3 & 88.6$\rightarrow$83.0 & 39.6$\rightarrow$7.7 & 48.1$\rightarrow$20.0 \\
+GPT-5.6-sol & Profile & 107.4$\rightarrow$71.4 & 88.0$\rightarrow$70.0 & 66.4$\rightarrow$65.0 & 56.7$\rightarrow$47.8 & 66.2$\rightarrow$48.7 \\
+GLM-5.3-Flash & List & 50.0$\rightarrow$11.1 & 50.0$\rightarrow$11.1 & 59.8$\rightarrow$59.4 & 22.7$\rightarrow$0.9 & 43.3$\rightarrow$13.0 \\
+GLM-5.3-Flash & Graph & 50.0$\rightarrow$9.2 & 39.1$\rightarrow$11.6 & 78.7$\rightarrow$78.2 & 28.2$\rightarrow$2.5 & 29.2$\rightarrow$11.8 \\
+GLM-5.3-Flash & Profile & 16.0$\rightarrow$11.9 & 8.0$\rightarrow$8.0 & 54.6$\rightarrow$54.6 & 3.8$\rightarrow$3.8 & 8.5$\rightarrow$8.5 \\
+DeepSeek-V4-Flash & List & 50.0$\rightarrow$15.1 & 50.0$\rightarrow$15.1 & 59.8$\rightarrow$57.5 & 22.7$\rightarrow$3.3 & 43.3$\rightarrow$16.8 \\
+DeepSeek-V4-Flash & Graph & 50.0$\rightarrow$13.8 & 43.7$\rightarrow$14.4 & 59.8$\rightarrow$56.4 & 28.3$\rightarrow$6.1 & 31.2$\rightarrow$13.9 \\
+DeepSeek-V4-Flash & Profile & 14.4$\rightarrow$12.8 & 9.1$\rightarrow$9.1 & 56.4$\rightarrow$56.4 & 4.1$\rightarrow$4.1 & 9.3$\rightarrow$9.3 \\
+\bottomrule
+\end{tabular}
+\caption{Direct-memory operating points for the selected case-study persona. Values are macro percentages before $\rightarrow$ after reranking.}
+\label{tab:direct-memory-operating-points-export}
+\end{table*}

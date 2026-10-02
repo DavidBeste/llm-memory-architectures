@@ -1,0 +1,4306 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 0,
+  "persona_name": "Douglas Perry",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "My name is Douglas Perry.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "I am male.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.456,
+        "private": 0.544,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9944066525627802,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I live at 503 Ward Underpass, Kaufmanberg, ME 03609.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "I am 42 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6920000000000001,
+        "private": 0.308,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8908512966034439,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I am married.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.456,
+        "private": 0.544,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9944066525627802,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I work for Northland Manufacturing Inc.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "My job title is Production Supervisor.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "My annual income is $72,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "I have mild hypertension.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My primary physician is Dr. Elaine Winters.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I own my home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "I hold a Bachelor of Science in Mechanical Engineering.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.48400000000000004,
+        "private": 0.516,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9992612140227841,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I met with my attorney about the inheritance dispute on April 12, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The court hearing for the inheritance case took place on June 19, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "We attended a mediation session on May 3, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "All inheritance documents had to be reviewed by April 30, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The family convened to discuss the inheritance on April 20, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The estate at the center of the dispute was valued at $850,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have paid $10,500 in attorney fees for the inheritance case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The estimated inheritance tax on the estate is $21,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I set aside $15,000 in cash reserves to cover legal expenses.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.202,
+        "private": 0.7979999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7259101060407926,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My anticipated share of the inheritance is $250,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.202,
+        "private": 0.7979999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7259101060407926,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "During the dispute my stress level averaged 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attended four anxiety counseling sessions during the inheritance dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I averaged 5.5 hours of sleep per night while the dispute was ongoing.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I used daily journaling as my primary coping strategy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My average mood rating during the dispute was 4 on a 10-point scale.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I read 'Estate Planning Basics' by J. Clarke to better understand the dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I completed the Coursera course 'Intro to Probate Law'.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attended the State Bar Probate Seminar in May 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I spent an average of 45 minutes each day reading legal materials.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I compiled 12 pages of notes on legal jargon.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The main conflict in the inheritance dispute was with my sister, Emily Perry.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My spouse was highly supportive throughout the dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I communicated with my parents weekly by phone during the dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I reached out to my estranged relative, Uncle Martin, for a statement.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attended a monthly meetup with the 'Legal Friends' support group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My average blood pressure during the dispute was 138 over 86 mmHg.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My doctor prescribed Clonidine 0.1 mg nightly for stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I gained 4 pounds during the inheritance dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I saw my doctor for stress management on May 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I managed only 2 hours of physical activity per week during the dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I stayed temporarily at my cousin's house on 12 River Road, Sprucefield, ME.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My mortgage payment was due on June 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My home insurance policy number is HI-5412987.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The property appraisal for the estate was performed on April 8, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I spent $1,200 on home maintenance during the dispute period.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I filed a complaint in Probate Court under case number 23-1456.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The probate application number is PA-2023-089.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My legal representative is Attorney Laura Michaels.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Three witness statements were submitted to the court.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The settlement offer on the table was $200,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I took four days of leave from work to attend court.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My work hours were reduced by 15% during the dispute.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My employer provided a flexible schedule to accommodate court appearances.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My performance review rating during the dispute was 'Meets Expectations'.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I worked an additional 6 overtime hours to cover legal costs.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I began my sobriety journey on July 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attend an AA meeting every Tuesday at 7:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My daily morning routine starts at 6:30 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My first monthly sobriety check‑in was on August 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have bi‑weekly therapy sessions on Thursdays at 5:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I save $450 each month since becoming sober.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.7979999999999999,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.9078924505212679,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Before sobriety, I spent about $600 per month on alcohol.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have donated $200 from my savings to a local charity.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My recovery app subscription costs $9.99 per month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I allocate $100 each month for new hobbies.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My current craving score is 2 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I actively use five relapse‑prevention strategies.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have attended two therapist sessions this month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My mood improvement rating is 7 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I feel a high level of confidence in my sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have read ‘Living Sober’ by John Smith and ‘The Sober Life’ by Maria Lopez.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I completed the ‘Sober Living 101’ course on Udemy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attended a Relapse Prevention Workshop in September 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I spend about three hours per week on self‑education about recovery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I earned the Certified Peer Support Facilitator credential in 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My supportive friend Jane Thompson checks in with me weekly.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My family held a meeting on August 10, 2023 to discuss my sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My partner attended an AA meeting with me once.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "There has been a significant reduction in conflict with coworkers since I became sober.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I formed a new connection with Alex Rivera through my sobriety group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My liver function test showed ALT 28 and AST 22, both within normal ranges.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have lost 6 pounds since starting sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I now average 7.5 hours of sleep per night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My blood pressure has normalized to 124 over 78 mmHg.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I engage in 150 minutes of fitness activity each week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I cleared clutter in the garage to create a new workshop space.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I bought a modular shelving unit for better storage.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I would rate the cleanliness of my home as 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I started a vegetable garden in my backyard as a new hobby.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My monthly utility bills have decreased by $45.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have had no DUI incidents since starting sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My probation, which ended in April 2023, is now completed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attended two legal counseling sessions regarding past offenses.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I am in full compliance with the court‑mandated treatment program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I completed a 40‑hour alcohol education program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My work productivity score rose to 92 out of 100.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My manager has considered me for a promotion to senior supervisor.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I have had zero days of absenteeism since becoming sober.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I was assigned to lead the Lean Manufacturing Initiative project.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Feedback from coworkers about my performance has been highly positive.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I submitted the adoption application on September 5, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.128,
+        "private": 0.872,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5519275534566073,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The home study appointment was scheduled for September 20, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My first meeting with the child was on October 2, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The adoption court hearing is set for November 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The final placement of the child is planned for December 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have paid $8,200 in agency fees for the adoption.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Legal fees for the adoption total $5,400.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I set aside $650 each month for future child expenses.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The state provides $3,000 in adoption assistance.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The estimated yearly cost of childcare is $12,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Before the adoption process my anxiety score was 7 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have attended five counseling sessions to manage adoption‑related stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My self‑assessment of parental preparedness rates an 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have taken part in three emotional‑support group meetings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I feel a high level of confidence in my upcoming parenting role.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I completed a parenting class in March 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I took the online course ‘Infant Development 101’.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I earned a CPR and First Aid certification that expires in 2025.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have read ‘Adopted Hearts’ and ‘The Adoptive Family’.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I attended two webinars on trauma‑informed care in 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My spouse has been very supportive of the adoption.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "We discussed the adoption with extended family at dinner on September 10, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The plan includes quarterly video calls with the child’s biological family.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Two friends have volunteered to babysit when needed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I have a mentorship relationship with Karen Liu, a former foster parent.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Both my spouse and I completed a health check‑up in June 2023 with all results clear.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Our immunizations have been updated with flu, Tdap, and COVID‑19 booster shots.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I added three stroller walks per week to my fitness routine.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "I expect my sleep schedule to adjust for nighttime infant feedings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "My mental‑health evaluation cleared me for adoption with no contraindications.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The nursery will be painted and furnished by November 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "We converted the guest room into the child’s bedroom.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "All electrical outlets are covered and stairs have safety gates installed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Our home insurance was updated to policy number HI-742190 in July 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "We plan to move to a four‑bedroom house in June 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The adoption petition was filed on September 12, 2023 under court number AD-2023-044.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "We obtained the birth parents’ consent on August 30, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Our background check clearance number is BK-921874.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The final court order number is CO-2023-119.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The post‑adoption termination of parental rights document was filed in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I took four weeks of paternity leave for the adoption.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My employer granted a flexible work arrangement allowing me to work remotely two days per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My work hours were adjusted to an 8 am‑4 pm shift.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "My employer provided $5,000 in adoption assistance.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.8520000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "I discussed career planning with my manager in November 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    }
+  ],
+  "necessary_attributes": [
+    "My name is Douglas Perry.",
+    "I live at 503 Ward Underpass, Kaufmanberg, ME 03609.",
+    "I work for Northland Manufacturing Inc.",
+    "My job title is Production Supervisor.",
+    "My annual income is $72,000.",
+    "I own my home."
+  ],
+  "inappropriate_attributes": [
+    "I have mild hypertension.",
+    "My primary physician is Dr. Elaine Winters.",
+    "I met with my attorney about the inheritance dispute on April 12, 2023.",
+    "The court hearing for the inheritance case took place on June 19, 2023.",
+    "We attended a mediation session on May 3, 2023.",
+    "All inheritance documents had to be reviewed by April 30, 2023.",
+    "The family convened to discuss the inheritance on April 20, 2023.",
+    "The estate at the center of the dispute was valued at $850,000.",
+    "During the dispute my stress level averaged 8 out of 10.",
+    "I attended four anxiety counseling sessions during the inheritance dispute.",
+    "I averaged 5.5 hours of sleep per night while the dispute was ongoing.",
+    "I used daily journaling as my primary coping strategy.",
+    "My average mood rating during the dispute was 4 on a 10-point scale.",
+    "I read 'Estate Planning Basics' by J. Clarke to better understand the dispute.",
+    "I completed the Coursera course 'Intro to Probate Law'.",
+    "I attended the State Bar Probate Seminar in May 2023.",
+    "I spent an average of 45 minutes each day reading legal materials.",
+    "I compiled 12 pages of notes on legal jargon.",
+    "The main conflict in the inheritance dispute was with my sister, Emily Perry.",
+    "My spouse was highly supportive throughout the dispute.",
+    "I communicated with my parents weekly by phone during the dispute.",
+    "I reached out to my estranged relative, Uncle Martin, for a statement.",
+    "I attended a monthly meetup with the 'Legal Friends' support group.",
+    "My average blood pressure during the dispute was 138 over 86 mmHg.",
+    "My doctor prescribed Clonidine 0.1 mg nightly for stress.",
+    "I gained 4 pounds during the inheritance dispute.",
+    "I saw my doctor for stress management on May 15, 2023.",
+    "I managed only 2 hours of physical activity per week during the dispute.",
+    "I stayed temporarily at my cousin's house on 12 River Road, Sprucefield, ME.",
+    "I began my sobriety journey on July 1, 2023.",
+    "I attend an AA meeting every Tuesday at 7:00 PM.",
+    "My daily morning routine starts at 6:30 AM.",
+    "My first monthly sobriety check‑in was on August 15, 2023.",
+    "Before sobriety, I spent about $600 per month on alcohol.",
+    "My recovery app subscription costs $9.99 per month.",
+    "My current craving score is 2 out of 10.",
+    "I actively use five relapse‑prevention strategies.",
+    "I have attended two therapist sessions this month.",
+    "My mood improvement rating is 7 out of 10.",
+    "I feel a high level of confidence in my sobriety.",
+    "I have read ‘Living Sober’ by John Smith and ‘The Sober Life’ by Maria Lopez.",
+    "I completed the ‘Sober Living 101’ course on Udemy.",
+    "I attended a Relapse Prevention Workshop in September 2023.",
+    "I spend about three hours per week on self‑education about recovery.",
+    "I earned the Certified Peer Support Facilitator credential in 2023.",
+    "My supportive friend Jane Thompson checks in with me weekly.",
+    "My family held a meeting on August 10, 2023 to discuss my sobriety.",
+    "My partner attended an AA meeting with me once.",
+    "There has been a significant reduction in conflict with coworkers since I became sober.",
+    "I formed a new connection with Alex Rivera through my sobriety group.",
+    "My liver function test showed ALT 28 and AST 22, both within normal ranges.",
+    "I have lost 6 pounds since starting sobriety.",
+    "I now average 7.5 hours of sleep per night.",
+    "My blood pressure has normalized to 124 over 78 mmHg.",
+    "I engage in 150 minutes of fitness activity each week.",
+    "I cleared clutter in the garage to create a new workshop space.",
+    "I bought a modular shelving unit for better storage.",
+    "I would rate the cleanliness of my home as 9 out of 10.",
+    "I started a vegetable garden in my backyard as a new hobby.",
+    "My monthly utility bills have decreased by $45.",
+    "I have had no DUI incidents since starting sobriety.",
+    "My probation, which ended in April 2023, is now completed.",
+    "I attended two legal counseling sessions regarding past offenses.",
+    "I am in full compliance with the court‑mandated treatment program.",
+    "I completed a 40‑hour alcohol education program.",
+    "The home study appointment was scheduled for September 20, 2023.",
+    "My first meeting with the child was on October 2, 2023.",
+    "The adoption court hearing is set for November 15, 2023.",
+    "The final placement of the child is planned for December 1, 2023.",
+    "Before the adoption process my anxiety score was 7 out of 10.",
+    "I have attended five counseling sessions to manage adoption‑related stress.",
+    "My self‑assessment of parental preparedness rates an 8 out of 10.",
+    "I have taken part in three emotional‑support group meetings.",
+    "I feel a high level of confidence in my upcoming parenting role.",
+    "I completed a parenting class in March 2023.",
+    "I took the online course ‘Infant Development 101’.",
+    "I earned a CPR and First Aid certification that expires in 2025.",
+    "I have read ‘Adopted Hearts’ and ‘The Adoptive Family’.",
+    "I attended two webinars on trauma‑informed care in 2023.",
+    "My spouse has been very supportive of the adoption.",
+    "We discussed the adoption with extended family at dinner on September 10, 2023.",
+    "The plan includes quarterly video calls with the child’s biological family.",
+    "Two friends have volunteered to babysit when needed.",
+    "I have a mentorship relationship with Karen Liu, a former foster parent.",
+    "I added three stroller walks per week to my fitness routine.",
+    "I expect my sleep schedule to adjust for nighttime infant feedings."
+  ],
+  "ambiguous_attributes": [
+    "I am male.",
+    "I am 42 years old.",
+    "I am married.",
+    "I hold a Bachelor of Science in Mechanical Engineering.",
+    "I have paid $10,500 in attorney fees for the inheritance case.",
+    "The estimated inheritance tax on the estate is $21,000.",
+    "I set aside $15,000 in cash reserves to cover legal expenses.",
+    "My anticipated share of the inheritance is $250,000.",
+    "My mortgage payment was due on June 1, 2023.",
+    "My home insurance policy number is HI-5412987.",
+    "The property appraisal for the estate was performed on April 8, 2023.",
+    "I spent $1,200 on home maintenance during the dispute period.",
+    "I filed a complaint in Probate Court under case number 23-1456.",
+    "The probate application number is PA-2023-089.",
+    "My legal representative is Attorney Laura Michaels.",
+    "Three witness statements were submitted to the court.",
+    "The settlement offer on the table was $200,000.",
+    "I took four days of leave from work to attend court.",
+    "My work hours were reduced by 15% during the dispute.",
+    "My employer provided a flexible schedule to accommodate court appearances.",
+    "My performance review rating during the dispute was 'Meets Expectations'.",
+    "I worked an additional 6 overtime hours to cover legal costs.",
+    "I have bi‑weekly therapy sessions on Thursdays at 5:00 PM.",
+    "I save $450 each month since becoming sober.",
+    "I have donated $200 from my savings to a local charity.",
+    "I allocate $100 each month for new hobbies.",
+    "My work productivity score rose to 92 out of 100.",
+    "My manager has considered me for a promotion to senior supervisor.",
+    "I have had zero days of absenteeism since becoming sober.",
+    "I was assigned to lead the Lean Manufacturing Initiative project.",
+    "Feedback from coworkers about my performance has been highly positive.",
+    "I submitted the adoption application on September 5, 2023.",
+    "I have paid $8,200 in agency fees for the adoption.",
+    "Legal fees for the adoption total $5,400.",
+    "I set aside $650 each month for future child expenses.",
+    "The state provides $3,000 in adoption assistance.",
+    "The estimated yearly cost of childcare is $12,000.",
+    "Both my spouse and I completed a health check‑up in June 2023 with all results clear.",
+    "Our immunizations have been updated with flu, Tdap, and COVID‑19 booster shots.",
+    "My mental‑health evaluation cleared me for adoption with no contraindications.",
+    "The nursery will be painted and furnished by November 2023.",
+    "We converted the guest room into the child’s bedroom.",
+    "All electrical outlets are covered and stairs have safety gates installed.",
+    "Our home insurance was updated to policy number HI-742190 in July 2023.",
+    "We plan to move to a four‑bedroom house in June 2024.",
+    "The adoption petition was filed on September 12, 2023 under court number AD-2023-044.",
+    "We obtained the birth parents’ consent on August 30, 2023.",
+    "Our background check clearance number is BK-921874.",
+    "The final court order number is CO-2023-119.",
+    "The post‑adoption termination of parental rights document was filed in March 2024.",
+    "I took four weeks of paternity leave for the adoption.",
+    "My employer granted a flexible work arrangement allowing me to work remotely two days per week.",
+    "My work hours were adjusted to an 8 am‑4 pm shift.",
+    "My employer provided $5,000 in adoption assistance.",
+    "I discussed career planning with my manager in November 2023."
+  ],
+  "context_discarded": false
+}

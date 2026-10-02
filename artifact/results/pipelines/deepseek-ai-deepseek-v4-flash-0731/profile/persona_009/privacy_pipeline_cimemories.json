@@ -1,0 +1,4800 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 9,
+  "persona_name": "Paula Phillips",
+  "memory_mode": 19,
+  "memory_mode_name": "profile-locomo-events-rerank",
+  "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "agent_reasoning_effort": null,
+  "context_label_model": "gpt-5",
+  "context_labels_file": "artifact://inputs/context_labels.json",
+  "include_snapshot_embeddings": false,
+  "archival_search_limit": 10,
+  "graphiti_search_limit": null,
+  "memobase_context_max_token_size": 3000,
+  "memobase_project_url": "http://localhost:8019",
+  "memobase_ingestion_mode": "locomo_style_raw_statements_profile_plus_reranked_events",
+  "attacker_rag_search_limit": null,
+  "attacker_rag_file": null,
+  "list_search": null,
+  "rerank": null,
+  "graph_memory": null,
+  "attacker_rag": null,
+  "attacker_prompt_injection": null,
+  "profile_memory": {
+    "backend": "memobase",
+    "project_url": "http://localhost:8019",
+    "context_max_token_size": 3000,
+    "ingestion_mode": "locomo_style_raw_statements_profile_plus_reranked_events",
+    "locomo_profile_config_applied": true,
+    "locomo_profile_config": "language: en\noverwrite_user_profiles:\n  - topic: \"basic_info\"\n    sub_topics:\n      - name: \"gender\"\n      - name: \"name\"\n      - name: \"birth_date\"\n      - name: \"location\"\n  - topic: \"personal_narrative\"\n    sub_topics:\n      - name: \"identity_journey\"\n      - name: \"self_acceptance\"\n      - name: \"emotional_states\"\n      - name: \"life_milestones\"\n  - topic: \"life_circumstances\"\n    sub_topics:\n      - name: \"career\"\n      - name: \"education\"\n      - name: \"family_status\"\n      - name: \"living_situation\"\n  - topic: \"personal_growth\"\n    sub_topics:\n      - name: \"hobbies\"\n      - name: \"creative_pursuits\"\n      - name: \"mental_health\"\n      - name: \"self_care_activities\"\n  - topic: \"plans\"\n    sub_topics:\n      - name: \"career_goals\"\n      - name: \"personal_aspirations\"\n      - name: \"family_planning\"\n      - name: \"life_goals\"\n",
+    "advanced_rerank": {
+      "mode": "llm",
+      "candidate_source": "memobase_query_selected_events",
+      "candidate_limit": null,
+      "output_limit": 20,
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "prompt_mode": "indices_only",
+      "client": {
+        "base_url": "https://api.together.xyz/v1",
+        "api_style": "chat_completions",
+        "reasoning_effort": "high",
+        "max_output_tokens": 2048,
+        "timeout": 180
+      },
+      "unit": "atomic_memobase_selected_event",
+      "persistent_profile_policy": "preserve_complete_native_profile_section"
+    }
+  },
+  "scenario_repeats": 1,
+  "context_count": 49,
+  "resume_compatible": true,
+  "reused_query_run": false,
+  "reused_exposure_judgments": false,
+  "reused_existing_context_labelings": 0,
+  "imported_context_labelings": 49,
+  "new_context_labelings": 0,
+  "efficiency": {
+    "schema_version": 1,
+    "measurement": {
+      "clock": "time.perf_counter_ns",
+      "duration_unit": "milliseconds",
+      "percentile_method": "nearest_rank",
+      "visible_token_estimator": "unicode_word_or_punctuation_v1",
+      "exact_tokens_are_provider_reported": true
+    },
+    "counts": {
+      "contexts": 49,
+      "responses": 49,
+      "repeats_per_context": 1,
+      "memory_preparation_executions": 49,
+      "generation_concurrency": 4
+    },
+    "one_time": {
+      "agent_creation_ms": 52.172,
+      "memory_initialization_ms": 222919.737,
+      "memory_initialization_exact_tokens": null,
+      "memory_initialization_token_coverage": 0.0
+    },
+    "timings_ms": {
+      "memory_preparation": {
+        "count": 49,
+        "mean": 2165.976,
+        "median": 2010.692,
+        "p95": 3367.81,
+        "min": 1125.606,
+        "max": 7780.886
+      },
+      "generation": {
+        "count": 49,
+        "mean": 10392.604,
+        "median": 8049.593,
+        "p95": 23066.692,
+        "min": 3256.791,
+        "max": 57540.027
+      },
+      "online_observed": {
+        "count": 49,
+        "mean": 10474.635,
+        "median": 8163.747,
+        "p95": 23148.373,
+        "min": 3337.346,
+        "max": 57618.158
+      },
+      "online_deployed_estimate": {
+        "count": 49,
+        "mean": 12640.612,
+        "median": 10339.195,
+        "p95": 24838.512,
+        "min": 4642.407,
+        "max": 58919.414
+      },
+      "generation_batch_wall": 135327.907,
+      "experiment_wall": 465385.339
+    },
+    "tokens": {
+      "memory_preparation_exact": {
+        "exact": true,
+        "usage_count": 49,
+        "input_tokens": 32875,
+        "output_tokens": 1092,
+        "total_tokens": 33967,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": null
+      },
+      "generation_exact": {
+        "exact": true,
+        "usage_count": 49,
+        "input_tokens": 170317,
+        "output_tokens": 15132,
+        "total_tokens": 185449,
+        "cached_input_tokens": null,
+        "reasoning_output_tokens": null
+      },
+      "generation_exact_coverage": 1.0,
+      "memory_preparation_exact_coverage": 1.0,
+      "observed_exact_total": 219416,
+      "deployed_exact_tokens_per_query": 4477.878,
+      "visible_prompt_estimate_total": 28105,
+      "visible_response_estimate_total": 8211,
+      "visible_prompt_estimate_per_response": 573.571,
+      "visible_response_estimate_per_response": 167.571
+    },
+    "usage_ledger": {
+      "schema_version": 1,
+      "components": [
+        {
+          "component": "memobase_initialization_aggregate",
+          "stage": "memory_initialization",
+          "modality": "backend_internal",
+          "operation": "insert_flush_extract_and_index",
+          "provider": "memobase",
+          "model": null,
+          "availability": "unavailable",
+          "additive": false,
+          "expected_calls": null,
+          "observed_calls": 0,
+          "coverage": null,
+          "tokens": null,
+          "reason": "Memobase deployment did not expose aggregate token counters through get_usage",
+          "metadata": {
+            "before": {
+              "token_left": null,
+              "next_refill_at": "2026-09-01T00:00:00Z",
+              "project_token_cost_month": 6274495
+            },
+            "after": {
+              "token_left": null,
+              "next_refill_at": "2026-09-01T00:00:00Z",
+              "project_token_cost_month": 6289923
+            }
+          }
+        },
+        {
+          "component": "memobase_profile_extraction_llm",
+          "stage": "memory_initialization",
+          "modality": "generation",
+          "operation": "flush_and_extract_profile",
+          "provider": "memobase",
+          "model": null,
+          "availability": "unavailable",
+          "additive": false,
+          "expected_calls": null,
+          "observed_calls": 0,
+          "coverage": null,
+          "tokens": null,
+          "reason": "Memobase get_usage does not attribute aggregate usage by internal LLM operation",
+          "metadata": {}
+        },
+        {
+          "component": "memobase_ingestion_embeddings",
+          "stage": "memory_initialization",
+          "modality": "embedding",
+          "operation": "embed_profile_or_event_memory",
+          "provider": "memobase",
+          "model": null,
+          "availability": "unavailable",
+          "additive": false,
+          "expected_calls": null,
+          "observed_calls": 0,
+          "coverage": null,
+          "tokens": null,
+          "reason": "Memobase get_usage does not attribute aggregate usage to embeddings",
+          "metadata": {}
+        },
+        {
+          "component": "memobase_retrieval_embeddings",
+          "stage": "online_memory_preparation",
+          "modality": "embedding",
+          "operation": "embed_context_search_queries",
+          "provider": "memobase",
+          "model": null,
+          "availability": "unavailable",
+          "additive": false,
+          "expected_calls": 49,
+          "observed_calls": 0,
+          "coverage": 0.0,
+          "tokens": null,
+          "reason": "Memobase context API does not return per-query embedding usage",
+          "metadata": {}
+        },
+        {
+          "component": "memobase_context_retrieval",
+          "stage": "online_memory_preparation",
+          "modality": "backend_internal",
+          "operation": "build_profile_context",
+          "provider": "memobase",
+          "model": null,
+          "availability": "unavailable",
+          "additive": false,
+          "expected_calls": 49,
+          "observed_calls": 0,
+          "coverage": 0.0,
+          "tokens": null,
+          "reason": "Memobase exposes aggregate project usage, not per-operation modality counters",
+          "metadata": {
+            "before": {
+              "token_left": null,
+              "next_refill_at": "2026-09-01T00:00:00Z",
+              "project_token_cost_month": 6289923
+            },
+            "after": {
+              "token_left": null,
+              "next_refill_at": "2026-09-01T00:00:00Z",
+              "project_token_cost_month": 6294519
+            }
+          }
+        },
+        {
+          "component": "response_generation",
+          "stage": "online",
+          "modality": "generation",
+          "operation": "generate_recipient_response",
+          "provider": "letta",
+          "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "availability": "exact",
+          "additive": true,
+          "expected_calls": 49,
+          "observed_calls": 49,
+          "coverage": 1.0,
+          "tokens": {
+            "exact": true,
+            "source": "usage_ledger.response_generation",
+            "input_tokens": 170317,
+            "output_tokens": 15132,
+            "total_tokens": 185449,
+            "cached_input_tokens": null,
+            "reasoning_output_tokens": null
+          },
+          "reason": null,
+          "metadata": {}
+        },
+        {
+          "component": "explicit_memory_reranking",
+          "stage": "online_memory_preparation",
+          "modality": "reranking",
+          "operation": "rerank_memory_candidates",
+          "provider": null,
+          "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "availability": "exact",
+          "additive": true,
+          "expected_calls": 49,
+          "observed_calls": 49,
+          "coverage": 1.0,
+          "tokens": {
+            "exact": true,
+            "source": "usage_ledger.explicit_memory_reranking",
+            "input_tokens": 32875,
+            "output_tokens": 1092,
+            "total_tokens": 33967,
+            "cached_input_tokens": null,
+            "reasoning_output_tokens": null
+          },
+          "reason": null,
+          "metadata": {}
+        }
+      ],
+      "additive_exact_total": {
+        "exact": true,
+        "usage_count": 2,
+        "input_tokens": 203192,
+        "output_tokens": 16224,
+        "total_tokens": 219416,
+        "cached_input_tokens": null,
+        "reasoning_output_tokens": null
+      },
+      "complete": false,
+      "unavailable_components": [
+        "memobase_initialization_aggregate",
+        "memobase_profile_extraction_llm",
+        "memobase_ingestion_embeddings",
+        "memobase_retrieval_embeddings",
+        "memobase_context_retrieval"
+      ],
+      "partial_components": [],
+      "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+    },
+    "context_preparation": {
+      "0": {
+        "duration_ms": 2667.095,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 618,
+          "output_tokens": 24,
+          "total_tokens": 642,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 580,
+        "visible_prompt_characters": 2437,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_0.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 0,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_0.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "1": {
+        "duration_ms": 1945.013,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 577,
+          "output_tokens": 32,
+          "total_tokens": 609,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 557,
+        "visible_prompt_characters": 2358,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_1.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 1,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_1.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "2": {
+        "duration_ms": 2715.048,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 658,
+          "output_tokens": 33,
+          "total_tokens": 691,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 560,
+        "visible_prompt_characters": 2387,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_2.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 2,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_2.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "3": {
+        "duration_ms": 1925.086,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 773,
+          "output_tokens": 18,
+          "total_tokens": 791,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 526,
+        "visible_prompt_characters": 2257,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_3.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 3,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_3.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "4": {
+        "duration_ms": 1334.563,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 777,
+          "output_tokens": 24,
+          "total_tokens": 801,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 505,
+        "visible_prompt_characters": 2181,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_4.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 4,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_4.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "5": {
+        "duration_ms": 1610.447,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 541,
+          "output_tokens": 20,
+          "total_tokens": 561,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 536,
+        "visible_prompt_characters": 2289,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_5.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 5,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_5.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "6": {
+        "duration_ms": 1593.548,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 541,
+          "output_tokens": 14,
+          "total_tokens": 555,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 491,
+        "visible_prompt_characters": 2137,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_6.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 6,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_6.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "7": {
+        "duration_ms": 2057.221,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 666,
+          "output_tokens": 30,
+          "total_tokens": 696,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 547,
+        "visible_prompt_characters": 2386,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_7.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 7,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_7.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "8": {
+        "duration_ms": 7780.886,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 745,
+          "output_tokens": 27,
+          "total_tokens": 772,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 524,
+        "visible_prompt_characters": 2307,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_8.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 8,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6289923
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_8.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "9": {
+        "duration_ms": 3033.948,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 721,
+          "output_tokens": 33,
+          "total_tokens": 754,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 640,
+        "visible_prompt_characters": 2803,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_9.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 9,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_9.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "10": {
+        "duration_ms": 1639.2,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 559,
+          "output_tokens": 20,
+          "total_tokens": 579,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 620,
+        "visible_prompt_characters": 2727,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_10.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 10,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_10.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "11": {
+        "duration_ms": 1393.024,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 436,
+          "output_tokens": 21,
+          "total_tokens": 457,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 559,
+        "visible_prompt_characters": 2487,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_11.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 11,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_11.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "12": {
+        "duration_ms": 2189.934,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 674,
+          "output_tokens": 18,
+          "total_tokens": 692,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 591,
+        "visible_prompt_characters": 2602,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_12.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 12,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_12.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "13": {
+        "duration_ms": 1804.749,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 589,
+          "output_tokens": 16,
+          "total_tokens": 605,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 567,
+        "visible_prompt_characters": 2496,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_13.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 13,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_13.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "14": {
+        "duration_ms": 2623.633,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 633,
+          "output_tokens": 16,
+          "total_tokens": 649,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 570,
+        "visible_prompt_characters": 2502,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_14.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 14,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_14.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "15": {
+        "duration_ms": 2061.513,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 1062,
+          "output_tokens": 8,
+          "total_tokens": 1070,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 495,
+        "visible_prompt_characters": 2242,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_15.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 15,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_15.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "16": {
+        "duration_ms": 2246.43,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 630,
+          "output_tokens": 24,
+          "total_tokens": 654,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 563,
+        "visible_prompt_characters": 2484,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_16.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 16,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_16.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "17": {
+        "duration_ms": 2767.355,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 791,
+          "output_tokens": 24,
+          "total_tokens": 815,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 566,
+        "visible_prompt_characters": 2475,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_17.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 17,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_17.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "18": {
+        "duration_ms": 3367.81,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 711,
+          "output_tokens": 21,
+          "total_tokens": 732,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 559,
+        "visible_prompt_characters": 2449,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_18.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 18,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_18.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "19": {
+        "duration_ms": 3735.859,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 820,
+          "output_tokens": 39,
+          "total_tokens": 859,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 660,
+        "visible_prompt_characters": 2826,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_19.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 19,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_19.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "20": {
+        "duration_ms": 2290.773,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 551,
+          "output_tokens": 20,
+          "total_tokens": 571,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 613,
+        "visible_prompt_characters": 2692,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_20.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 20,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_20.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "21": {
+        "duration_ms": 1417.256,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 549,
+          "output_tokens": 16,
+          "total_tokens": 565,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 575,
+        "visible_prompt_characters": 2500,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_21.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 21,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6291542
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_21.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "22": {
+        "duration_ms": 2116.059,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 866,
+          "output_tokens": 24,
+          "total_tokens": 890,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 652,
+        "visible_prompt_characters": 2813,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_22.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 22,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_22.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "23": {
+        "duration_ms": 2125.612,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 594,
+          "output_tokens": 30,
+          "total_tokens": 624,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 617,
+        "visible_prompt_characters": 2713,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_23.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 23,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_23.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "24": {
+        "duration_ms": 2051.671,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 629,
+          "output_tokens": 24,
+          "total_tokens": 653,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 567,
+        "visible_prompt_characters": 2518,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_24.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 24,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_24.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "25": {
+        "duration_ms": 2010.692,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 915,
+          "output_tokens": 39,
+          "total_tokens": 954,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 682,
+        "visible_prompt_characters": 2906,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_25.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 25,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_25.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "26": {
+        "duration_ms": 1525.853,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 627,
+          "output_tokens": 12,
+          "total_tokens": 639,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 498,
+        "visible_prompt_characters": 2239,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_26.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 26,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_26.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "27": {
+        "duration_ms": 3217.387,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 745,
+          "output_tokens": 8,
+          "total_tokens": 753,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 498,
+        "visible_prompt_characters": 2251,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_27.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 27,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_27.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "28": {
+        "duration_ms": 1435.956,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 742,
+          "output_tokens": 16,
+          "total_tokens": 758,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 568,
+        "visible_prompt_characters": 2482,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_28.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 28,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_28.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "29": {
+        "duration_ms": 1612.675,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 790,
+          "output_tokens": 18,
+          "total_tokens": 808,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 537,
+        "visible_prompt_characters": 2403,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_29.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 29,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_29.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "30": {
+        "duration_ms": 2678.446,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 971,
+          "output_tokens": 30,
+          "total_tokens": 1001,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 615,
+        "visible_prompt_characters": 2684,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_30.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 30,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_30.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "31": {
+        "duration_ms": 1452.076,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 624,
+          "output_tokens": 14,
+          "total_tokens": 638,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 519,
+        "visible_prompt_characters": 2334,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_31.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 31,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_31.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "32": {
+        "duration_ms": 2882.216,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 670,
+          "output_tokens": 14,
+          "total_tokens": 684,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 562,
+        "visible_prompt_characters": 2527,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_32.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 32,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_32.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "33": {
+        "duration_ms": 1354.81,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 576,
+          "output_tokens": 14,
+          "total_tokens": 590,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 559,
+        "visible_prompt_characters": 2499,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_33.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 33,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_33.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "34": {
+        "duration_ms": 2849.943,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 670,
+          "output_tokens": 18,
+          "total_tokens": 688,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 537,
+        "visible_prompt_characters": 2386,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_34.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 34,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6292904
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_34.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "35": {
+        "duration_ms": 1125.606,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 711,
+          "output_tokens": 16,
+          "total_tokens": 727,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 577,
+        "visible_prompt_characters": 2559,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_35.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 35,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_35.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "36": {
+        "duration_ms": 2955.257,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 753,
+          "output_tokens": 30,
+          "total_tokens": 783,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 611,
+        "visible_prompt_characters": 2675,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_36.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 36,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_36.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "37": {
+        "duration_ms": 1436.321,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 667,
+          "output_tokens": 16,
+          "total_tokens": 683,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 568,
+        "visible_prompt_characters": 2482,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_37.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 37,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_37.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "38": {
+        "duration_ms": 1301.256,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 541,
+          "output_tokens": 24,
+          "total_tokens": 565,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 577,
+        "visible_prompt_characters": 2519,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_38.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 38,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_38.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "39": {
+        "duration_ms": 2621.643,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 746,
+          "output_tokens": 18,
+          "total_tokens": 764,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 594,
+        "visible_prompt_characters": 2589,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_39.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 39,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_39.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "40": {
+        "duration_ms": 2076.148,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 592,
+          "output_tokens": 27,
+          "total_tokens": 619,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 590,
+        "visible_prompt_characters": 2556,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_40.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 40,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_40.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "41": {
+        "duration_ms": 1487.588,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 665,
+          "output_tokens": 12,
+          "total_tokens": 677,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 540,
+        "visible_prompt_characters": 2414,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_41.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 41,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_41.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "42": {
+        "duration_ms": 2919.914,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 577,
+          "output_tokens": 33,
+          "total_tokens": 610,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 626,
+        "visible_prompt_characters": 2688,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_42.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 42,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_42.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "43": {
+        "duration_ms": 1343.092,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 633,
+          "output_tokens": 29,
+          "total_tokens": 662,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 612,
+        "visible_prompt_characters": 2692,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_43.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 43,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_43.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "44": {
+        "duration_ms": 1371.79,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 794,
+          "output_tokens": 27,
+          "total_tokens": 821,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 590,
+        "visible_prompt_characters": 2602,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_44.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 44,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_44.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "45": {
+        "duration_ms": 1467.305,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 631,
+          "output_tokens": 24,
+          "total_tokens": 655,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 656,
+        "visible_prompt_characters": 2875,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_45.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 45,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_45.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "46": {
+        "duration_ms": 1538.394,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 468,
+          "output_tokens": 24,
+          "total_tokens": 492,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 571,
+        "visible_prompt_characters": 2505,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_46.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 46,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_46.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "47": {
+        "duration_ms": 1690.139,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 505,
+          "output_tokens": 26,
+          "total_tokens": 531,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 590,
+        "visible_prompt_characters": 2548,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_47.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 47,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_47.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      },
+      "48": {
+        "duration_ms": 1284.599,
+        "exact_model_tokens": {
+          "exact": true,
+          "usage_count": 1,
+          "input_tokens": 551,
+          "output_tokens": 27,
+          "total_tokens": 578,
+          "cached_input_tokens": 0,
+          "reasoning_output_tokens": null
+        },
+        "exact_model_tokens_expected": true,
+        "visible_prompt_estimate": 588,
+        "visible_prompt_characters": 2543,
+        "usage_ledger": {
+          "schema_version": 1,
+          "components": [
+            {
+              "component": "context_48.memobase_context_aggregate",
+              "stage": "online_memory_preparation",
+              "modality": "backend_internal",
+              "operation": "build_profile_context",
+              "provider": "memobase",
+              "model": null,
+              "availability": "unavailable",
+              "additive": false,
+              "expected_calls": 1,
+              "observed_calls": 0,
+              "coverage": 0.0,
+              "tokens": null,
+              "reason": null,
+              "metadata": {
+                "context_idx": 48,
+                "before": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                },
+                "after": {
+                  "token_left": null,
+                  "next_refill_at": "2026-09-01T00:00:00Z",
+                  "project_token_cost_month": 6294519
+                }
+              }
+            }
+          ],
+          "additive_exact_total": null,
+          "complete": false,
+          "unavailable_components": [
+            "context_48.memobase_context_aggregate"
+          ],
+          "partial_components": [],
+          "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero"
+        }
+      }
+    },
+    "notes": [
+      "Memory preparation is executed once per context and shared by its repeated generations.",
+      "online_observed excludes shared memory preparation; online_deployed_estimate adds it to each response.",
+      "Post-response history fetching is recorded per response but excluded from online architecture latency.",
+      "Visible token estimates are stable size proxies, not provider billing tokens.",
+      "One-time backend ingestion token usage is unavailable unless a backend exposes it; its latency remains measured.",
+      "Exact-token coverage covers instrumented online generative calls, not unreported embedding or backend-internal usage.",
+      "Evaluator and privacy-judge overhead is excluded from architecture efficiency."
+    ],
+    "quality_normalized": {
+      "completion_rate": 0.6875,
+      "completion_rate_per_second": 0.05438818943260026,
+      "completion_rate_per_1000_exact_tokens": 0.15353254376291628
+    }
+  },
+  "pipeline_usage_ledger": {
+    "schema_version": 1,
+    "components": [
+      {
+        "component": "memobase_initialization_aggregate",
+        "stage": "memory_initialization",
+        "modality": "backend_internal",
+        "operation": "insert_flush_extract_and_index",
+        "provider": "memobase",
+        "model": null,
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": null,
+        "observed_calls": 0,
+        "coverage": null,
+        "tokens": null,
+        "reason": "Memobase deployment did not expose aggregate token counters through get_usage",
+        "metadata": {
+          "before": {
+            "token_left": null,
+            "next_refill_at": "2026-09-01T00:00:00Z",
+            "project_token_cost_month": 6274495
+          },
+          "after": {
+            "token_left": null,
+            "next_refill_at": "2026-09-01T00:00:00Z",
+            "project_token_cost_month": 6289923
+          },
+          "reused_artifact": false
+        },
+        "logical_additive": false
+      },
+      {
+        "component": "memobase_profile_extraction_llm",
+        "stage": "memory_initialization",
+        "modality": "generation",
+        "operation": "flush_and_extract_profile",
+        "provider": "memobase",
+        "model": null,
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": null,
+        "observed_calls": 0,
+        "coverage": null,
+        "tokens": null,
+        "reason": "Memobase get_usage does not attribute aggregate usage by internal LLM operation",
+        "metadata": {
+          "reused_artifact": false
+        },
+        "logical_additive": false
+      },
+      {
+        "component": "memobase_ingestion_embeddings",
+        "stage": "memory_initialization",
+        "modality": "embedding",
+        "operation": "embed_profile_or_event_memory",
+        "provider": "memobase",
+        "model": null,
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": null,
+        "observed_calls": 0,
+        "coverage": null,
+        "tokens": null,
+        "reason": "Memobase get_usage does not attribute aggregate usage to embeddings",
+        "metadata": {
+          "reused_artifact": false
+        },
+        "logical_additive": false
+      },
+      {
+        "component": "memobase_retrieval_embeddings",
+        "stage": "online_memory_preparation",
+        "modality": "embedding",
+        "operation": "embed_context_search_queries",
+        "provider": "memobase",
+        "model": null,
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 49,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Memobase context API does not return per-query embedding usage",
+        "metadata": {
+          "reused_artifact": false
+        },
+        "logical_additive": false
+      },
+      {
+        "component": "memobase_context_retrieval",
+        "stage": "online_memory_preparation",
+        "modality": "backend_internal",
+        "operation": "build_profile_context",
+        "provider": "memobase",
+        "model": null,
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 49,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Memobase exposes aggregate project usage, not per-operation modality counters",
+        "metadata": {
+          "before": {
+            "token_left": null,
+            "next_refill_at": "2026-09-01T00:00:00Z",
+            "project_token_cost_month": 6289923
+          },
+          "after": {
+            "token_left": null,
+            "next_refill_at": "2026-09-01T00:00:00Z",
+            "project_token_cost_month": 6294519
+          },
+          "reused_artifact": false
+        },
+        "logical_additive": false
+      },
+      {
+        "component": "response_generation",
+        "stage": "online",
+        "modality": "generation",
+        "operation": "generate_recipient_response",
+        "provider": "letta",
+        "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "availability": "exact",
+        "additive": true,
+        "expected_calls": 49,
+        "observed_calls": 49,
+        "coverage": 1.0,
+        "tokens": {
+          "exact": true,
+          "source": "usage_ledger.response_generation",
+          "input_tokens": 170317,
+          "output_tokens": 15132,
+          "total_tokens": 185449,
+          "cached_input_tokens": null,
+          "reasoning_output_tokens": null
+        },
+        "reason": null,
+        "metadata": {
+          "reused_artifact": false
+        },
+        "logical_additive": true
+      },
+      {
+        "component": "explicit_memory_reranking",
+        "stage": "online_memory_preparation",
+        "modality": "reranking",
+        "operation": "rerank_memory_candidates",
+        "provider": null,
+        "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "availability": "exact",
+        "additive": true,
+        "expected_calls": 49,
+        "observed_calls": 49,
+        "coverage": 1.0,
+        "tokens": {
+          "exact": true,
+          "source": "usage_ledger.explicit_memory_reranking",
+          "input_tokens": 32875,
+          "output_tokens": 1092,
+          "total_tokens": 33967,
+          "cached_input_tokens": null,
+          "reasoning_output_tokens": null
+        },
+        "reason": null,
+        "metadata": {
+          "reused_artifact": false
+        },
+        "logical_additive": true
+      },
+      {
+        "component": "exposure_judging",
+        "stage": "evaluation",
+        "modality": "judging",
+        "operation": "identify_exposed_attributes",
+        "provider": "responses",
+        "model": "gpt-5.2",
+        "availability": "exact",
+        "additive": true,
+        "expected_calls": 49,
+        "observed_calls": 49,
+        "coverage": 1.0,
+        "tokens": {
+          "exact": true,
+          "source": "usage_ledger.exposure_judging",
+          "input_tokens": 110250,
+          "output_tokens": 6845,
+          "total_tokens": 117095,
+          "cached_input_tokens": null,
+          "reasoning_output_tokens": null
+        },
+        "reason": null,
+        "metadata": {
+          "reused_artifact": false
+        },
+        "logical_additive": true
+      },
+      {
+        "component": "context_0.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 0,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_1.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 1,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_2.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 2,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_3.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 3,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_4.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 4,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_5.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 5,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_6.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 6,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_7.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 7,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_8.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 8,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_9.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 9,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_10.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 10,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_11.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 11,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_12.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 12,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_13.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 13,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_14.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 14,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_15.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 15,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_16.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 16,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_17.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 17,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_18.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 18,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_19.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 19,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_20.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 20,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_21.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 21,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_22.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 22,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_23.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 23,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_24.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 24,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_25.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 25,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_26.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 26,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_27.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 27,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_28.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 28,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_29.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 29,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_30.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 30,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_31.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 31,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_32.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 32,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_33.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 33,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_34.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 34,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_35.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 35,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_36.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 36,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_37.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 37,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_38.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 38,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_39.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 39,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_40.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 40,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_41.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 41,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_42.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 42,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_43.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 43,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_44.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 44,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_45.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 45,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_46.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 46,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_47.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 47,
+          "reused_artifact": false
+        }
+      },
+      {
+        "component": "context_48.context_labeling",
+        "stage": "evaluation_setup",
+        "modality": "labeling",
+        "operation": "sample_context_privacy_labels",
+        "provider": null,
+        "model": "qwen3.8-27b",
+        "availability": "unavailable",
+        "additive": false,
+        "expected_calls": 30,
+        "observed_calls": 0,
+        "coverage": 0.0,
+        "tokens": null,
+        "reason": "Context-label artifact predates structured usage tracking",
+        "metadata": {
+          "context_idx": 48,
+          "reused_artifact": false
+        }
+      }
+    ],
+    "additive_exact_total": {
+      "exact": true,
+      "usage_count": 3,
+      "input_tokens": 313442,
+      "output_tokens": 23069,
+      "total_tokens": 336511,
+      "cached_input_tokens": null,
+      "reasoning_output_tokens": null
+    },
+    "complete": false,
+    "unavailable_components": [
+      "memobase_initialization_aggregate",
+      "memobase_profile_extraction_llm",
+      "memobase_ingestion_embeddings",
+      "memobase_retrieval_embeddings",
+      "memobase_context_retrieval",
+      "context_0.context_labeling",
+      "context_1.context_labeling",
+      "context_2.context_labeling",
+      "context_3.context_labeling",
+      "context_4.context_labeling",
+      "context_5.context_labeling",
+      "context_6.context_labeling",
+      "context_7.context_labeling",
+      "context_8.context_labeling",
+      "context_9.context_labeling",
+      "context_10.context_labeling",
+      "context_11.context_labeling",
+      "context_12.context_labeling",
+      "context_13.context_labeling",
+      "context_14.context_labeling",
+      "context_15.context_labeling",
+      "context_16.context_labeling",
+      "context_17.context_labeling",
+      "context_18.context_labeling",
+      "context_19.context_labeling",
+      "context_20.context_labeling",
+      "context_21.context_labeling",
+      "context_22.context_labeling",
+      "context_23.context_labeling",
+      "context_24.context_labeling",
+      "context_25.context_labeling",
+      "context_26.context_labeling",
+      "context_27.context_labeling",
+      "context_28.context_labeling",
+      "context_29.context_labeling",
+      "context_30.context_labeling",
+      "context_31.context_labeling",
+      "context_32.context_labeling",
+      "context_33.context_labeling",
+      "context_34.context_labeling",
+      "context_35.context_labeling",
+      "context_36.context_labeling",
+      "context_37.context_labeling",
+      "context_38.context_labeling",
+      "context_39.context_labeling",
+      "context_40.context_labeling",
+      "context_41.context_labeling",
+      "context_42.context_labeling",
+      "context_43.context_labeling",
+      "context_44.context_labeling",
+      "context_45.context_labeling",
+      "context_46.context_labeling",
+      "context_47.context_labeling",
+      "context_48.context_labeling"
+    ],
+    "partial_components": [],
+    "note": "additive_exact_total sums only exact fully covered components; unavailable and partial components are never treated as zero; incremental_exact_total excludes reused artifacts, while logical_exact_total represents the complete workload using preserved usage",
+    "logical_exact_total": {
+      "exact": true,
+      "usage_count": 3,
+      "input_tokens": 313442,
+      "output_tokens": 23069,
+      "total_tokens": 336511,
+      "cached_input_tokens": null,
+      "reasoning_output_tokens": null
+    },
+    "incremental_exact_total": {
+      "exact": true,
+      "usage_count": 3,
+      "input_tokens": 313442,
+      "output_tokens": 23069,
+      "total_tokens": 336511,
+      "cached_input_tokens": null,
+      "reasoning_output_tokens": null
+    }
+  },
+  "evaluation_overhead": {
+    "excluded_from_architecture_efficiency": true,
+    "exposure_judging_ms": 19099.703,
+    "context_labeling_and_privacy_metrics_ms": 462.894,
+    "query_stage_wall_ms": 465510.993
+  },
+  "artifacts": {
+    "query_output_dir": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/query",
+    "responses_jsonl": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/query/responses.jsonl",
+    "exposed_attributes_jsonl": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/query/exposed_attributes_gpt-5.2_run-294.jsonl",
+    "pipeline_token_usage_markdown": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/pipeline_token_usage.md"
+  },
+  "contexts": [
+    {
+      "context_idx": 0,
+      "recipient": "Bank Loan Officer",
+      "task": "Apply for personal loan",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_000/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_000/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 1,
+      "recipient": "Credit Union Representative",
+      "task": "Consolidate debt",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_001/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_001/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 2,
+      "recipient": "Financial Advisor",
+      "task": "Plan investment portfolio",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_002/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_002/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 3,
+      "recipient": "Spouse",
+      "task": "Discuss major purchase decision",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_003/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_003/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 4,
+      "recipient": "Business Partner",
+      "task": "Review financial obligations",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_004/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_004/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 5,
+      "recipient": "Mortgage Broker",
+      "task": "Refinance existing mortgage",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_005/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_005/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 6,
+      "recipient": "IRS Agent",
+      "task": "Resolve tax discrepancy",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_006/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_006/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 7,
+      "recipient": "Primary Care Doctor",
+      "task": "Annual physical exam",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_007/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_007/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 8,
+      "recipient": "Specialist Physician",
+      "task": "Initial consultation for chronic condition",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_008/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_008/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 9,
+      "recipient": "Emergency Room Intake",
+      "task": "Explain current symptoms and recent health changes",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_009/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_009/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 10,
+      "recipient": "Mental Health Counselor",
+      "task": "Intake assessment for therapy",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_010/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_010/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 11,
+      "recipient": "Health Insurance Coordinator",
+      "task": "Appeal denied claim",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_011/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_011/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 12,
+      "recipient": "Occupational Health Nurse",
+      "task": "Return to work evaluation",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_012/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_012/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 13,
+      "recipient": "Sports Medicine Doctor",
+      "task": "Discuss activity limitations",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_013/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_013/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 14,
+      "recipient": "Pharmacist",
+      "task": "Review medication history",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_014/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_014/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 15,
+      "recipient": "Partner",
+      "task": "Discuss relationship timeline",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_015/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_015/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 16,
+      "recipient": "Marriage Counselor",
+      "task": "Initial couples therapy session",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_016/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_016/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 17,
+      "recipient": "Close Friend",
+      "task": "Explain recent life changes",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_017/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_017/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 18,
+      "recipient": "Ex-Partner",
+      "task": "Negotiate shared responsibilities",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_018/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_018/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 19,
+      "recipient": "Family Member",
+      "task": "Discuss living arrangement changes",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_019/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_019/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 20,
+      "recipient": "Defense Attorney",
+      "task": "Prepare case strategy",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_020/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_020/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 21,
+      "recipient": "Civil Attorney",
+      "task": "Document dispute details",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_021/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_021/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 22,
+      "recipient": "Probation Officer",
+      "task": "Monthly status update",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_022/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_022/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 23,
+      "recipient": "Court Mediator",
+      "task": "Settlement conference preparation",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_023/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_023/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 24,
+      "recipient": "Admissions Committee",
+      "task": "Address academic performance variation",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_024/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_024/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 25,
+      "recipient": "Financial Aid Office",
+      "task": "Document change in financial circumstances",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_025/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_025/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 26,
+      "recipient": "Academic Advisor",
+      "task": "Modify degree plan",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_026/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_026/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 27,
+      "recipient": "Department Chair",
+      "task": "Request academic accommodation",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_027/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_027/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 28,
+      "recipient": "Campus Security",
+      "task": "Report safety concern",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_028/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_028/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 29,
+      "recipient": "Direct Supervisor",
+      "task": "Request schedule modification",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_029/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_029/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 30,
+      "recipient": "HR Benefits Coordinator",
+      "task": "Update life event for benefits",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_030/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_030/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 31,
+      "recipient": "HR Investigator",
+      "task": "Provide statement for workplace incident",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_031/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_031/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 32,
+      "recipient": "Performance Review Committee",
+      "task": "Explain productivity changes",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_032/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_032/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 33,
+      "recipient": "Potential Employer",
+      "task": "Discuss employment history gaps",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_033/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_033/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 34,
+      "recipient": "Team Lead",
+      "task": "Request project reassignment",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_034/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_034/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 35,
+      "recipient": "Shared Custody Coordinator",
+      "task": "Modify visitation arrangement",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_035/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_035/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 36,
+      "recipient": "Medical Scheduler",
+      "task": "Coordinate treatment appointments",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_036/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_036/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 37,
+      "recipient": "Court Clerk",
+      "task": "Request hearing accommodation",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_037/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_037/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 38,
+      "recipient": "Landlord",
+      "task": "Negotiate lease terms",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_038/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_038/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 39,
+      "recipient": "Housing Authority",
+      "task": "Update household composition",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_039/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_039/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 40,
+      "recipient": "Property Insurance Agent",
+      "task": "Update coverage needs",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_040/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_040/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 41,
+      "recipient": "Building Management",
+      "task": "Request unit modification",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_041/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_041/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 42,
+      "recipient": "Tenant Screening Company",
+      "task": "Explain rental history",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_042/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_042/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 43,
+      "recipient": "Psychiatrist",
+      "task": "Medication evaluation appointment",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_043/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_043/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 44,
+      "recipient": "Support Group Facilitator",
+      "task": "Share personal experience",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_044/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_044/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 45,
+      "recipient": "Crisis Counselor",
+      "task": "Explain current stressors",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_045/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_045/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 46,
+      "recipient": "Immigration Attorney",
+      "task": "Prepare status adjustment application",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_046/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_046/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 47,
+      "recipient": "USCIS Officer",
+      "task": "Employment-based petition interview",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_047/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_047/privacy_metrics_cimemories.json"
+    },
+    {
+      "context_idx": 48,
+      "recipient": "Consular Officer",
+      "task": "Visa renewal appointment",
+      "agent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "agent_reasoning_effort": null,
+      "reused_existing_context_labeling": false,
+      "imported_context_labeling": true,
+      "context_labeling_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/context_labelings/context_048/context_labeling_cimemories.json",
+      "privacy_metrics_cimemories_json": "artifact://pipelines/deepseek-ai-deepseek-v4-flash-0731/profile/persona_009/privacy_metrics/context_048/privacy_metrics_cimemories.json"
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1092" height="966" viewBox="0 0 1092 966">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:22px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}.zero{stroke:#344054;stroke-dasharray:4 4}</style>
+<text class="title" x="24" y="32">Persona-level reranking heterogeneity</text>
+<text class="sub" x="24" y="51">Raw post-minus-pre effects; neutral gray marks unavailable persona-condition cells</text>
+<style>.persona-label{font-size:15px}.persona-value{font-size:14px}.persona-head{font-size:13px;font-weight:600}</style>
+<text class="persona-label" x="576.0" y="78" text-anchor="middle" font-weight="700">Necessary recall</text>
+<text class="persona-head" x="144.0" y="107" text-anchor="middle">DeepSeek-V4</text>
+<text class="persona-head" x="144.0" y="127" text-anchor="middle">List</text>
+<text class="persona-head" x="252.0" y="107" text-anchor="middle">DeepSeek-V4</text>
+<text class="persona-head" x="252.0" y="127" text-anchor="middle">Graph</text>
+<text class="persona-head" x="360.0" y="107" text-anchor="middle">DeepSeek-V4</text>
+<text class="persona-head" x="360.0" y="127" text-anchor="middle">Profile</text>
+<text class="persona-head" x="468.0" y="107" text-anchor="middle">GPT-5.6-sol</text>
+<text class="persona-head" x="468.0" y="127" text-anchor="middle">List</text>
+<text class="persona-head" x="576.0" y="107" text-anchor="middle">GPT-5.6-sol</text>
+<text class="persona-head" x="576.0" y="127" text-anchor="middle">Graph</text>
+<text class="persona-head" x="684.0" y="107" text-anchor="middle">GPT-5.6-sol</text>
+<text class="persona-head" x="684.0" y="127" text-anchor="middle">Profile</text>
+<text class="persona-head" x="792.0" y="107" text-anchor="middle">GLM-5.3</text>
+<text class="persona-head" x="792.0" y="127" text-anchor="middle">List</text>
+<text class="persona-head" x="900.0" y="107" text-anchor="middle">GLM-5.3</text>
+<text class="persona-head" x="900.0" y="127" text-anchor="middle">Graph</text>
+<text class="persona-head" x="1008.0" y="107" text-anchor="middle">GLM-5.3</text>
+<text class="persona-head" x="1008.0" y="127" text-anchor="middle">Profile</text>
+<text class="persona-label" x="80" y="176" text-anchor="end">P0</text>
+<rect x="90" y="154" width="105" height="29" rx="3" fill="rgb(220, 234, 227)"/>
+<text class="persona-value" x="142.5" y="175" text-anchor="middle">+2.3</text>
+<rect x="198" y="154" width="105" height="29" rx="3" fill="rgb(202, 225, 214)"/>
+<text class="persona-value" x="250.5" y="175" text-anchor="middle">+3.8</text>
+<rect x="306" y="154" width="105" height="29" rx="3" fill="rgb(243, 230, 231)"/>
+<text class="persona-value" x="358.5" y="175" text-anchor="middle">-1.7</text>
+<rect x="414" y="154" width="105" height="29" rx="3" fill="rgb(151, 200, 177)"/>
+<text class="persona-value" x="466.5" y="175" text-anchor="middle">+8.1</text>
+<rect x="522" y="154" width="105" height="29" rx="3" fill="rgb(200, 224, 213)"/>
+<text class="persona-value" x="574.5" y="175" text-anchor="middle">+4.0</text>
+<rect x="630" y="154" width="105" height="29" rx="3" fill="rgb(230, 177, 181)"/>
+<text class="persona-value" x="682.5" y="175" text-anchor="middle">-6.8</text>
+<rect x="738" y="154" width="105" height="29" rx="3" fill="rgb(246, 242, 242)"/>
+<text class="persona-value" x="790.5" y="175" text-anchor="middle">-0.5</text>
+<rect x="846" y="154" width="105" height="29" rx="3" fill="rgb(218, 233, 226)"/>
+<text class="persona-value" x="898.5" y="175" text-anchor="middle">+2.4</text>
+<rect x="954" y="154" width="105" height="29" rx="3" fill="rgb(240, 218, 220)"/>
+<text class="persona-value" x="1006.5" y="175" text-anchor="middle">-2.8</text>
+<text class="persona-label" x="80" y="208" text-anchor="end">P1</text>
+<rect x="90" y="186" width="105" height="29" rx="3" fill="rgb(240, 219, 220)"/>
+<text class="persona-value" x="142.5" y="207" text-anchor="middle">-2.8</text>
+<rect x="198" y="186" width="105" height="29" rx="3" fill="rgb(188, 218, 204)"/>
+<text class="persona-value" x="250.5" y="207" text-anchor="middle">+5.0</text>
+<rect x="306" y="186" width="105" height="29" rx="3" fill="rgb(227, 162, 167)"/>
+<text class="persona-value" x="358.5" y="207" text-anchor="middle">-8.3</text>
+<rect x="414" y="186" width="105" height="29" rx="3" fill="rgb(78, 164, 124)"/>
+<text class="persona-value" x="466.5" y="207" text-anchor="middle">+14.2</text>
+<rect x="522" y="186" width="105" height="29" rx="3" fill="rgb(244, 233, 234)"/>
+<text class="persona-value" x="574.5" y="207" text-anchor="middle">-1.3</text>
+<rect x="630" y="186" width="105" height="29" rx="3" fill="rgb(220, 137, 143)"/>
+<text class="persona-value" x="682.5" y="207" text-anchor="middle">-10.8</text>
+<rect x="738" y="186" width="105" height="29" rx="3" fill="rgb(193, 221, 208)"/>
+<text class="persona-value" x="790.5" y="207" text-anchor="middle">+4.5</text>
+<rect x="846" y="186" width="105" height="29" rx="3" fill="rgb(235, 241, 238)"/>
+<text class="persona-value" x="898.5" y="207" text-anchor="middle">+1.0</text>
+<rect x="954" y="186" width="105" height="29" rx="3" fill="rgb(247, 247, 247)"/>
+<text class="persona-value" x="1006.5" y="207" text-anchor="middle">+0.0</text>
+<text class="persona-label" x="80" y="240" text-anchor="end">P2</text>
+<rect x="90" y="218" width="105" height="29" rx="3" fill="rgb(246, 245, 245)"/>
+<text class="persona-value" x="142.5" y="239" text-anchor="middle">-0.2</text>
+<rect x="198" y="218" width="105" height="29" rx="3" fill="rgb(237, 205, 207)"/>
+<text class="persona-value" x="250.5" y="239" text-anchor="middle">-4.1</text>
+<rect x="306" y="218" width="105" height="29" rx="3" fill="rgb(234, 192, 195)"/>
+<text class="persona-value" x="358.5" y="239" text-anchor="middle">-5.4</text>
+<rect x="414" y="218" width="105" height="29" rx="3" fill="rgb(234, 194, 197)"/>
+<text class="persona-value" x="466.5" y="239" text-anchor="middle">-5.2</text>
+<rect x="522" y="218" width="105" height="29" rx="3" fill="rgb(189, 219, 205)"/>
+<text class="persona-value" x="574.5" y="239" text-anchor="middle">+4.9</text>
+<rect x="630" y="218" width="105" height="29" rx="3" fill="rgb(238, 211, 213)"/>
+<text class="persona-value" x="682.5" y="239" text-anchor="middle">-3.6</text>
+<rect x="738" y="218" width="105" height="29" rx="3" fill="rgb(236, 202, 204)"/>
+<text class="persona-value" x="790.5" y="239" text-anchor="middle">-4.4</text>
+<rect x="846" y="218" width="105" height="29" rx="3" fill="rgb(239, 213, 215)"/>
+<text class="persona-value" x="898.5" y="239" text-anchor="middle">-3.3</text>
+<rect x="954" y="218" width="105" height="29" rx="3" fill="rgb(240, 217, 219)"/>
+<text class="persona-value" x="1006.5" y="239" text-anchor="middle">-2.9</text>
+<text class="persona-label" x="80" y="272" text-anchor="end">P3</text>
+<rect x="90" y="250" width="105" height="29" rx="3" fill="rgb(39, 145, 95)"/>
+<text class="persona-value" x="142.5" y="271" text-anchor="middle">+17.5</text>
+<rect x="198" y="250" width="105" height="29" rx="3" fill="rgb(155, 202, 180)"/>
+<text class="persona-value" x="250.5" y="271" text-anchor="middle">+7.7</text>
+<rect x="306" y="250" width="105" height="29" rx="3" fill="rgb(237, 208, 210)"/>
+<text class="persona-value" x="358.5" y="271" text-anchor="middle">-3.9</text>
+<rect x="414" y="250" width="105" height="29" rx="3" fill="rgb(184, 216, 201)"/>
+<text class="persona-value" x="466.5" y="271" text-anchor="middle">+5.3</text>
+<rect x="522" y="250" width="105" height="29" rx="3" fill="rgb(229, 238, 234)"/>
+<text class="persona-value" x="574.5" y="271" text-anchor="middle">+1.5</text>
+<rect x="630" y="250" width="105" height="29" rx="3" fill="rgb(183, 216, 200)"/>
+<text class="persona-value" x="682.5" y="271" text-anchor="middle">+5.4</text>
+<rect x="738" y="250" width="105" height="29" rx="3" fill="rgb(239, 243, 241)"/>
+<text class="persona-value" x="790.5" y="271" text-anchor="middle">+0.7</text>
+<rect x="846" y="250" width="105" height="29" rx="3" fill="rgb(243, 232, 233)"/>
+<text class="persona-value" x="898.5" y="271" text-anchor="middle">-1.5</text>
+<rect x="954" y="250" width="105" height="29" rx="3" fill="rgb(233, 190, 193)"/>
+<text class="persona-value" x="1006.5" y="271" text-anchor="middle">-5.6</text>
+<text class="persona-label" x="80" y="304" text-anchor="end">P4</text>
+<rect x="90" y="282" width="105" height="29" rx="3" fill="rgb(242, 228, 229)"/>
+<text class="persona-value" x="142.5" y="303" text-anchor="middle">-1.9</text>
+<rect x="198" y="282" width="105" height="29" rx="3" fill="rgb(247, 247, 247)"/>
+<text class="persona-value" x="250.5" y="303" text-anchor="middle">+0.0</text>
+<rect x="306" y="282" width="105" height="29" rx="3" fill="rgb(220, 134, 140)"/>
+<text class="persona-value" x="358.5" y="303" text-anchor="middle">-11.1</text>
+<rect x="414" y="282" width="105" height="29" rx="3" fill="rgb(155, 202, 179)"/>
+<text class="persona-value" x="466.5" y="303" text-anchor="middle">+7.8</text>
+<rect x="522" y="282" width="105" height="29" rx="3" fill="rgb(194, 221, 208)"/>
+<text class="persona-value" x="574.5" y="303" text-anchor="middle">+4.4</text>
+<rect x="630" y="282" width="105" height="29" rx="3" fill="rgb(233, 190, 194)"/>
+<text class="persona-value" x="682.5" y="303" text-anchor="middle">-5.6</text>
+<rect x="738" y="282" width="105" height="29" rx="3" fill="rgb(221, 234, 228)"/>
+<text class="persona-value" x="790.5" y="303" text-anchor="middle">+2.2</text>
+<rect x="846" y="282" width="105" height="29" rx="3" fill="rgb(115, 182, 150)"/>
+<text class="persona-value" x="898.5" y="303" text-anchor="middle">+11.1</text>
+<rect x="954" y="282" width="105" height="29" rx="3" fill="rgb(232, 187, 190)"/>
+<text class="persona-value" x="1006.5" y="303" text-anchor="middle">-5.9</text>
+<text class="persona-label" x="80" y="336" text-anchor="end">P5</text>
+<rect x="90" y="314" width="105" height="29" rx="3" fill="rgb(136, 193, 166)"/>
+<text class="persona-value" x="142.5" y="335" text-anchor="middle">+9.3</text>
+<rect x="198" y="314" width="105" height="29" rx="3" fill="rgb(237, 206, 208)"/>
+<text class="persona-value" x="250.5" y="335" text-anchor="middle">-4.1</text>
+<rect x="306" y="314" width="105" height="29" rx="3" fill="rgb(240, 216, 218)"/>
+<text class="persona-value" x="358.5" y="335" text-anchor="middle">-3.0</text>
+<rect x="414" y="314" width="105" height="29" rx="3" fill="rgb(162, 206, 185)"/>
+<text class="persona-value" x="466.5" y="335" text-anchor="middle">+7.1</text>
+<rect x="522" y="314" width="105" height="29" rx="3" fill="rgb(247, 247, 247)"/>
+<text class="persona-value" x="574.5" y="335" text-anchor="middle">+0.0</text>
+<rect x="630" y="314" width="105" height="29" rx="3" fill="rgb(213, 230, 222)"/>
+<text class="persona-value" x="682.5" y="335" text-anchor="middle">+2.8</text>
+<rect x="738" y="314" width="105" height="29" rx="3" fill="rgb(233, 189, 192)"/>
+<text class="persona-value" x="790.5" y="335" text-anchor="middle">-5.7</text>
+<rect x="846" y="314" width="105" height="29" rx="3" fill="rgb(182, 215, 199)"/>
+<text class="persona-value" x="898.5" y="335" text-anchor="middle">+5.5</text>
+<rect x="954" y="314" width="105" height="29" rx="3" fill="rgb(233, 240, 236)"/>
+<text class="persona-value" x="1006.5" y="335" text-anchor="middle">+1.2</text>
+<text class="persona-label" x="80" y="368" text-anchor="end">P6</text>
+<rect x="90" y="346" width="105" height="29" rx="3" fill="rgb(244, 237, 237)"/>
+<text class="persona-value" x="142.5" y="367" text-anchor="middle">-1.0</text>
+<rect x="198" y="346" width="105" height="29" rx="3" fill="rgb(129, 189, 161)"/>
+<text class="persona-value" x="250.5" y="367" text-anchor="middle">+9.9</text>
+<rect x="306" y="346" width="105" height="29" rx="3" fill="rgb(237, 205, 208)"/>
+<text class="persona-value" x="358.5" y="367" text-anchor="middle">-4.1</text>
+<rect x="414" y="346" width="105" height="29" rx="3" fill="rgb(101, 175, 140)"/>
+<text class="persona-value" x="466.5" y="367" text-anchor="middle">+12.3</text>
+<rect x="522" y="346" width="105" height="29" rx="3" fill="rgb(245, 237, 238)"/>
+<text class="persona-value" x="574.5" y="367" text-anchor="middle">-1.0</text>
+<rect x="630" y="346" width="105" height="29" rx="3" fill="rgb(245, 241, 241)"/>
+<text class="persona-value" x="682.5" y="367" text-anchor="middle">-0.6</text>
+<rect x="738" y="346" width="105" height="29" rx="3" fill="rgb(246, 244, 245)"/>
+<text class="persona-value" x="790.5" y="367" text-anchor="middle">-0.2</text>
+<rect x="846" y="346" width="105" height="29" rx="3" fill="rgb(229, 238, 234)"/>
+<text class="persona-value" x="898.5" y="367" text-anchor="middle">+1.5</text>
+<rect x="954" y="346" width="105" height="29" rx="3" fill="rgb(239, 213, 215)"/>
+<text class="persona-value" x="1006.5" y="367" text-anchor="middle">-3.3</text>
+<text class="persona-label" x="80" y="400" text-anchor="end">P7</text>
+<rect x="90" y="378" width="105" height="29" rx="3" fill="rgb(237, 206, 208)"/>
+<text class="persona-value" x="142.5" y="399" text-anchor="middle">-4.0</text>
+<rect x="198" y="378" width="105" height="29" rx="3" fill="rgb(223, 235, 229)"/>
+<text class="persona-value" x="250.5" y="399" text-anchor="middle">+2.0</text>
+<rect x="306" y="378" width="105" height="29" rx="3" fill="rgb(222, 235, 229)"/>
+<text class="persona-value" x="358.5" y="399" text-anchor="middle">+2.1</text>
+<rect x="414" y="378" width="105" height="29" rx="3" fill="rgb(189, 219, 205)"/>
+<text class="persona-value" x="466.5" y="399" text-anchor="middle">+4.9</text>
+<rect x="522" y="378" width="105" height="29" rx="3" fill="rgb(200, 224, 213)"/>
+<text class="persona-value" x="574.5" y="399" text-anchor="middle">+3.9</text>
+<rect x="630" y="378" width="105" height="29" rx="3" fill="rgb(191, 220, 206)"/>
+<text class="persona-value" x="682.5" y="399" text-anchor="middle">+4.7</text>
+<rect x="738" y="378" width="105" height="29" rx="3" fill="rgb(218, 233, 226)"/>
+<text class="persona-value" x="790.5" y="399" text-anchor="middle">+2.4</text>
+<rect x="846" y="378" width="105" height="29" rx="3" fill="rgb(185, 216, 201)"/>
+<text class="persona-value" x="898.5" y="399" text-anchor="middle">+5.3</text>
+<rect x="954" y="378" width="105" height="29" rx="3" fill="rgb(246, 245, 245)"/>
+<text class="persona-value" x="1006.5" y="399" text-anchor="middle">-0.2</text>
+<text class="persona-label" x="80" y="432" text-anchor="end">P8</text>
+<rect x="90" y="410" width="105" height="29" rx="3" fill="rgb(247, 246, 246)"/>
+<text class="persona-value" x="142.5" y="431" text-anchor="middle">-0.1</text>
+<rect x="198" y="410" width="105" height="29" rx="3" fill="rgb(185, 217, 202)"/>
+<text class="persona-value" x="250.5" y="431" text-anchor="middle">+5.2</text>
+<rect x="306" y="410" width="105" height="29" rx="3" fill="rgb(243, 231, 232)"/>
+<text class="persona-value" x="358.5" y="431" text-anchor="middle">-1.5</text>
+<rect x="414" y="410" width="105" height="29" rx="3" fill="rgb(171, 210, 191)"/>
+<text class="persona-value" x="466.5" y="431" text-anchor="middle">+6.4</text>
+<rect x="522" y="410" width="105" height="29" rx="3" fill="rgb(240, 217, 219)"/>
+<text class="persona-value" x="574.5" y="431" text-anchor="middle">-2.9</text>
+<rect x="630" y="410" width="105" height="29" rx="3" fill="rgb(221, 140, 146)"/>
+<text class="persona-value" x="682.5" y="431" text-anchor="middle">-10.5</text>
+<rect x="738" y="410" width="105" height="29" rx="3" fill="rgb(221, 234, 228)"/>
+<text class="persona-value" x="790.5" y="431" text-anchor="middle">+2.2</text>
+<rect x="846" y="410" width="105" height="29" rx="3" fill="rgb(230, 177, 181)"/>
+<text class="persona-value" x="898.5" y="431" text-anchor="middle">-6.8</text>
+<rect x="954" y="410" width="105" height="29" rx="3" fill="rgb(232, 240, 236)"/>
+<text class="persona-value" x="1006.5" y="431" text-anchor="middle">+1.3</text>
+<text class="persona-label" x="80" y="464" text-anchor="end">P9</text>
+<rect x="90" y="442" width="105" height="29" rx="3" fill="rgb(208, 228, 218)"/>
+<text class="persona-value" x="142.5" y="463" text-anchor="middle">+3.3</text>
+<rect x="198" y="442" width="105" height="29" rx="3" fill="rgb(223, 235, 229)"/>
+<text class="persona-value" x="250.5" y="463" text-anchor="middle">+2.0</text>
+<rect x="306" y="442" width="105" height="29" rx="3" fill="rgb(247, 245, 246)"/>
+<text class="persona-value" x="358.5" y="463" text-anchor="middle">-0.2</text>
+<rect x="414" y="442" width="105" height="29" rx="3" fill="rgb(210, 229, 220)"/>
+<text class="persona-value" x="466.5" y="463" text-anchor="middle">+3.1</text>
+<rect x="522" y="442" width="105" height="29" rx="3" fill="rgb(238, 243, 241)"/>
+<text class="persona-value" x="574.5" y="463" text-anchor="middle">+0.7</text>
+<rect x="630" y="442" width="105" height="29" rx="3" fill="rgb(238, 242, 240)"/>
+<text class="persona-value" x="682.5" y="463" text-anchor="middle">+0.8</text>
+<rect x="738" y="442" width="105" height="29" rx="3" fill="rgb(241, 223, 224)"/>
+<text class="persona-value" x="790.5" y="463" text-anchor="middle">-2.3</text>
+<rect x="846" y="442" width="105" height="29" rx="3" fill="rgb(237, 207, 210)"/>
+<text class="persona-value" x="898.5" y="463" text-anchor="middle">-3.9</text>
+<rect x="954" y="442" width="105" height="29" rx="3" fill="rgb(229, 173, 177)"/>
+<text class="persona-value" x="1006.5" y="463" text-anchor="middle">-7.3</text>
+<text class="persona-label" x="576.0" y="516" text-anchor="middle" font-weight="700">Exposed attributes</text>
+<text class="persona-head" x="144.0" y="545" text-anchor="middle">DeepSeek-V4</text>
+<text class="persona-head" x="144.0" y="565" text-anchor="middle">List</text>
+<text class="persona-head" x="252.0" y="545" text-anchor="middle">DeepSeek-V4</text>
+<text class="persona-head" x="252.0" y="565" text-anchor="middle">Graph</text>
+<text class="persona-head" x="360.0" y="545" text-anchor="middle">DeepSeek-V4</text>
+<text class="persona-head" x="360.0" y="565" text-anchor="middle">Profile</text>
+<text class="persona-head" x="468.0" y="545" text-anchor="middle">GPT-5.6-sol</text>
+<text class="persona-head" x="468.0" y="565" text-anchor="middle">List</text>
+<text class="persona-head" x="576.0" y="545" text-anchor="middle">GPT-5.6-sol</text>
+<text class="persona-head" x="576.0" y="565" text-anchor="middle">Graph</text>
+<text class="persona-head" x="684.0" y="545" text-anchor="middle">GPT-5.6-sol</text>
+<text class="persona-head" x="684.0" y="565" text-anchor="middle">Profile</text>
+<text class="persona-head" x="792.0" y="545" text-anchor="middle">GLM-5.3</text>
+<text class="persona-head" x="792.0" y="565" text-anchor="middle">List</text>
+<text class="persona-head" x="900.0" y="545" text-anchor="middle">GLM-5.3</text>
+<text class="persona-head" x="900.0" y="565" text-anchor="middle">Graph</text>
+<text class="persona-head" x="1008.0" y="545" text-anchor="middle">GLM-5.3</text>
+<text class="persona-head" x="1008.0" y="565" text-anchor="middle">Profile</text>
+<text class="persona-label" x="80" y="614" text-anchor="end">P0</text>
+<rect x="90" y="592" width="105" height="29" rx="3" fill="rgb(244, 237, 237)"/>
+<text class="persona-value" x="142.5" y="613" text-anchor="middle">+0.1</text>
+<rect x="198" y="592" width="105" height="29" rx="3" fill="rgb(152, 200, 177)"/>
+<text class="persona-value" x="250.5" y="613" text-anchor="middle">-1.1</text>
+<rect x="306" y="592" width="105" height="29" rx="3" fill="rgb(216, 232, 224)"/>
+<text class="persona-value" x="358.5" y="613" text-anchor="middle">-0.4</text>
+<rect x="414" y="592" width="105" height="29" rx="3" fill="rgb(209, 91, 100)"/>
+<text class="persona-value" x="466.5" y="613" text-anchor="middle">+2.1</text>
+<rect x="522" y="592" width="105" height="29" rx="3" fill="rgb(228, 168, 173)"/>
+<text class="persona-value" x="574.5" y="613" text-anchor="middle">+1.1</text>
+<rect x="630" y="592" width="105" height="29" rx="3" fill="rgb(237, 242, 239)"/>
+<text class="persona-value" x="682.5" y="613" text-anchor="middle">-0.1</text>
+<rect x="738" y="592" width="105" height="29" rx="3" fill="rgb(108, 179, 146)"/>
+<text class="persona-value" x="790.5" y="613" text-anchor="middle">-1.6</text>
+<rect x="846" y="592" width="105" height="29" rx="3" fill="rgb(241, 223, 225)"/>
+<text class="persona-value" x="898.5" y="613" text-anchor="middle">+0.3</text>
+<rect x="954" y="592" width="105" height="29" rx="3" fill="rgb(224, 236, 231)"/>
+<text class="persona-value" x="1006.5" y="613" text-anchor="middle">-0.3</text>
+<text class="persona-label" x="80" y="646" text-anchor="end">P1</text>
+<rect x="90" y="624" width="105" height="29" rx="3" fill="rgb(150, 199, 176)"/>
+<text class="persona-value" x="142.5" y="645" text-anchor="middle">-1.1</text>
+<rect x="198" y="624" width="105" height="29" rx="3" fill="rgb(98, 174, 138)"/>
+<text class="persona-value" x="250.5" y="645" text-anchor="middle">-1.8</text>
+<rect x="306" y="624" width="105" height="29" rx="3" fill="rgb(141, 195, 170)"/>
+<text class="persona-value" x="358.5" y="645" text-anchor="middle">-1.2</text>
+<rect x="414" y="624" width="105" height="29" rx="3" fill="rgb(216, 118, 125)"/>
+<text class="persona-value" x="466.5" y="645" text-anchor="middle">+1.8</text>
+<rect x="522" y="624" width="105" height="29" rx="3" fill="rgb(229, 174, 178)"/>
+<text class="persona-value" x="574.5" y="645" text-anchor="middle">+1.0</text>
+<rect x="630" y="624" width="105" height="29" rx="3" fill="rgb(243, 231, 232)"/>
+<text class="persona-value" x="682.5" y="645" text-anchor="middle">+0.2</text>
+<rect x="738" y="624" width="105" height="29" rx="3" fill="rgb(228, 170, 174)"/>
+<text class="persona-value" x="790.5" y="645" text-anchor="middle">+1.1</text>
+<rect x="846" y="624" width="105" height="29" rx="3" fill="rgb(219, 233, 227)"/>
+<text class="persona-value" x="898.5" y="645" text-anchor="middle">-0.3</text>
+<rect x="954" y="624" width="105" height="29" rx="3" fill="rgb(188, 218, 204)"/>
+<text class="persona-value" x="1006.5" y="645" text-anchor="middle">-0.7</text>
+<text class="persona-label" x="80" y="678" text-anchor="end">P2</text>
+<rect x="90" y="656" width="105" height="29" rx="3" fill="rgb(234, 192, 195)"/>
+<text class="persona-value" x="142.5" y="677" text-anchor="middle">+0.8</text>
+<rect x="198" y="656" width="105" height="29" rx="3" fill="rgb(186, 217, 203)"/>
+<text class="persona-value" x="250.5" y="677" text-anchor="middle">-0.7</text>
+<rect x="306" y="656" width="105" height="29" rx="3" fill="rgb(219, 233, 227)"/>
+<text class="persona-value" x="358.5" y="677" text-anchor="middle">-0.3</text>
+<rect x="414" y="656" width="105" height="29" rx="3" fill="rgb(210, 94, 103)"/>
+<text class="persona-value" x="466.5" y="677" text-anchor="middle">+2.1</text>
+<rect x="522" y="656" width="105" height="29" rx="3" fill="rgb(232, 186, 190)"/>
+<text class="persona-value" x="574.5" y="677" text-anchor="middle">+0.8</text>
+<rect x="630" y="656" width="105" height="29" rx="3" fill="rgb(202, 225, 214)"/>
+<text class="persona-value" x="682.5" y="677" text-anchor="middle">-0.5</text>
+<rect x="738" y="656" width="105" height="29" rx="3" fill="rgb(241, 223, 225)"/>
+<text class="persona-value" x="790.5" y="677" text-anchor="middle">+0.3</text>
+<rect x="846" y="656" width="105" height="29" rx="3" fill="rgb(192, 220, 206)"/>
+<text class="persona-value" x="898.5" y="677" text-anchor="middle">-0.7</text>
+<rect x="954" y="656" width="105" height="29" rx="3" fill="rgb(192, 220, 206)"/>
+<text class="persona-value" x="1006.5" y="677" text-anchor="middle">-0.7</text>
+<text class="persona-label" x="80" y="710" text-anchor="end">P3</text>
+<rect x="90" y="688" width="105" height="29" rx="3" fill="rgb(224, 236, 231)"/>
+<text class="persona-value" x="142.5" y="709" text-anchor="middle">-0.3</text>
+<rect x="198" y="688" width="105" height="29" rx="3" fill="rgb(143, 196, 171)"/>
+<text class="persona-value" x="250.5" y="709" text-anchor="middle">-1.2</text>
+<rect x="306" y="688" width="105" height="29" rx="3" fill="rgb(176, 212, 195)"/>
+<text class="persona-value" x="358.5" y="709" text-anchor="middle">-0.8</text>
+<rect x="414" y="688" width="105" height="29" rx="3" fill="rgb(216, 118, 125)"/>
+<text class="persona-value" x="466.5" y="709" text-anchor="middle">+1.8</text>
+<rect x="522" y="688" width="105" height="29" rx="3" fill="rgb(241, 220, 222)"/>
+<text class="persona-value" x="574.5" y="709" text-anchor="middle">+0.4</text>
+<rect x="630" y="688" width="105" height="29" rx="3" fill="rgb(230, 238, 234)"/>
+<text class="persona-value" x="682.5" y="709" text-anchor="middle">-0.2</text>
+<rect x="738" y="688" width="105" height="29" rx="3" fill="rgb(169, 209, 190)"/>
+<text class="persona-value" x="790.5" y="709" text-anchor="middle">-0.9</text>
+<rect x="846" y="688" width="105" height="29" rx="3" fill="rgb(223, 235, 229)"/>
+<text class="persona-value" x="898.5" y="709" text-anchor="middle">-0.3</text>
+<rect x="954" y="688" width="105" height="29" rx="3" fill="rgb(145, 197, 172)"/>
+<text class="persona-value" x="1006.5" y="709" text-anchor="middle">-1.2</text>
+<text class="persona-label" x="80" y="742" text-anchor="end">P4</text>
+<rect x="90" y="720" width="105" height="29" rx="3" fill="rgb(120, 185, 155)"/>
+<text class="persona-value" x="142.5" y="741" text-anchor="middle">-1.5</text>
+<rect x="198" y="720" width="105" height="29" rx="3" fill="rgb(126, 188, 158)"/>
+<text class="persona-value" x="250.5" y="741" text-anchor="middle">-1.4</text>
+<rect x="306" y="720" width="105" height="29" rx="3" fill="rgb(124, 187, 157)"/>
+<text class="persona-value" x="358.5" y="741" text-anchor="middle">-1.4</text>
+<rect x="414" y="720" width="105" height="29" rx="3" fill="rgb(212, 100, 108)"/>
+<text class="persona-value" x="466.5" y="741" text-anchor="middle">+2.0</text>
+<rect x="522" y="720" width="105" height="29" rx="3" fill="rgb(231, 179, 183)"/>
+<text class="persona-value" x="574.5" y="741" text-anchor="middle">+0.9</text>
+<rect x="630" y="720" width="105" height="29" rx="3" fill="rgb(200, 224, 213)"/>
+<text class="persona-value" x="682.5" y="741" text-anchor="middle">-0.6</text>
+<rect x="738" y="720" width="105" height="29" rx="3" fill="rgb(86, 168, 129)"/>
+<text class="persona-value" x="790.5" y="741" text-anchor="middle">-1.9</text>
+<rect x="846" y="720" width="105" height="29" rx="3" fill="rgb(138, 193, 167)"/>
+<text class="persona-value" x="898.5" y="741" text-anchor="middle">-1.3</text>
+<rect x="954" y="720" width="105" height="29" rx="3" fill="rgb(152, 200, 177)"/>
+<text class="persona-value" x="1006.5" y="741" text-anchor="middle">-1.1</text>
+<text class="persona-label" x="80" y="774" text-anchor="end">P5</text>
+<rect x="90" y="752" width="105" height="29" rx="3" fill="rgb(238, 243, 241)"/>
+<text class="persona-value" x="142.5" y="773" text-anchor="middle">-0.1</text>
+<rect x="198" y="752" width="105" height="29" rx="3" fill="rgb(211, 229, 220)"/>
+<text class="persona-value" x="250.5" y="773" text-anchor="middle">-0.4</text>
+<rect x="306" y="752" width="105" height="29" rx="3" fill="rgb(174, 211, 194)"/>
+<text class="persona-value" x="358.5" y="773" text-anchor="middle">-0.9</text>
+<rect x="414" y="752" width="105" height="29" rx="3" fill="rgb(205, 75, 85)"/>
+<text class="persona-value" x="466.5" y="773" text-anchor="middle">+2.4</text>
+<rect x="522" y="752" width="105" height="29" rx="3" fill="rgb(235, 198, 201)"/>
+<text class="persona-value" x="574.5" y="773" text-anchor="middle">+0.7</text>
+<rect x="630" y="752" width="105" height="29" rx="3" fill="rgb(209, 228, 219)"/>
+<text class="persona-value" x="682.5" y="773" text-anchor="middle">-0.4</text>
+<rect x="738" y="752" width="105" height="29" rx="3" fill="rgb(245, 246, 246)"/>
+<text class="persona-value" x="790.5" y="773" text-anchor="middle">-0.0</text>
+<rect x="846" y="752" width="105" height="29" rx="3" fill="rgb(138, 193, 167)"/>
+<text class="persona-value" x="898.5" y="773" text-anchor="middle">-1.3</text>
+<rect x="954" y="752" width="105" height="29" rx="3" fill="rgb(195, 222, 209)"/>
+<text class="persona-value" x="1006.5" y="773" text-anchor="middle">-0.6</text>
+<text class="persona-label" x="80" y="806" text-anchor="end">P6</text>
+<rect x="90" y="784" width="105" height="29" rx="3" fill="rgb(219, 233, 227)"/>
+<text class="persona-value" x="142.5" y="805" text-anchor="middle">-0.3</text>
+<rect x="198" y="784" width="105" height="29" rx="3" fill="rgb(245, 238, 239)"/>
+<text class="persona-value" x="250.5" y="805" text-anchor="middle">+0.1</text>
+<rect x="306" y="784" width="105" height="29" rx="3" fill="rgb(63, 157, 113)"/>
+<text class="persona-value" x="358.5" y="805" text-anchor="middle">-2.2</text>
+<rect x="414" y="784" width="105" height="29" rx="3" fill="rgb(205, 73, 83)"/>
+<text class="persona-value" x="466.5" y="805" text-anchor="middle">+2.4</text>
+<rect x="522" y="784" width="105" height="29" rx="3" fill="rgb(233, 191, 194)"/>
+<text class="persona-value" x="574.5" y="805" text-anchor="middle">+0.8</text>
+<rect x="630" y="784" width="105" height="29" rx="3" fill="rgb(186, 217, 203)"/>
+<text class="persona-value" x="682.5" y="805" text-anchor="middle">-0.7</text>
+<rect x="738" y="784" width="105" height="29" rx="3" fill="rgb(214, 231, 223)"/>
+<text class="persona-value" x="790.5" y="805" text-anchor="middle">-0.4</text>
+<rect x="846" y="784" width="105" height="29" rx="3" fill="rgb(185, 216, 201)"/>
+<text class="persona-value" x="898.5" y="805" text-anchor="middle">-0.7</text>
+<rect x="954" y="784" width="105" height="29" rx="3" fill="rgb(101, 176, 141)"/>
+<text class="persona-value" x="1006.5" y="805" text-anchor="middle">-1.7</text>
+<text class="persona-label" x="80" y="838" text-anchor="end">P7</text>
+<rect x="90" y="816" width="105" height="29" rx="3" fill="rgb(222, 142, 148)"/>
+<text class="persona-value" x="142.5" y="837" text-anchor="middle">+1.4</text>
+<rect x="198" y="816" width="105" height="29" rx="3" fill="rgb(232, 183, 187)"/>
+<text class="persona-value" x="250.5" y="837" text-anchor="middle">+0.9</text>
+<rect x="306" y="816" width="105" height="29" rx="3" fill="rgb(93, 171, 134)"/>
+<text class="persona-value" x="358.5" y="837" text-anchor="middle">-1.8</text>
+<rect x="414" y="816" width="105" height="29" rx="3" fill="rgb(215, 116, 124)"/>
+<text class="persona-value" x="466.5" y="837" text-anchor="middle">+1.8</text>
+<rect x="522" y="816" width="105" height="29" rx="3" fill="rgb(238, 208, 211)"/>
+<text class="persona-value" x="574.5" y="837" text-anchor="middle">+0.5</text>
+<rect x="630" y="816" width="105" height="29" rx="3" fill="rgb(245, 246, 246)"/>
+<text class="persona-value" x="682.5" y="837" text-anchor="middle">-0.0</text>
+<rect x="738" y="816" width="105" height="29" rx="3" fill="rgb(237, 242, 239)"/>
+<text class="persona-value" x="790.5" y="837" text-anchor="middle">-0.1</text>
+<rect x="846" y="816" width="105" height="29" rx="3" fill="rgb(186, 217, 203)"/>
+<text class="persona-value" x="898.5" y="837" text-anchor="middle">-0.7</text>
+<rect x="954" y="816" width="105" height="29" rx="3" fill="rgb(103, 176, 142)"/>
+<text class="persona-value" x="1006.5" y="837" text-anchor="middle">-1.7</text>
+<text class="persona-label" x="80" y="870" text-anchor="end">P8</text>
+<rect x="90" y="848" width="105" height="29" rx="3" fill="rgb(245, 238, 239)"/>
+<text class="persona-value" x="142.5" y="869" text-anchor="middle">+0.1</text>
+<rect x="198" y="848" width="105" height="29" rx="3" fill="rgb(108, 179, 146)"/>
+<text class="persona-value" x="250.5" y="869" text-anchor="middle">-1.6</text>
+<rect x="306" y="848" width="105" height="29" rx="3" fill="rgb(63, 157, 113)"/>
+<text class="persona-value" x="358.5" y="869" text-anchor="middle">-2.2</text>
+<rect x="414" y="848" width="105" height="29" rx="3" fill="rgb(220, 134, 141)"/>
+<text class="persona-value" x="466.5" y="869" text-anchor="middle">+1.6</text>
+<rect x="522" y="848" width="105" height="29" rx="3" fill="rgb(233, 191, 194)"/>
+<text class="persona-value" x="574.5" y="869" text-anchor="middle">+0.8</text>
+<rect x="630" y="848" width="105" height="29" rx="3" fill="rgb(188, 218, 204)"/>
+<text class="persona-value" x="682.5" y="869" text-anchor="middle">-0.7</text>
+<rect x="738" y="848" width="105" height="29" rx="3" fill="rgb(230, 238, 234)"/>
+<text class="persona-value" x="790.5" y="869" text-anchor="middle">-0.2</text>
+<rect x="846" y="848" width="105" height="29" rx="3" fill="rgb(195, 222, 209)"/>
+<text class="persona-value" x="898.5" y="869" text-anchor="middle">-0.6</text>
+<rect x="954" y="848" width="105" height="29" rx="3" fill="rgb(211, 229, 220)"/>
+<text class="persona-value" x="1006.5" y="869" text-anchor="middle">-0.4</text>
+<text class="persona-label" x="80" y="902" text-anchor="end">P9</text>
+<rect x="90" y="880" width="105" height="29" rx="3" fill="rgb(233, 189, 192)"/>
+<text class="persona-value" x="142.5" y="901" text-anchor="middle">+0.8</text>
+<rect x="198" y="880" width="105" height="29" rx="3" fill="rgb(195, 222, 209)"/>
+<text class="persona-value" x="250.5" y="901" text-anchor="middle">-0.6</text>
+<rect x="306" y="880" width="105" height="29" rx="3" fill="rgb(176, 212, 195)"/>
+<text class="persona-value" x="358.5" y="901" text-anchor="middle">-0.8</text>
+<rect x="414" y="880" width="105" height="29" rx="3" fill="rgb(204, 69, 79)"/>
+<text class="persona-value" x="466.5" y="901" text-anchor="middle">+2.4</text>
+<rect x="522" y="880" width="105" height="29" rx="3" fill="rgb(222, 142, 148)"/>
+<text class="persona-value" x="574.5" y="901" text-anchor="middle">+1.4</text>
+<rect x="630" y="880" width="105" height="29" rx="3" fill="rgb(244, 235, 236)"/>
+<text class="persona-value" x="682.5" y="901" text-anchor="middle">+0.2</text>
+<rect x="738" y="880" width="105" height="29" rx="3" fill="rgb(226, 237, 232)"/>
+<text class="persona-value" x="790.5" y="901" text-anchor="middle">-0.2</text>
+<rect x="846" y="880" width="105" height="29" rx="3" fill="rgb(134, 192, 165)"/>
+<text class="persona-value" x="898.5" y="901" text-anchor="middle">-1.3</text>
+<rect x="954" y="880" width="105" height="29" rx="3" fill="rgb(126, 188, 158)"/>
+<text class="persona-value" x="1006.5" y="901" text-anchor="middle">-1.4</text>
+<text class="persona-label" x="24" y="948">Green is desirable (recall up or exposure down); red is undesirable. Recall values are percentage points; exposure values are attributes per response.</text>
+</svg>

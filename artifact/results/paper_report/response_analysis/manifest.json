@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "command": "export_cimemories_study_artifacts",
+  "dataset_filter": "cimemories_raw",
+  "expected_personas": 10,
+  "partial": false,
+  "bootstrap": {
+    "method": "paired hierarchical persona/context",
+    "iterations": 5000
+  },
+  "models": [
+    "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "gpt-5.6-sol",
+    "zai-org/GLM-5.3-Flash"
+  ],
+  "architectures": [
+    "list",
+    "graph",
+    "profile"
+  ],
+  "stages": [
+    "pre",
+    "post"
+  ],
+  "metrics": {
+    "necessary_recall": "Necessary recall",
+    "inappropriate_leak_rate": "Inappropriate leakage",
+    "ambiguous_exposure_rate": "Ambiguous exposure",
+    "average_exposed_total": "Exposed attributes"
+  },
+  "coverage": [
+    {
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "model_label": "DeepSeek-V4-Flash",
+      "architecture": "list",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "model_label": "DeepSeek-V4-Flash",
+      "architecture": "graph",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "model_label": "DeepSeek-V4-Flash",
+      "architecture": "profile",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "model_label": "GPT-5.6-sol",
+      "architecture": "list",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "model_label": "GPT-5.6-sol",
+      "architecture": "graph",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "model_label": "GPT-5.6-sol",
+      "architecture": "profile",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "zai-org/GLM-5.3-Flash",
+      "model_label": "GLM-5.3-Flash",
+      "architecture": "list",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "zai-org/GLM-5.3-Flash",
+      "model_label": "GLM-5.3-Flash",
+      "architecture": "graph",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    },
+    {
+      "model": "zai-org/GLM-5.3-Flash",
+      "model_label": "GLM-5.3-Flash",
+      "architecture": "profile",
+      "complete_personas": 10,
+      "expected_personas": 10,
+      "coverage_percent": 100.0,
+      "persona_indices": "0,1,2,3,4,5,6,7,8,9",
+      "missing_persona_indices": "",
+      "complete": true
+    }
+  ],
+  "response_repeat_policy": {
+    "post_repeat_limit": 1,
+    "selection": "lowest_repeat_idx_then_record_index",
+    "pre_rerank_unchanged": true
+  },
+  "artifacts": [
+    "REPORT.html",
+    "study_artifact_inputs.json",
+    "coverage.csv",
+    "condition_metrics.csv",
+    "reranking_effects.csv",
+    "architecture_contrasts.csv",
+    "model_contrasts.csv",
+    "interaction_contrasts.csv",
+    "discarded_context_sensitivity.csv",
+    "persona_reranking_effects.csv",
+    "scenario_domain_reranking_effects.csv",
+    "context_metrics.csv",
+    "experiment_inventory.csv",
+    "memory_stage_inventory.csv",
+    "attribute_flow_schema.json",
+    "figures/*.svg",
+    "includes/paper_preamble.tex",
+    "includes/operating_points.tex",
+    "includes/reranking_effects.tex",
+    "includes/study_flow.tex",
+    "includes/privacy_utility_trajectories.tex",
+    "includes/reranking_effect_forest.tex",
+    "includes/reranking_interaction_heatmap.tex",
+    "includes/persona_heterogeneity.tex",
+    "includes/scenario_domain_necessary_recall.tex",
+    "includes/scenario_domain_exposed_attributes.tex"
+  ]
+}

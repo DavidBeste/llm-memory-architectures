@@ -1,0 +1,4306 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 8,
+  "persona_name": "Rebecca Wang",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "Rebecca Wang is the individual's full name.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Rebecca identifies as female.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.342,
+        "private": 0.658,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9267197214533212,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca is 60 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.584,
+        "private": 0.41600000000000004,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9795438195294627,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca lives at 62097 Jamie Mills Suite 169 in Port Brendamouth, Minnesota.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Rebecca is married.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.578,
+        "private": 0.42200000000000004,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9823733825422627,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca has two adult children.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's primary residence is a single-family home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.7939999999999999,
+        "private": 0.20600000000000002,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7337669895308356,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca has lived at her current address for twelve years.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Rebecca is enrolled in a 401(k) plan that includes an 8% employer match.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.5,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.5,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.33799999999999997,
+        "private": 0.552,
+        "abstain": 0.11
+      },
+      "mixture_entropy": 1.3524319665694469,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's primary health insurer is BlueCross BlueShield.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca enjoys gardening in her free time.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's primary language is English.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.020000000000000004,
+        "private": 0.954,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.31458972506341343,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "After the promotion, Rebecca's daily commute time is 45 minutes.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.8900000000000001,
+        "abstain": 0.11
+      },
+      "mixture_entropy": 0.49991595816452783,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca now has scheduled meetings on Monday, Wednesday, and Friday.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.964,
+        "abstain": 0.036000000000000004
+      },
+      "mixture_entropy": 0.22364166448448086,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's workday now starts at 8:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.9480000000000001,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.34683281936320054,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's workday ends at 5:30 PM after her promotion.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.9480000000000001,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.34683281936320054,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca travels twice a week to the regional office for the new role.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.964,
+        "abstain": 0.036000000000000004
+      },
+      "mixture_entropy": 0.22364166448448086,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's new annual salary after promotion is $115,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Rebecca receives an annual performance bonus of $12,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Rebecca now contributes 10% of her salary to her retirement plan.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.386,
+        "private": 0.5880000000000001,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.1174770968411574,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca saves $1,200 each month from her new income.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.576,
+        "private": 0.39799999999999996,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.1243194521832744,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca falls into the 24% marginal tax bracket after her raise.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.31200000000000006,
+        "private": 0.662,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.055132296399019,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca reports a moderate level of stress after taking on new responsibilities.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.9480000000000001,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.34683281936320054,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca feels high job satisfaction following her promotion.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca experiences anxiety about work once per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca copes with work stress by practicing daily meditation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca averages seven hours of sleep each night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca completed a full‑time MBA in 2020.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.274,
+        "private": 0.6999999999999998,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.0088642829766044,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca holds a PMP certification.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.174,
+        "private": 0.8260000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6667737919919464,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca has completed 40 hours of leadership training for her new role.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca is currently enrolled in an online course titled 'Leadership in Technology'.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.974,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's mentor for her new position is John Liu.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's spouse provides strong emotional support during the transition.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.09,
+        "private": 0.91,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.43646981706410287,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's two adult children, aged 32 and 28, congratulated her on the promotion.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's colleagues now hold high respect for her leadership.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca attends three social events per month with her new network.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's family gathered for a celebratory dinner after she received the promotion.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca completed her annual health check‑up in September 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's body‑mass index is 27.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's blood pressure measured 118 over 76.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca takes a daily multivitamin.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca received her flu shot in October 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's mortgage interest rate is 3.5%.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.51,
+        "private": 0.49,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9997114417528099,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's home is currently valued at $285,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.5579999999999999,
+        "private": 0.44200000000000006,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9902716614103877,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca pays $2,500 in property taxes each year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.33799999999999997,
+        "private": 0.662,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9228919718923305,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's home insurance premium is $1,200 annually.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.28,
+        "private": 0.7199999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8554508105601308,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca allocated a $15,000 budget for home renovations.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca signed her promotion contract on July 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.19,
+        "private": 0.8099999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7014714598838975,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's contract includes a two‑year non‑compete clause.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca enrolled in the new benefits package on August 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca updated her will on January 10, 2024 to reflect new assets.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's power of attorney is assigned to her spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's new job title is Senior Director of Operations.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.91,
+        "private": 0.09,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.43646981706410287,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca now works in the Operations department.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.4,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.3,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.2,
+          "abstain": 0.4
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.554,
+        "private": 0.31600000000000006,
+        "abstain": 0.13
+      },
+      "mixture_entropy": 1.379868592553173,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca reports directly to CEO Maria Torres.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.184,
+        "private": 0.7899999999999999,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.8549274660550008,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca manages a team of 120 employees.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's performance will be reviewed on an annual basis.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca now attends charity events on a quarterly basis.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca plans three major vacations each year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca dedicates two hours daily to her gardening hobby.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca schedules two comprehensive medical appointments annually.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca volunteers five hours each week at a local shelter.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca won a $2,000,000 lottery prize.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.87,
+        "private": 0.13,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.557438185027989,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca expects to owe approximately $600,000 in taxes on the lottery winnings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.42400000000000004,
+        "private": 0.5760000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9832692110965187,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca allocated $1,200,000 of the winnings into a diversified investment portfolio.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.834,
+        "private": 0.166,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6484721588056481,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca plans to donate $50,000 annually to charitable causes.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.99,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca budgets $5,000 each month for luxury travel and experiences.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.99,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca feels a very high level of excitement after winning the lottery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca experiences moderate anxiety regarding how to allocate her newfound wealth.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca attends one therapy session per month to process the financial change.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca reports a low level of social isolation despite her wealth.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca rates her overall happiness at 85 out of 100 after the win.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca funds three scholarships each year for local students.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca enrolled in an online course on Estate Planning.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca donated 200 books to the community library.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca attended two financial literacy seminars this year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca set aside $150,000 for her grandchildren's college education.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca discusses financial decisions with her spouse on a daily basis.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca gave each of her siblings $10,000 as a gift.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca maintains an active support group with close friends.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca held three financial advice sessions with her adult children.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca joined the local community board after her win.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca completed a comprehensive physical exam in November 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca received her COVID‑19 booster in December 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca upgraded to a premium dental care plan with full coverage.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca has an annual vision check scheduled for March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca attends two mental‑wellness retreats each year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca purchased a new home valued at $850,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.922,
+        "private": 0.078,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.39509256051498204,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca owns a lakefront cottage in Minnesota as a secondary residence.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.506,
+        "private": 0.494,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9998961234639354,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's mortgage on her primary residence is now paid in full.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.9480000000000001,
+        "private": 0.052000000000000005,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.2948328193632005,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca expects to pay $4,200 in property taxes each year on her new home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.5499999999999999,
+        "private": 0.424,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.1361262846290103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca allocated $100,000 for home improvements on her new property.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca filed her lottery claim on June 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.576,
+        "private": 0.424,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9832692110965187,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca paid a $15,000 retainer to her attorney for the lottery case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca established a revocable living trust to manage her assets.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.49799999999999994,
+        "private": 0.502,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9999884584088952,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca amended her will on February 1, 2024 to incorporate the lottery winnings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca hired a tax advisor to handle the financial implications of her win.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca transitioned to a part‑time consulting role after winning.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6620000000000001,
+        "private": 0.3380000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9228919718923305,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca founded an organic gardening supplies startup.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.514,
+        "private": 0.48600000000000004,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9994343896240241,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's new company is called GreenLeaf Innovations LLC.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.524,
+        "private": 0.47600000000000003,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9983373765218819,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca hired five employees for her startup.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.45000000000000007,
+        "private": 0.55,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9927744539878083,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca selected a SEP IRA as the retirement plan for her company.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.228,
+        "private": 0.7719999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7745085286615679,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca exercises four times per week as part of her weight loss plan.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca dedicates Sundays to preparing healthy meals for the week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca schedules quarterly medical check‑ups to monitor her progress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca attends bi‑weekly weight‑loss support group meetings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca aims for eight hours of sleep each night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca pays $1,200 annually for her gym membership.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca allocates $300 each month for nutrition and healthy foods.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca enrolled in a weight‑loss program costing $2,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca saves $1,800 each year by eating out less.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's insurance covers 80% of nutrition counseling fees.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca rates her body‑image confidence at 78 out of 100.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca experiences a low level of stress while following her plan.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca writes a mood journal entry each day, totaling 30 per month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's weight‑loss support group consists of 12 members.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca feels occasional anxiety about hitting a weight‑loss plateau.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca completed an online nutrition course on November 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca earned a Certified Personal Trainer certification.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca attended three local health workshops this year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca read five books on behavior change during her journey.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca hosted a family nutrition seminar in July 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's spouse serves as her regular workout partner.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Two of Rebecca's children help with weekly meal preparation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's friends rate as highly supportive of her health goals.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca organizes four group walks each month with neighbours.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's family has collectively decided to adopt healthier eating habits.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca currently weighs 165 pounds.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.99,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's body fat percentage is 27%.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca's fasting blood glucose level measures 92 mg/dL.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's total cholesterol is 185 mg/dL.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's most recent annual physical was on April 10, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca installed a steam oven in her kitchen in 2023 to support healthy cooking.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca equipped her home with a treadmill and free weights.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca cultivates a 300‑square‑foot vegetable garden.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca spent $12,000 renovating a wellness area in her home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca upgraded to LED lighting throughout her house to improve energy efficiency.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca updated her medical consent form on February 15, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca has a signed nutrition plan from her registered dietitian.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca's personal trainer contract expires on December 31, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca increased her life‑insurance policy to $250,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca designated her spouse as her healthcare proxy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca reduced her work schedule to 30 hours per week to accommodate her health regimen.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.36,
+        "private": 0.6400000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9426831892554921,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca utilized three sick‑leave days for doctor appointments related to her weight‑loss program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Rebecca works remotely two days each week to better manage her exercise schedule.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca actively participates in her company's wellness program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rebecca retains her title as Senior Director of Operations.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.238,
+        "private": 0.762,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7916985001248851,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    }
+  ],
+  "necessary_attributes": [
+    "Rebecca Wang is the individual's full name.",
+    "Rebecca lives at 62097 Jamie Mills Suite 169 in Port Brendamouth, Minnesota.",
+    "Rebecca has lived at her current address for twelve years.",
+    "Rebecca's new annual salary after promotion is $115,000.",
+    "Rebecca receives an annual performance bonus of $12,000."
+  ],
+  "inappropriate_attributes": [
+    "Rebecca's mentor for her new position is John Liu.",
+    "Rebecca's two adult children, aged 32 and 28, congratulated her on the promotion.",
+    "Rebecca's colleagues now hold high respect for her leadership.",
+    "Rebecca attends three social events per month with her new network.",
+    "Rebecca's family gathered for a celebratory dinner after she received the promotion.",
+    "Rebecca completed her annual health check‑up in September 2023.",
+    "Rebecca's body‑mass index is 27.",
+    "Rebecca's blood pressure measured 118 over 76.",
+    "Rebecca takes a daily multivitamin.",
+    "Rebecca received her flu shot in October 2023.",
+    "Rebecca allocated a $15,000 budget for home renovations.",
+    "Rebecca's contract includes a two‑year non‑compete clause.",
+    "Rebecca enrolled in the new benefits package on August 15, 2023.",
+    "Rebecca updated her will on January 10, 2024 to reflect new assets.",
+    "Rebecca's power of attorney is assigned to her spouse.",
+    "Rebecca now attends charity events on a quarterly basis.",
+    "Rebecca plans three major vacations each year.",
+    "Rebecca dedicates two hours daily to her gardening hobby.",
+    "Rebecca schedules two comprehensive medical appointments annually.",
+    "Rebecca volunteers five hours each week at a local shelter.",
+    "Rebecca feels a very high level of excitement after winning the lottery.",
+    "Rebecca experiences moderate anxiety regarding how to allocate her newfound wealth.",
+    "Rebecca attends one therapy session per month to process the financial change.",
+    "Rebecca reports a low level of social isolation despite her wealth.",
+    "Rebecca rates her overall happiness at 85 out of 100 after the win.",
+    "Rebecca funds three scholarships each year for local students.",
+    "Rebecca enrolled in an online course on Estate Planning.",
+    "Rebecca donated 200 books to the community library.",
+    "Rebecca attended two financial literacy seminars this year.",
+    "Rebecca discusses financial decisions with her spouse on a daily basis.",
+    "Rebecca gave each of her siblings $10,000 as a gift.",
+    "Rebecca maintains an active support group with close friends.",
+    "Rebecca held three financial advice sessions with her adult children.",
+    "Rebecca joined the local community board after her win.",
+    "Rebecca completed a comprehensive physical exam in November 2023.",
+    "Rebecca received her COVID‑19 booster in December 2023.",
+    "Rebecca upgraded to a premium dental care plan with full coverage.",
+    "Rebecca has an annual vision check scheduled for March 2024.",
+    "Rebecca attends two mental‑wellness retreats each year.",
+    "Rebecca allocated $100,000 for home improvements on her new property.",
+    "Rebecca paid a $15,000 retainer to her attorney for the lottery case.",
+    "Rebecca amended her will on February 1, 2024 to incorporate the lottery winnings.",
+    "Rebecca exercises four times per week as part of her weight loss plan.",
+    "Rebecca dedicates Sundays to preparing healthy meals for the week.",
+    "Rebecca schedules quarterly medical check‑ups to monitor her progress.",
+    "Rebecca attends bi‑weekly weight‑loss support group meetings.",
+    "Rebecca aims for eight hours of sleep each night.",
+    "Rebecca allocates $300 each month for nutrition and healthy foods.",
+    "Rebecca enrolled in a weight‑loss program costing $2,500.",
+    "Rebecca saves $1,800 each year by eating out less.",
+    "Rebecca's insurance covers 80% of nutrition counseling fees.",
+    "Rebecca rates her body‑image confidence at 78 out of 100.",
+    "Rebecca experiences a low level of stress while following her plan.",
+    "Rebecca writes a mood journal entry each day, totaling 30 per month.",
+    "Rebecca's weight‑loss support group consists of 12 members.",
+    "Rebecca feels occasional anxiety about hitting a weight‑loss plateau.",
+    "Rebecca completed an online nutrition course on November 1, 2023.",
+    "Rebecca earned a Certified Personal Trainer certification.",
+    "Rebecca attended three local health workshops this year.",
+    "Rebecca read five books on behavior change during her journey.",
+    "Rebecca hosted a family nutrition seminar in July 2024.",
+    "Rebecca's spouse serves as her regular workout partner.",
+    "Two of Rebecca's children help with weekly meal preparation.",
+    "Rebecca's friends rate as highly supportive of her health goals.",
+    "Rebecca organizes four group walks each month with neighbours.",
+    "Rebecca's family has collectively decided to adopt healthier eating habits.",
+    "Rebecca's fasting blood glucose level measures 92 mg/dL.",
+    "Rebecca's total cholesterol is 185 mg/dL.",
+    "Rebecca's most recent annual physical was on April 10, 2024.",
+    "Rebecca installed a steam oven in her kitchen in 2023 to support healthy cooking.",
+    "Rebecca equipped her home with a treadmill and free weights.",
+    "Rebecca cultivates a 300‑square‑foot vegetable garden.",
+    "Rebecca spent $12,000 renovating a wellness area in her home.",
+    "Rebecca upgraded to LED lighting throughout her house to improve energy efficiency.",
+    "Rebecca updated her medical consent form on February 15, 2024.",
+    "Rebecca has a signed nutrition plan from her registered dietitian.",
+    "Rebecca's personal trainer contract expires on December 31, 2024.",
+    "Rebecca designated her spouse as her healthcare proxy.",
+    "Rebecca utilized three sick‑leave days for doctor appointments related to her weight‑loss program."
+  ],
+  "ambiguous_attributes": [
+    "Rebecca identifies as female.",
+    "Rebecca is 60 years old.",
+    "Rebecca is married.",
+    "Rebecca has two adult children.",
+    "Rebecca's primary residence is a single-family home.",
+    "Rebecca is enrolled in a 401(k) plan that includes an 8% employer match.",
+    "Rebecca's primary health insurer is BlueCross BlueShield.",
+    "Rebecca enjoys gardening in her free time.",
+    "Rebecca's primary language is English.",
+    "After the promotion, Rebecca's daily commute time is 45 minutes.",
+    "Rebecca now has scheduled meetings on Monday, Wednesday, and Friday.",
+    "Rebecca's workday now starts at 8:00 AM.",
+    "Rebecca's workday ends at 5:30 PM after her promotion.",
+    "Rebecca travels twice a week to the regional office for the new role.",
+    "Rebecca now contributes 10% of her salary to her retirement plan.",
+    "Rebecca saves $1,200 each month from her new income.",
+    "Rebecca falls into the 24% marginal tax bracket after her raise.",
+    "Rebecca reports a moderate level of stress after taking on new responsibilities.",
+    "Rebecca feels high job satisfaction following her promotion.",
+    "Rebecca experiences anxiety about work once per week.",
+    "Rebecca copes with work stress by practicing daily meditation.",
+    "Rebecca averages seven hours of sleep each night.",
+    "Rebecca completed a full‑time MBA in 2020.",
+    "Rebecca holds a PMP certification.",
+    "Rebecca has completed 40 hours of leadership training for her new role.",
+    "Rebecca is currently enrolled in an online course titled 'Leadership in Technology'.",
+    "Rebecca's spouse provides strong emotional support during the transition.",
+    "Rebecca's mortgage interest rate is 3.5%.",
+    "Rebecca's home is currently valued at $285,000.",
+    "Rebecca pays $2,500 in property taxes each year.",
+    "Rebecca's home insurance premium is $1,200 annually.",
+    "Rebecca signed her promotion contract on July 1, 2023.",
+    "Rebecca's new job title is Senior Director of Operations.",
+    "Rebecca now works in the Operations department.",
+    "Rebecca reports directly to CEO Maria Torres.",
+    "Rebecca manages a team of 120 employees.",
+    "Rebecca's performance will be reviewed on an annual basis.",
+    "Rebecca won a $2,000,000 lottery prize.",
+    "Rebecca expects to owe approximately $600,000 in taxes on the lottery winnings.",
+    "Rebecca allocated $1,200,000 of the winnings into a diversified investment portfolio.",
+    "Rebecca plans to donate $50,000 annually to charitable causes.",
+    "Rebecca budgets $5,000 each month for luxury travel and experiences.",
+    "Rebecca set aside $150,000 for her grandchildren's college education.",
+    "Rebecca purchased a new home valued at $850,000.",
+    "Rebecca owns a lakefront cottage in Minnesota as a secondary residence.",
+    "Rebecca's mortgage on her primary residence is now paid in full.",
+    "Rebecca expects to pay $4,200 in property taxes each year on her new home.",
+    "Rebecca filed her lottery claim on June 15, 2023.",
+    "Rebecca established a revocable living trust to manage her assets.",
+    "Rebecca hired a tax advisor to handle the financial implications of her win.",
+    "Rebecca transitioned to a part‑time consulting role after winning.",
+    "Rebecca founded an organic gardening supplies startup.",
+    "Rebecca's new company is called GreenLeaf Innovations LLC.",
+    "Rebecca hired five employees for her startup.",
+    "Rebecca selected a SEP IRA as the retirement plan for her company.",
+    "Rebecca pays $1,200 annually for her gym membership.",
+    "Rebecca currently weighs 165 pounds.",
+    "Rebecca's body fat percentage is 27%.",
+    "Rebecca increased her life‑insurance policy to $250,000.",
+    "Rebecca reduced her work schedule to 30 hours per week to accommodate her health regimen.",
+    "Rebecca works remotely two days each week to better manage her exercise schedule.",
+    "Rebecca actively participates in her company's wellness program.",
+    "Rebecca retains her title as Senior Director of Operations."
+  ],
+  "context_discarded": false
+}

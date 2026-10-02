@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="610" viewBox="0 0 920 610">
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3559a8"/></marker>
+<marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d65f45"/></marker>
+<marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a6e"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:22px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}.zero{stroke:#344054;stroke-dasharray:4 4}</style>
+<text class="title" x="24" y="32">Privacy–utility trajectories</text>
+<text class="sub" x="24" y="51">Each arrow shows how reranking moves one model × architecture condition</text>
+<line class="grid" x1="85.0" y1="85" x2="85.0" y2="505"/>
+<line class="grid" x1="85" y1="85.0" x2="820" y2="85.0"/>
+<text class="tiny" x="85.0" y="524" text-anchor="middle">0.0</text>
+<text class="tiny" x="75" y="509.0" text-anchor="end">0%</text>
+<line class="grid" x1="232.0" y1="85" x2="232.0" y2="505"/>
+<line class="grid" x1="85" y1="169.0" x2="820" y2="169.0"/>
+<text class="tiny" x="232.0" y="524" text-anchor="middle">2.5</text>
+<text class="tiny" x="75" y="425.0" text-anchor="end">16%</text>
+<line class="grid" x1="379.0" y1="85" x2="379.0" y2="505"/>
+<line class="grid" x1="85" y1="253.0" x2="820" y2="253.0"/>
+<text class="tiny" x="379.0" y="524" text-anchor="middle">5.0</text>
+<text class="tiny" x="75" y="341.0" text-anchor="end">33%</text>
+<line class="grid" x1="526.0" y1="85" x2="526.0" y2="505"/>
+<line class="grid" x1="85" y1="337.0" x2="820" y2="337.0"/>
+<text class="tiny" x="526.0" y="524" text-anchor="middle">7.5</text>
+<text class="tiny" x="75" y="257.0" text-anchor="end">49%</text>
+<line class="grid" x1="673.0" y1="85" x2="673.0" y2="505"/>
+<line class="grid" x1="85" y1="421.0" x2="820" y2="421.0"/>
+<text class="tiny" x="673.0" y="524" text-anchor="middle">10.1</text>
+<text class="tiny" x="75" y="173.0" text-anchor="end">66%</text>
+<line class="grid" x1="820.0" y1="85" x2="820.0" y2="505"/>
+<line class="grid" x1="85" y1="505.0" x2="820" y2="505.0"/>
+<text class="tiny" x="820.0" y="524" text-anchor="middle">12.6</text>
+<text class="tiny" x="75" y="89.0" text-anchor="end">82%</text>
+<line x1="590.9364206507905" y1="237.84681637197465" x2="590.5785311761497" y2="224.72735913094175" stroke="#3559a8" stroke-width="2.5" marker-end="url(#arrow0)"/>
+<circle cx="590.9364206507905" cy="237.84681637197465" r="4" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="590.5785311761497" cy="224.72735913094175" r="5" fill="#3559a8"/>
+<text class="tiny" x="596.5785311761497" y="219.72735913094175">List</text>
+<line x1="741.2499999999999" y1="174.8336480307646" x2="694.9629612797671" y2="161.0326397378651" stroke="#3559a8" stroke-width="2.5" marker-end="url(#arrow0)"/>
+<circle cx="741.2499999999999" cy="174.8336480307646" r="4" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="694.9629612797671" cy="161.0326397378651" r="5" fill="#3559a8"/>
+<text class="tiny" x="700.9629612797671" y="156.0326397378651">Graph</text>
+<line x1="354.25218142155967" y1="218.5326196323727" x2="283.74795491728776" y2="232.51039401679796" stroke="#3559a8" stroke-width="2.5" marker-end="url(#arrow0)"/>
+<circle cx="354.25218142155967" cy="218.5326196323727" r="4" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="283.74795491728776" cy="232.51039401679796" r="5" fill="#3559a8"/>
+<text class="tiny" x="289.74795491728776" y="227.51039401679796">Profile</text>
+<line x1="281.00413561170694" y1="284.8890825050593" x2="400.06203417560437" y2="255.53095903560157" stroke="#d65f45" stroke-width="2.5" marker-end="url(#arrow1)"/>
+<circle cx="281.00413561170694" cy="284.8890825050593" r="4" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="400.06203417560437" cy="255.53095903560157" r="5" fill="#d65f45"/>
+<text class="tiny" x="406.06203417560437" y="250.53095903560157">List</text>
+<line x1="302.3582075986184" y1="231.98834420862931" x2="351.62765860752586" y2="224.92894564787233" stroke="#d65f45" stroke-width="2.5" marker-end="url(#arrow1)"/>
+<circle cx="302.3582075986184" cy="231.98834420862931" r="4" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="351.62765860752586" cy="224.92894564787233" r="5" fill="#d65f45"/>
+<text class="tiny" x="357.62765860752586" y="219.92894564787233">Graph</text>
+<line x1="306.0563988365751" y1="235.78469535653292" x2="289.1162970369023" y2="244.86032539088245" stroke="#d65f45" stroke-width="2.5" marker-end="url(#arrow1)"/>
+<circle cx="306.0563988365751" cy="235.78469535653292" r="4" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="289.1162970369023" cy="244.86032539088245" r="5" fill="#d65f45"/>
+<text class="tiny" x="295.1162970369023" y="239.86032539088245">Profile</text>
+<line x1="592.6065715324486" y1="219.02647283707208" x2="568.9858662061442" y2="223.27777390910168" stroke="#2b8a6e" stroke-width="2.5" marker-end="url(#arrow2)"/>
+<circle cx="592.6065715324486" cy="219.02647283707208" r="4" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="568.9858662061442" cy="223.27777390910168" r="5" fill="#2b8a6e"/>
+<text class="tiny" x="574.9858662061442" y="218.27777390910168">List</text>
+<line x1="647.2443646609706" y1="141.73082231783303" x2="606.9221505180875" y2="139.78260869565213" stroke="#2b8a6e" stroke-width="2.5" marker-end="url(#arrow2)"/>
+<circle cx="647.2443646609706" cy="141.73082231783303" r="4" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="606.9221505180875" cy="139.78260869565213" r="5" fill="#2b8a6e"/>
+<text class="tiny" x="612.9221505180875" y="134.78260869565213">Graph</text>
+<line x1="504.8043537538628" y1="174.5321487096483" x2="447.42274131975995" y2="186.24604344281934" stroke="#2b8a6e" stroke-width="2.5" marker-end="url(#arrow2)"/>
+<circle cx="504.8043537538628" cy="174.5321487096483" r="4" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="447.42274131975995" cy="186.24604344281934" r="5" fill="#2b8a6e"/>
+<text class="tiny" x="453.42274131975995" y="181.24604344281934">Profile</text>
+<text class="lab" x="452.5" y="553" text-anchor="middle">Mean exposed attributes (lower is more selective)</text>
+<text class="lab" transform="translate(22 295.0) rotate(-90)" text-anchor="middle">Necessary recall (higher is better)</text>
+<circle cx="90" cy="570" r="5" fill="#3559a8"/><text class="lab" x="101" y="574">DeepSeek-V4-Flash</text>
+<circle cx="340" cy="570" r="5" fill="#d65f45"/><text class="lab" x="351" y="574">GPT-5.6-sol</text>
+<circle cx="590" cy="570" r="5" fill="#2b8a6e"/><text class="lab" x="601" y="574">GLM-5.3-Flash</text>
+</svg>

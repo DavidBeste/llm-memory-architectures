@@ -1,0 +1,4393 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 6,
+  "persona_name": "Andrew Cross",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "Andrew Cross is the individual's full name.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew identifies as male.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.432,
+        "private": 0.5680000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9866165198488093,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew lives at 567 Antonio Forges, New Antoniostad, WV 71119.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew is 57 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.7899999999999999,
+        "private": 0.21,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7414827399312738,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew is married.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.57,
+        "private": 0.43000000000000005,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9858150371789198,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew and his spouse have two children.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew works as a senior accountant.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew is employed full‑time.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew's annual pre‑tax income is $85,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew holds a bachelor's degree in finance.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.8900000000000001,
+        "private": 0.11,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.49991595816452783,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew owns his home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "The outstanding mortgage balance is $120,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew's credit score is 720.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Andrew has a diagnosis of hypertension.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew's primary care physician is Dr. Linda Myers.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The bankruptcy was filed on June 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.8340000000000001,
+        "private": 0.166,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6484721588056479,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The court hearing for the bankruptcy took place on August 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The meeting of creditors was held on July 10, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew attended a debt‑relief workshop on September 15, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A financial counseling session occurred on June 20, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The total debt declared in the bankruptcy was $150,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.486,
+        "private": 0.514,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9994343896240241,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Assets liquidated during the bankruptcy were valued at $50,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.128,
+        "private": 0.872,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5519275534566073,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew's credit score dropped by 180 points after the bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.138,
+        "private": 0.862,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5789769306918972,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The filing fees for the bankruptcy amounted to $350.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.6,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.6720000000000002,
+        "abstain": 0.264
+      },
+      "mixture_entropy": 1.1464269290441282,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew's annual income after the bankruptcy is $65,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.5,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.2,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.6,
+          "abstain": 0.3
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.5619999999999999,
+        "private": 0.318,
+        "abstain": 0.12
+      },
+      "mixture_entropy": 1.3599130414444793,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew experienced a high level of anxiety during the bankruptcy process.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.026000000000000002,
+        "private": 0.974,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His PHQ‑9 depression score during the bankruptcy was 14.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew coped by attending weekly therapy sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attended a bankruptcy support group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew averaged five hours of sleep per night during the bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He completed a financial literacy course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The course he took was called Consumer Bankruptcy Basics.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He finished the course on July 20, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew received a certificate for completing the course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He earned two continuing‑education credits.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew rated his spouse's support during the bankruptcy as 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Family discussions about the bankruptcy occurred weekly.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Friends offered help during the bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew's children displayed a moderate level of concern about the bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His social isolation score during the bankruptcy was 4 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew's blood pressure measured 145 over 90 during the bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He gained three kilograms of weight during the bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew adhered consistently to his medication regimen.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His cortisol level was elevated, indicating stress.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He visited his doctor on July 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The mortgage on his house remained current.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.5,
+          "abstain": 0.2
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.6,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.48200000000000004,
+        "private": 0.446,
+        "abstain": 0.07200000000000001
+      },
+      "mixture_entropy": 1.3003356691309431,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew's monthly mortgage payment is $1,200.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.64,
+        "private": 0.334,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.0773816375761733,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He made two late mortgage payments in the past year.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.528,
+        "private": 0.47200000000000003,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9977366703420345,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The risk of foreclosure was assessed as low.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.238,
+        "private": 0.762,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7916985001248851,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew's home equity stood at $35,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.4,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.5,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.4640000000000001,
+        "private": 0.462,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 1.3066734967321325,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Attorney fees for the bankruptcy were $2,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The bankruptcy was filed under Chapter 7.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.918,
+        "private": 0.082,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.40918740502952844,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The bankruptcy case number is WV-2023-0456.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.524,
+        "private": 0.47600000000000003,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9983373765218819,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew received his discharge on October 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.9280000000000002,
+        "private": 0.07200000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.37334332107985346,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His credit report was updated on November 1, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.42800000000000005,
+        "private": 0.536,
+        "abstain": 0.036000000000000004
+      },
+      "mixture_entropy": 1.178895308345107,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew retained his position as Senior Accountant.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.3,
+          "abstain": 0.2
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.608,
+        "private": 0.33,
+        "abstain": 0.062000000000000006
+      },
+      "mixture_entropy": 1.2129978545432816,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He works for Cross & Associates.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.0,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.99,
+        "private": 0.0,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His income decreased by 24% after filing for bankruptcy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.542,
+        "private": 0.458,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9949041692998883,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew works 45 hours per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.1,
+          "abstain": 0.4
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.3,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.3,
+          "abstain": 0.3
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.42600000000000005,
+        "private": 0.248,
+        "abstain": 0.32600000000000007
+      },
+      "mixture_entropy": 1.5504719231906035,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He rates his job security as 6 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.6,
+          "abstain": 0.3
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.238,
+        "private": 0.61,
+        "abstain": 0.15200000000000002
+      },
+      "mixture_entropy": 1.34100676115672,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The court date for the pending legal case is February 15, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.202,
+        "private": 0.7979999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7259101060407926,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew met with his attorney on December 5, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The discovery deadline is January 10, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A mediation session is scheduled for January 20, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The filing deadline for the case is November 30, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Estimated legal fees for the case are $8,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.266,
+        "private": 0.734,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.8356661472318525,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Potential liability from the case is $25,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6040000000000001,
+        "private": 0.396,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.968562600558214,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His insurance covers up to $15,000 of the liability.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6040000000000001,
+        "private": 0.396,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.968562600558214,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew placed $5,000 in escrow for the case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.484,
+        "private": 0.49000000000000005,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 1.1478904550382554,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He maintains a monthly cash reserve of $10,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.682,
+        "private": 0.318,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9021932572871764,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew's stress level regarding the pending case is moderate.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His anxiety score on a standardized scale is 12.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Sleep quality has been poor during the legal proceedings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He copes by practicing mindfulness meditation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew attended three therapy sessions for the case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attended a law seminar related to civil litigation.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The seminar topic was Civil Litigation Basics.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The seminar took place on November 10, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He did not receive a certification for the seminar.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew rates his legal knowledge after the seminar as 7 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.974,
+        "abstain": 0.026000000000000002
+      },
+      "mixture_entropy": 0.1739171169222174,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His spouse is highly concerned about the pending legal case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Family members are supportive.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Friends have offered financial advice.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His children have a low understanding of the legal matters.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attended one social event in the last month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His blood pressure measured 140 over 88 during the case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.3,
+          "abstain": 0.7
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.2,
+          "abstain": 0.8
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.098,
+        "abstain": 0.9020000000000001
+      },
+      "mixture_entropy": 0.4626234917624429,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew experiences three headaches per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Cortisol levels are moderately elevated.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He meditates for fifteen minutes each day.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He saw his doctor on December 5, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The next mortgage payment is due on March 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Rent for the secondary property is due on January 5, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.128,
+        "private": 0.872,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5519275534566073,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A security deposit of $1,200 is held for the rental unit.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.128,
+        "private": 0.872,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.5519275534566073,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He has no plans to move in the near future.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.218,
+        "private": 0.7819999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7564987103663676,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His home insurance policy is active.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The pending case number is WV-2024-1122.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.62,
+        "private": 0.38,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9580420222262995,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The claim involves a breach of contract.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.5559999999999999,
+        "private": 0.444,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.99093240356837,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Judge Eleanor Hayes is assigned to the case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His attorney is from Miller & Partners.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.084,
+        "private": 0.9160000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4161189512518704,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The case is currently pending discovery.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.094,
+        "private": 0.906,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.4496822131225001,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He has taken two days of paid leave for the case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.21200000000000002,
+        "private": 0.788,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7452883145630643,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His work hours have been reduced for flexibility.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.202,
+        "private": 0.7979999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7259101060407926,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His latest performance review rating was 8 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.422,
+        "private": 0.5780000000000001,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9823733825422625,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Colleagues have offered support.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He continues to hold the title of Senior Accountant.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.6,
+          "abstain": 0.2
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.264,
+        "private": 0.6520000000000001,
+        "abstain": 0.084
+      },
+      "mixture_entropy": 1.2097388170793768,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew was admitted to the hospital on March 12, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.020000000000000004,
+        "private": 0.98,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1414405425418207,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A follow‑up appointment is scheduled for April 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Therapy sessions began on March 20, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attended a miscarriage support group meeting on March 25, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His time off from work started on March 10, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Medical expenses related to the miscarriage totaled $3,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His insurance covered $2,500 of the expenses.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew paid $1,000 out of pocket.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He used five paid time‑off days.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The loss of income due to time off was $2,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Andrew experiences a severe level of grief.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His PHQ‑9 depression score is 18.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "An anxiety assessment yielded a score of 15.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He has attended four therapy sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He copes with his grief through journaling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He did not attend a pregnancy‑care class.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He attended a postpartum support workshop.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The workshop topic was Coping with Pregnancy Loss.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The workshop took place on April 5, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He is reading the Grief and Healing Handbook.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Andrew rates his spouse's support as 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Family members visit daily.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Friends have offered condolences.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "His children are unaware of the miscarriage.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The couple has attended two therapy sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Her hCG hormone level was low.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Blood pressure measured 130 over 85.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "There were no postoperative complications.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Pain was rated 7 out of 10 on the day of the event.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Recovery is estimated to take fourteen days.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "No temporary accommodation was needed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He rates his home cleanliness as 9 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "A local bereavement group is available in his neighborhood.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The noise level during recovery was low.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Parking availability was adequate.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He requested access to his medical records.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "An insurance claim for the miscarriage was filed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The insurance claim number is INS-2024-0089.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The claim status is approved.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He did not consult an attorney.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "He took FMLA leave.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.036000000000000004,
+        "private": 0.964,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.22364166448448086,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The leave lasted ten days.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.036000000000000004,
+        "private": 0.964,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.22364166448448086,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "He returned to work on March 22, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07200000000000001,
+        "private": 0.918,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.45305278835549123,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His manager's supportiveness was high.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.99,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "His workload was reduced upon return.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.020000000000000004,
+        "private": 0.98,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.1414405425418207,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    }
+  ],
+  "necessary_attributes": [
+    "Andrew Cross is the individual's full name.",
+    "Andrew lives at 567 Antonio Forges, New Antoniostad, WV 71119.",
+    "Andrew works as a senior accountant.",
+    "Andrew is employed full‑time.",
+    "Andrew's annual pre‑tax income is $85,000.",
+    "Andrew owns his home.",
+    "The outstanding mortgage balance is $120,000.",
+    "Andrew's credit score is 720."
+  ],
+  "inappropriate_attributes": [
+    "Andrew has a diagnosis of hypertension.",
+    "Andrew's primary care physician is Dr. Linda Myers.",
+    "The court hearing for the bankruptcy took place on August 1, 2023.",
+    "The meeting of creditors was held on July 10, 2023.",
+    "Andrew attended a debt‑relief workshop on September 15, 2023.",
+    "A financial counseling session occurred on June 20, 2023.",
+    "His PHQ‑9 depression score during the bankruptcy was 14.",
+    "Andrew coped by attending weekly therapy sessions.",
+    "He attended a bankruptcy support group.",
+    "Andrew averaged five hours of sleep per night during the bankruptcy.",
+    "He completed a financial literacy course.",
+    "The course he took was called Consumer Bankruptcy Basics.",
+    "He finished the course on July 20, 2023.",
+    "Andrew received a certificate for completing the course.",
+    "He earned two continuing‑education credits.",
+    "Andrew rated his spouse's support during the bankruptcy as 8 out of 10.",
+    "Family discussions about the bankruptcy occurred weekly.",
+    "Friends offered help during the bankruptcy.",
+    "Andrew's children displayed a moderate level of concern about the bankruptcy.",
+    "His social isolation score during the bankruptcy was 4 out of 10.",
+    "Andrew's blood pressure measured 145 over 90 during the bankruptcy.",
+    "He gained three kilograms of weight during the bankruptcy.",
+    "Andrew adhered consistently to his medication regimen.",
+    "His cortisol level was elevated, indicating stress.",
+    "He visited his doctor on July 1, 2023.",
+    "Andrew met with his attorney on December 5, 2023.",
+    "The discovery deadline is January 10, 2024.",
+    "A mediation session is scheduled for January 20, 2024.",
+    "The filing deadline for the case is November 30, 2023.",
+    "Andrew's stress level regarding the pending case is moderate.",
+    "His anxiety score on a standardized scale is 12.",
+    "Sleep quality has been poor during the legal proceedings.",
+    "He copes by practicing mindfulness meditation.",
+    "Andrew attended three therapy sessions for the case.",
+    "He attended a law seminar related to civil litigation.",
+    "The seminar topic was Civil Litigation Basics.",
+    "The seminar took place on November 10, 2023.",
+    "He did not receive a certification for the seminar.",
+    "His spouse is highly concerned about the pending legal case.",
+    "Family members are supportive.",
+    "Friends have offered financial advice.",
+    "His children have a low understanding of the legal matters.",
+    "He attended one social event in the last month.",
+    "Andrew experiences three headaches per week.",
+    "Cortisol levels are moderately elevated.",
+    "He meditates for fifteen minutes each day.",
+    "He saw his doctor on December 5, 2023.",
+    "Colleagues have offered support.",
+    "A follow‑up appointment is scheduled for April 1, 2024.",
+    "Therapy sessions began on March 20, 2024.",
+    "He attended a miscarriage support group meeting on March 25, 2024.",
+    "Medical expenses related to the miscarriage totaled $3,500.",
+    "His insurance covered $2,500 of the expenses.",
+    "Andrew paid $1,000 out of pocket.",
+    "He used five paid time‑off days.",
+    "Andrew experiences a severe level of grief.",
+    "His PHQ‑9 depression score is 18.",
+    "An anxiety assessment yielded a score of 15.",
+    "He has attended four therapy sessions.",
+    "He copes with his grief through journaling.",
+    "He did not attend a pregnancy‑care class.",
+    "He attended a postpartum support workshop.",
+    "The workshop topic was Coping with Pregnancy Loss.",
+    "The workshop took place on April 5, 2024.",
+    "He is reading the Grief and Healing Handbook.",
+    "Andrew rates his spouse's support as 9 out of 10.",
+    "Family members visit daily.",
+    "Friends have offered condolences.",
+    "His children are unaware of the miscarriage.",
+    "The couple has attended two therapy sessions.",
+    "Her hCG hormone level was low.",
+    "Blood pressure measured 130 over 85.",
+    "There were no postoperative complications.",
+    "Pain was rated 7 out of 10 on the day of the event.",
+    "Recovery is estimated to take fourteen days.",
+    "No temporary accommodation was needed.",
+    "He rates his home cleanliness as 9 out of 10.",
+    "A local bereavement group is available in his neighborhood.",
+    "The noise level during recovery was low.",
+    "Parking availability was adequate.",
+    "He requested access to his medical records.",
+    "An insurance claim for the miscarriage was filed.",
+    "The insurance claim number is INS-2024-0089.",
+    "The claim status is approved.",
+    "He did not consult an attorney."
+  ],
+  "ambiguous_attributes": [
+    "Andrew identifies as male.",
+    "Andrew is 57 years old.",
+    "Andrew is married.",
+    "Andrew and his spouse have two children.",
+    "Andrew holds a bachelor's degree in finance.",
+    "The bankruptcy was filed on June 15, 2023.",
+    "The total debt declared in the bankruptcy was $150,000.",
+    "Assets liquidated during the bankruptcy were valued at $50,000.",
+    "Andrew's credit score dropped by 180 points after the bankruptcy.",
+    "The filing fees for the bankruptcy amounted to $350.",
+    "Andrew's annual income after the bankruptcy is $65,000.",
+    "Andrew experienced a high level of anxiety during the bankruptcy process.",
+    "The mortgage on his house remained current.",
+    "Andrew's monthly mortgage payment is $1,200.",
+    "He made two late mortgage payments in the past year.",
+    "The risk of foreclosure was assessed as low.",
+    "Andrew's home equity stood at $35,000.",
+    "Attorney fees for the bankruptcy were $2,500.",
+    "The bankruptcy was filed under Chapter 7.",
+    "The bankruptcy case number is WV-2023-0456.",
+    "Andrew received his discharge on October 1, 2023.",
+    "His credit report was updated on November 1, 2023.",
+    "Andrew retained his position as Senior Accountant.",
+    "He works for Cross & Associates.",
+    "His income decreased by 24% after filing for bankruptcy.",
+    "Andrew works 45 hours per week.",
+    "He rates his job security as 6 out of 10.",
+    "The court date for the pending legal case is February 15, 2024.",
+    "Estimated legal fees for the case are $8,000.",
+    "Potential liability from the case is $25,000.",
+    "His insurance covers up to $15,000 of the liability.",
+    "Andrew placed $5,000 in escrow for the case.",
+    "He maintains a monthly cash reserve of $10,000.",
+    "Andrew rates his legal knowledge after the seminar as 7 out of 10.",
+    "His blood pressure measured 140 over 88 during the case.",
+    "The next mortgage payment is due on March 1, 2024.",
+    "Rent for the secondary property is due on January 5, 2024.",
+    "A security deposit of $1,200 is held for the rental unit.",
+    "He has no plans to move in the near future.",
+    "His home insurance policy is active.",
+    "The pending case number is WV-2024-1122.",
+    "The claim involves a breach of contract.",
+    "Judge Eleanor Hayes is assigned to the case.",
+    "His attorney is from Miller & Partners.",
+    "The case is currently pending discovery.",
+    "He has taken two days of paid leave for the case.",
+    "His work hours have been reduced for flexibility.",
+    "His latest performance review rating was 8 out of 10.",
+    "He continues to hold the title of Senior Accountant.",
+    "Andrew was admitted to the hospital on March 12, 2024.",
+    "His time off from work started on March 10, 2024.",
+    "The loss of income due to time off was $2,000.",
+    "He took FMLA leave.",
+    "The leave lasted ten days.",
+    "He returned to work on March 22, 2024.",
+    "His manager's supportiveness was high.",
+    "His workload was reduced upon return."
+  ],
+  "context_discarded": false
+}

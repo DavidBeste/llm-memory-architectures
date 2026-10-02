@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="410" viewBox="0 0 1180 410">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:22px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}.zero{stroke:#344054;stroke-dasharray:4 4}</style>
+<text class="title" x="24" y="32">From stored memory to disclosed attributes</text>
+<text class="sub" x="24" y="51">Analysis layers in the current and planned study</text>
+<rect x="35" y="105" width="185" height="88" rx="12" fill="#eef4ff" stroke="#98a2b3"/>
+<text class="lab" x="127.5" y="139" text-anchor="middle" font-weight="700">Initialized memory</text>
+<text class="tiny" x="127.5" y="162" text-anchor="middle">List facts · graph topology · profile</text>
+<line x1="220" y1="149.0" x2="245" y2="149.0" stroke="#667085" stroke-width="2"/>
+<path d="M 245 144.0 L 255 149.0 L 245 154.0 z" fill="#667085"/>
+<rect x="255" y="105" width="185" height="88" rx="12" fill="#eef4ff" stroke="#98a2b3"/>
+<text class="lab" x="347.5" y="139" text-anchor="middle" font-weight="700">Retrieved candidates</text>
+<text class="tiny" x="347.5" y="162" text-anchor="middle">Architecture-native search result</text>
+<line x1="440" y1="149.0" x2="465" y2="149.0" stroke="#667085" stroke-width="2"/>
+<path d="M 465 144.0 L 475 149.0 L 465 154.0 z" fill="#667085"/>
+<rect x="475" y="105" width="185" height="88" rx="12" fill="#eef4ff" stroke="#98a2b3"/>
+<text class="lab" x="567.5" y="139" text-anchor="middle" font-weight="700">Contextual reranking</text>
+<text class="tiny" x="567.5" y="162" text-anchor="middle">Pre → post candidate selection</text>
+<line x1="660" y1="149.0" x2="685" y2="149.0" stroke="#667085" stroke-width="2"/>
+<path d="M 685 144.0 L 695 149.0 L 685 154.0 z" fill="#667085"/>
+<rect x="695" y="105" width="185" height="88" rx="12" fill="#f2f8f5" stroke="#98a2b3"/>
+<text class="lab" x="787.5" y="139" text-anchor="middle" font-weight="700">Message generation</text>
+<text class="tiny" x="787.5" y="162" text-anchor="middle">Model × architecture × stage</text>
+<line x1="880" y1="149.0" x2="905" y2="149.0" stroke="#667085" stroke-width="2"/>
+<path d="M 905 144.0 L 915 149.0 L 905 154.0 z" fill="#667085"/>
+<rect x="915" y="105" width="225" height="88" rx="12" fill="#f2f8f5" stroke="#98a2b3"/>
+<text class="lab" x="1027.5" y="139" text-anchor="middle" font-weight="700">Observed disclosure</text>
+<text class="tiny" x="1027.5" y="162" text-anchor="middle">Necessary · inappropriate · ambiguous</text>
+<rect x="35" y="245" width="625" height="88" rx="12" fill="#fff7e8" stroke="#d99b28" stroke-dasharray="5 4"/>
+<text class="lab" x="347" y="275" text-anchor="middle" font-weight="700">Planned attribute-flow analysis</text>
+<text class="tiny" x="347" y="299" text-anchor="middle">Which ground-truth attributes exist in initialized memory, survive retrieval and reranking, and become exposed?</text>
+<text class="tiny" x="347" y="316" text-anchor="middle">Join keys: model · architecture · persona · context · attribute · stage</text>
+<rect x="695" y="245" width="445" height="88" rx="12" fill="#f5f3ff" stroke="#8065b5"/>
+<text class="lab" x="918" y="275" text-anchor="middle" font-weight="700">Current factorial analysis</text>
+<text class="tiny" x="918" y="299" text-anchor="middle">Operating points · reranking effects · architecture/model contrasts</text>
+<text class="tiny" x="918" y="316" text-anchor="middle">Difference-in-differences · heterogeneity · robustness</text>
+</svg>

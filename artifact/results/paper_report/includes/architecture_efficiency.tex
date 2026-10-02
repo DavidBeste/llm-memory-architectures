@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Memory & Cells & Preparation (s) & Generation (s) & Deployed (s) & Reported tokens/query & Init. (min) \\
+\midrule
+List & 30 & 5.0 & \textbf{8.9} & 13.9 & \textbf{4554} (25/30) & \textbf{0.2} \\
+Graph & 30 & 6.3 & 9.9 & 16.3 & 5856 (25/30) & 5.9 \\
+Profile & 30 & \textbf{4.2} & 9.0 & \textbf{13.3} & 5308 (25/30) & 3.7 \\
+\bottomrule
+\end{tabular}
+\caption{Architecture-level efficiency of the deployed post-rerank pipeline. Values are macro-means over model--persona pipeline cells, so response repetitions do not change a cell's weight. Preparation covers retrieval and explicit reranking; deployed latency combines preparation and generation. Reported tokens include exact provider-reported generation and preparation usage but exclude backend operations without telemetry; token means use the cross-architecture matched telemetry cohort, shown in parentheses over all cells. Lower values are bold.}
+\label{tab:cimemories-architecture-efficiency}
+\end{table*}

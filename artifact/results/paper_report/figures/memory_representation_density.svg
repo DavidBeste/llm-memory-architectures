@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="480" viewBox="0 0 1260 480">
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#172033}.title{font-size:23px;font-weight:700}.sub{font-size:11px;fill:#667085}.lab{font-size:11px}.tiny{font-size:9px;fill:#667085}.axis{stroke:#98a2b3}.grid{stroke:#e4e7ec}</style>
+<text class="title" x="24" y="32">Representation density</text>
+<text class="sub" x="24" y="51">Returned facts on x; distinct represented attributes on y; arrows show pre → post</text>
+<text class="lab" x="247.0" y="78" text-anchor="middle" font-weight="700">List</text>
+<line class="grid" x1="72.0" y1="92" x2="72.0" y2="402"/>
+<line class="grid" x1="72" y1="402.0" x2="422" y2="402.0"/>
+<text class="tiny" x="72.0" y="418" text-anchor="middle">0</text>
+<text class="tiny" x="64" y="405.0" text-anchor="end">0</text>
+<line class="grid" x1="142.0" y1="92" x2="142.0" y2="402"/>
+<line class="grid" x1="72" y1="340.0" x2="422" y2="340.0"/>
+<text class="tiny" x="142.0" y="418" text-anchor="middle">11</text>
+<text class="tiny" x="64" y="343.0" text-anchor="end">11</text>
+<line class="grid" x1="212.0" y1="92" x2="212.0" y2="402"/>
+<line class="grid" x1="72" y1="278.0" x2="422" y2="278.0"/>
+<text class="tiny" x="212.0" y="418" text-anchor="middle">22</text>
+<text class="tiny" x="64" y="281.0" text-anchor="end">22</text>
+<line class="grid" x1="282.0" y1="92" x2="282.0" y2="402"/>
+<line class="grid" x1="72" y1="216.0" x2="422" y2="216.0"/>
+<text class="tiny" x="282.0" y="418" text-anchor="middle">33</text>
+<text class="tiny" x="64" y="219.0" text-anchor="end">33</text>
+<line class="grid" x1="352.0" y1="92" x2="352.0" y2="402"/>
+<line class="grid" x1="72" y1="154.0" x2="422" y2="154.0"/>
+<text class="tiny" x="352.0" y="418" text-anchor="middle">44</text>
+<text class="tiny" x="64" y="157.0" text-anchor="end">44</text>
+<line class="grid" x1="422.0" y1="92" x2="422.0" y2="402"/>
+<line class="grid" x1="72" y1="92.0" x2="422" y2="92.0"/>
+<text class="tiny" x="422.0" y="418" text-anchor="middle">55</text>
+<text class="tiny" x="64" y="95.0" text-anchor="end">55</text>
+<line x1="390.18181818181813" y1="120.18181818181823" x2="127.06493506493507" y2="353.22820037105754" stroke="#3559a8" stroke-width="2.5"/>
+<circle cx="390.18181818181813" cy="120.18181818181823" r="5" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="127.06493506493507" cy="353.22820037105754" r="5" fill="#3559a8"/>
+<line x1="390.18181818181813" y1="120.18181818181823" x2="142.7792207792208" y2="339.30983302411875" stroke="#d65f45" stroke-width="2.5"/>
+<circle cx="390.18181818181813" cy="120.18181818181823" r="5" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="142.7792207792208" cy="339.30983302411875" r="5" fill="#d65f45"/>
+<line x1="390.18181818181813" y1="120.18181818181823" x2="168.36363636363635" y2="316.64935064935065" stroke="#2b8a6e" stroke-width="2.5"/>
+<circle cx="390.18181818181813" cy="120.18181818181823" r="5" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="168.36363636363635" cy="316.64935064935065" r="5" fill="#2b8a6e"/>
+<text class="lab" x="652.0" y="78" text-anchor="middle" font-weight="700">Graph</text>
+<line class="grid" x1="477.0" y1="92" x2="477.0" y2="402"/>
+<line class="grid" x1="477" y1="402.0" x2="827" y2="402.0"/>
+<text class="tiny" x="477.0" y="418" text-anchor="middle">0</text>
+<line class="grid" x1="547.0" y1="92" x2="547.0" y2="402"/>
+<line class="grid" x1="477" y1="340.0" x2="827" y2="340.0"/>
+<text class="tiny" x="547.0" y="418" text-anchor="middle">11</text>
+<line class="grid" x1="617.0" y1="92" x2="617.0" y2="402"/>
+<line class="grid" x1="477" y1="278.0" x2="827" y2="278.0"/>
+<text class="tiny" x="617.0" y="418" text-anchor="middle">22</text>
+<line class="grid" x1="687.0" y1="92" x2="687.0" y2="402"/>
+<line class="grid" x1="477" y1="216.0" x2="827" y2="216.0"/>
+<text class="tiny" x="687.0" y="418" text-anchor="middle">33</text>
+<line class="grid" x1="757.0" y1="92" x2="757.0" y2="402"/>
+<line class="grid" x1="477" y1="154.0" x2="827" y2="154.0"/>
+<text class="tiny" x="757.0" y="418" text-anchor="middle">44</text>
+<line class="grid" x1="827.0" y1="92" x2="827.0" y2="402"/>
+<line class="grid" x1="477" y1="92.0" x2="827" y2="92.0"/>
+<text class="tiny" x="827.0" y="418" text-anchor="middle">55</text>
+<line x1="795.1818181818181" y1="120.18181818181823" x2="509.987012987013" y2="304.5051309911868" stroke="#3559a8" stroke-width="2.5"/>
+<circle cx="795.1818181818181" cy="120.18181818181823" r="5" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="509.987012987013" cy="304.5051309911868" r="5" fill="#3559a8"/>
+<line x1="795.1818181818181" y1="222.54207412773152" x2="535.7012987012987" y2="348.7614390921164" stroke="#d65f45" stroke-width="2.5"/>
+<circle cx="795.1818181818181" cy="222.54207412773152" r="5" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="535.7012987012987" cy="348.7614390921164" r="5" fill="#d65f45"/>
+<line x1="795.1818181818181" y1="201.48991911143307" x2="564.6623376623377" y2="336.1301460823373" stroke="#2b8a6e" stroke-width="2.5"/>
+<circle cx="795.1818181818181" cy="201.48991911143307" r="5" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="564.6623376623377" cy="336.1301460823373" r="5" fill="#2b8a6e"/>
+<text class="lab" x="1057.0" y="78" text-anchor="middle" font-weight="700">Profile</text>
+<line class="grid" x1="882.0" y1="92" x2="882.0" y2="402"/>
+<line class="grid" x1="882" y1="402.0" x2="1232" y2="402.0"/>
+<text class="tiny" x="882.0" y="418" text-anchor="middle">0</text>
+<line class="grid" x1="952.0" y1="92" x2="952.0" y2="402"/>
+<line class="grid" x1="882" y1="340.0" x2="1232" y2="340.0"/>
+<text class="tiny" x="952.0" y="418" text-anchor="middle">24</text>
+<line class="grid" x1="1022.0" y1="92" x2="1022.0" y2="402"/>
+<line class="grid" x1="882" y1="278.0" x2="1232" y2="278.0"/>
+<text class="tiny" x="1022.0" y="418" text-anchor="middle">47</text>
+<line class="grid" x1="1092.0" y1="92" x2="1092.0" y2="402"/>
+<line class="grid" x1="882" y1="216.0" x2="1232" y2="216.0"/>
+<text class="tiny" x="1092.0" y="418" text-anchor="middle">71</text>
+<line class="grid" x1="1162.0" y1="92" x2="1162.0" y2="402"/>
+<line class="grid" x1="882" y1="154.0" x2="1232" y2="154.0"/>
+<text class="tiny" x="1162.0" y="418" text-anchor="middle">95</text>
+<line class="grid" x1="1232.0" y1="92" x2="1232.0" y2="402"/>
+<line class="grid" x1="882" y1="92.0" x2="1232" y2="92.0"/>
+<text class="tiny" x="1232.0" y="418" text-anchor="middle">118</text>
+<line x1="1200.181818181818" y1="120.18181818181819" x2="1093.456444789778" y2="177.7997218358832" stroke="#3559a8" stroke-width="2.5"/>
+<circle cx="1200.181818181818" cy="120.18181818181819" r="5" fill="white" stroke="#3559a8" stroke-width="2"/>
+<circle cx="1093.456444789778" cy="177.7997218358832" r="5" fill="#3559a8"/>
+<line x1="929.3797807131141" y1="376.39204282041555" x2="917.2326685660018" y2="376.45736924179204" stroke="#d65f45" stroke-width="2.5"/>
+<circle cx="929.3797807131141" cy="376.39204282041555" r="5" fill="white" stroke="#d65f45" stroke-width="2"/>
+<circle cx="917.2326685660018" cy="376.45736924179204" r="5" fill="#d65f45"/>
+<line x1="924.7264093930761" y1="372.79908964470854" x2="920.0126046792714" y2="372.99506890883805" stroke="#2b8a6e" stroke-width="2.5"/>
+<circle cx="924.7264093930761" cy="372.79908964470854" r="5" fill="white" stroke="#2b8a6e" stroke-width="2"/>
+<circle cx="920.0126046792714" cy="372.99506890883805" r="5" fill="#2b8a6e"/>
+<text class="lab" x="630.0" y="453" text-anchor="middle">Mean returned memory facts</text>
+<text class="lab" transform="translate(18 247.0) rotate(-90)" text-anchor="middle">Mean represented attributes</text>
+</svg>

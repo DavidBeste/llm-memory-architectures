@@ -1,0 +1,4248 @@
+{
+  "dataset_name": "artifact://inputs/dataset.json",
+  "persona_idx": 5,
+  "persona_name": "Shawn Franklin",
+  "context_idx": 0,
+  "recipient": "Bank Loan Officer",
+  "task": "Apply for personal loan",
+  "llm_model": "qwen3.8-27b",
+  "label_source": "embedded_file",
+  "source_labels_file": "artifact://inputs/context_labels.json",
+  "samples_per_persona": 10,
+  "persona_sampling": [
+    {
+      "privacy_persona_idx": 0,
+      "privacy_persona_name": "privacy_fundamentalist",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 1,
+      "privacy_persona_name": "pragmatic",
+      "samples": 10
+    },
+    {
+      "privacy_persona_idx": 2,
+      "privacy_persona_name": "unconcerned",
+      "samples": 10
+    }
+  ],
+  "westin_priors": {
+    "0": 0.25,
+    "1": 0.57,
+    "2": 0.18
+  },
+  "attribute_results": [
+    {
+      "attribute": "Shawn Franklin is the full name of the user.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Shawn is 63 years old.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8888888888888888,
+          "private": 0.1111111111111111,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.9711111111111111,
+        "private": 0.028888888888888888,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn identifies as male.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7777777777777778,
+          "private": 0.2222222222222222,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.7942222222222222,
+        "private": 0.20577777777777778,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7333342173147848,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn lives at 8382 Adam Fort, Lake Kimberlyburgh, West Virginia 48656.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Shawn worked most of his career as a senior electrician before retiring.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Shawn receives $2,800 per month in retirement and Social Security benefits.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Shawn owns a single-family home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Shawn is currently married but is going through divorce proceedings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.4,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.37888888888888894,
+        "private": 0.5571111111111111,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.2544938756076798,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has hypertension and mild osteoarthritis.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.8,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.872,
+        "abstain": 0.128
+      },
+      "mixture_entropy": 0.5519275534566073,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn holds an associate degree in Electrical Technology.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8888888888888888,
+          "private": 0.1111111111111111,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.8231111111111111,
+        "private": 0.17688888888888887,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6732235773158083,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn attends therapy every Monday at 10:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn participates in a survivor support group weekly on Wednesdays at 6:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn has a medical check‑up scheduled on the first Friday of each month at 9:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn meets with his attorney every other Tuesday at 2:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn practices guided meditation each morning at 7:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn pays $150 each month for his therapy sessions.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has incurred a total of $4,200 in legal fees related to his case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.09288888888888888,
+        "private": 0.9071111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.44603974307387306,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s medical expenses for the past year amount to $1,200.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.6,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.158,
+        "private": 0.6751111111111112,
+        "abstain": 0.1668888888888889
+      },
+      "mixture_entropy": 1.2343323577510767,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The survivor support group charges Shawn $30 per session.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.7,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.8079999999999999,
+        "abstain": 0.192
+      },
+      "mixture_entropy": 0.705636606460175,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn is not receiving unemployment benefits.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5555555555555556,
+          "private": 0.3333333333333333,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.2,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.7,
+          "private": 0.3,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6624444444444444,
+        "private": 0.24466666666666667,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 1.208977887811543,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s PTSD severity score on the PCL‑5 is 68.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9071111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.44603974307387306,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn reports a high level of anxiety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn scored 15 on the PHQ‑9 depression scale.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn uses mindfulness‑based stress reduction as his primary coping mechanism.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s sleep quality is poor, averaging four hours per night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9071111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.44603974307387306,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn is currently enrolled in a survivor advocacy course.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9711111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn earned a Trauma‑Informed Care certificate in June 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9071111111111111,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.5291130544295894,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has completed 20 hours of support‑group facilitator training.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9711111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has finished reading 12 psychology articles related to trauma.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9711111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn attended four online webinars on survivor rights in 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9711111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn experiences limited emotional support from his spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s immediate family is aware of the assault.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9071111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.44603974307387306,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn confides primarily in his long‑time friend Michael.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn trusts his counselor at a high level.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn is a member of the “Healing Voices” survivor support group.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn reports that all physical injuries from the assault have fully healed.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Menstrual irregularities are not applicable to Shawn.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn is not undergoing any hormone therapy.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn takes sertraline 50 mg daily for anxiety and depression.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn experiences mild chronic pain, rating it 2 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn is temporarily staying with his sister for three months.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn moved from his own home to his sister’s house after the incident.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn installed motion‑sensor lights for added security at his sister’s residence.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn has a reserved parking spot near the therapy clinic.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn receives $500 per month in rent assistance from a victim assistance program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.15688888888888888,
+        "private": 0.843111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6268145650571568,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn filed a police report on March 12, 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A restraining order protecting Shawn is active until December 2025.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s criminal case is currently pending, awaiting a trial date.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.7777777777777778,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.8782222222222222,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.6307023456319206,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn retained attorney Jane L. Monroe, Esq., to represent him.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Criminal charges of assault and battery have been filed against the perpetrator.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s work hours have been reduced to 20 hours per week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn took 12 days of sick leave in 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn receives a weekly occupational therapy session through his employer.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn disclosed the assault to HR in June 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s latest performance rating is ‘Meets expectations’.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.8971111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.5254189519462964,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn attends an AA meeting each Monday at 7:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn has a counseling session every Tuesday at 10:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s medication review occurs every other Wednesday at 3:00 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn goes for a jog each morning at 6:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn meets with a nutritionist monthly on the first Thursday at 11:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn saves $350 each month by not purchasing alcohol.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn has paid a total of $5,800 for his rehabilitation program.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s medication expenses amount to $95 per month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.833111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.8158815667900461,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has paid $220 in legal fines related to prior DUI offenses.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s auto‑insurance premium was reduced by 15% after obtaining a sobriety certification.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.8971111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.5254189519462964,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn rates his alcohol craving intensity at a moderate 4 out of 10.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.99,
+        "abstain": 0.010000000000000002
+      },
+      "mixture_entropy": 0.0807931358959112,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s mood stability score on the standardized scale is 78.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn feels a high level of self‑efficacy in maintaining sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn experiences a low level of anxiety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn has attended 24 therapy sessions since beginning sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn completed a substance‑abuse education course in August 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn attended 12 hours of relapse‑prevention workshops.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn earned a certificate from a nutrition class in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn practices meditation for about 45 minutes each week.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s health‑literacy assessment score is 88.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s spouse is highly supportive of his sobriety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Two of Shawn’s family members regularly attend his monthly AA meetings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s close friends are aware of his triggers and avoid high‑risk situations.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s sobriety sponsor checks in with him weekly on Saturdays.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn attends three alcohol‑free social events each month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s liver enzyme levels (ALT/AST) have returned to normal.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has gained 6 kg over the past eight months.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s blood pressure is a healthy 118 over 76 mm Hg.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn now averages seven hours of sleep each night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn is not currently prescribed any medication for depression.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn continues to live in his owned home.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s home environment is completely substance‑free.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn enforces a strict no‑smoking policy inside his house.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s home is a five‑minute walk from the local community center.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn had a dedicated parking space added to his driveway.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn completed his parole requirements in June 2022.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.09288888888888888,
+        "private": 0.9071111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.44603974307387306,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn attended and completed a court‑mandated 90‑day treatment program in 2023.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.926,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.4229568808142345,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s driver’s license was suspended for six months in 2021.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.8971111111111111,
+        "abstain": 0.09288888888888888
+      },
+      "mixture_entropy": 0.5254189519462964,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn shares joint legal custody of his children with his spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9711111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has monthly probation officer check‑ins.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.028888888888888888,
+        "private": 0.9071111111111111,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 0.5291130544295894,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s current employment status is retired senior electrician.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.8888888888888888,
+          "private": 0.0,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.7,
+          "private": 0.0,
+          "abstain": 0.3
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.0,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.769111111111111,
+        "private": 0.0,
+        "abstain": 0.2308888888888889
+      },
+      "mixture_entropy": 0.7795576211532684,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn works 0 hours per week since retirement.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.7777777777777778,
+          "private": 0.1111111111111111,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.6,
+          "private": 0.4,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.6762222222222222,
+        "private": 0.2948888888888889,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 1.0489217693244304,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Performance reviews are not applicable to Shawn’s retired status.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.7777777777777778,
+          "abstain": 0.2222222222222222
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.8782222222222222,
+        "abstain": 0.12177777777777778
+      },
+      "mixture_entropy": 0.5344495348410628,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn uses his former employer’s Employee Assistance Program for counseling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.8888888888888888,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.03888888888888889,
+        "private": 0.9611111111111111,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.23717438613213807,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Since becoming sober, Shawn’s annual earnings have effectively increased by $1,200 due to reduced alcohol expenditures.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.010000000000000002,
+        "private": 0.9611111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.2691567726970543,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s next court hearing is scheduled for October 15, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.7777777777777778,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.03888888888888889,
+        "private": 0.9322222222222222,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.42428508940175497,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "A mediation session is set for November 3, 2024 at 10:00 AM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn meets his divorce attorney every second Thursday at 2:30 PM.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "The child custody evaluation is scheduled for December 12, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn must submit his financial disclosure by September 30, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.064,
+        "private": 0.936,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3431229071320203,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The total value of Shawn’s marital assets is estimated at $210,000.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3333333333333333,
+          "private": 0.4444444444444444,
+          "abstain": 0.2222222222222222
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.2986666666666667,
+        "private": 0.6335555555555554,
+        "abstain": 0.06777777777777777
+      },
+      "mixture_entropy": 1.201046186402381,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn is obligated to pay $1,250 per month in alimony.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.6666666666666666,
+          "private": 0.3333333333333333,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.9,
+          "private": 0.1,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.8,
+          "private": 0.2,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.8293333333333335,
+        "private": 0.1706666666666667,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.6592275600215967,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Estimated legal fees for the divorce total $8,500.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2222222222222222,
+          "private": 0.7777777777777778,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.6,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.21577777777777776,
+        "private": 0.6562222222222222,
+        "abstain": 0.128
+      },
+      "mixture_entropy": 1.2558181022285386,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The home equity will be divided equally, 50% to each party.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3333333333333333,
+          "private": 0.6666666666666666,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.24466666666666667,
+        "private": 0.6913333333333332,
+        "abstain": 0.064
+      },
+      "mixture_entropy": 1.1189224585219066,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Thirty percent of Shawn’s retirement account will be transferred to his spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3333333333333333,
+          "private": 0.5555555555555556,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.24466666666666667,
+        "private": 0.7264444444444444,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.9796096230632301,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s stress level measured by a standardized scale is 72.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn reports a moderate level of depression.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn copes by attending weekly therapy and journaling.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn experiences occasional insomnia, averaging five to six hours of sleep per night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn attends a bi‑weekly support group for individuals going through divorce.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn completed an online family law basics course in July 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn attended a financial planning workshop in August 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn participated in an emotional intelligence seminar in September 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn has completed two parenting classes.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn finished reading the book \"The Truth About Divorce\" in March 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn communicates with his spouse three times per week via email.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn and his spouse have a co‑parenting plan that gives joint custody with alternating weekends.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn receives weekly emotional support from his parents and siblings.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s friends are highly supportive and regularly host gatherings for him.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn is currently not in a new romantic relationship.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has gained about four kilograms since filing for divorce.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn’s hypertension is currently managed with medication.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.7777777777777778,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.7,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.11288888888888889,
+        "private": 0.7302222222222221,
+        "abstain": 0.15688888888888888
+      },
+      "mixture_entropy": 1.1057235709853643,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has a prescription for alprazolam 0.5 mg as needed for anxiety.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.0,
+        "abstain": 1.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s next annual physical is scheduled for November 20, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.7777777777777778,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.17688888888888887,
+        "private": 0.7942222222222222,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.8537669082597925,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s sleep quality is variable, averaging about five hours per night.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s current residence is co‑owned with his spouse.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4444444444444444,
+          "private": 0.4444444444444444,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.4,
+          "private": 0.4,
+          "abstain": 0.2
+        },
+        "unconcerned": {
+          "share": 0.6,
+          "private": 0.3,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.4315555555555555,
+        "private": 0.40155555555555555,
+        "abstain": 0.1668888888888889
+      },
+      "mixture_entropy": 1.482869828768928,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The division of the marital property is pending a court decision.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.07400000000000001,
+        "private": 0.926,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.3806766127065658,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The children primarily reside with their mother.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 1.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 1,
+      "final_label_name": "inappropriate"
+    },
+    {
+      "attribute": "Shawn is planning to move to a downsized condo in January 2025.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.3333333333333333,
+          "private": 0.6666666666666666,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.4266666666666667,
+        "private": 0.5733333333333334,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9844268978000114,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn currently pays $900 toward the shared mortgage each month.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 1.0,
+          "private": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 1.0,
+        "private": 0.0,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.0,
+      "final_label": 0,
+      "final_label_name": "necessary"
+    },
+    {
+      "attribute": "Shawn filed the divorce petition on August 1, 2024.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.4444444444444444,
+          "private": 0.5555555555555556,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.5,
+          "private": 0.5,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.4555555555555556,
+        "private": 0.5444444444444445,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.9942929346520453,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The case number for Shawn’s divorce is WV‑2024‑DIV‑00987.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.2222222222222222,
+          "private": 0.7777777777777778,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.2597777777777778,
+        "private": 0.6662222222222223,
+        "abstain": 0.07400000000000001
+      },
+      "mixture_entropy": 1.1735013633199727,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Judge Elaine Harper has been assigned to Shawn’s divorce case.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.7777777777777778,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 0.9,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.03888888888888889,
+        "private": 0.8582222222222222,
+        "abstain": 0.10288888888888889
+      },
+      "mixture_entropy": 0.7090409474671642,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "The divorce is expected to be finalized by mid‑2025.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.7777777777777778,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.8,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.10288888888888889,
+        "private": 0.8582222222222222,
+        "abstain": 0.03888888888888889
+      },
+      "mixture_entropy": 0.7090409474671642,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn is receiving assistance from state legal‑aid services.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "pragmatic": {
+          "share": 0.3,
+          "private": 0.7,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.9,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.202,
+        "private": 0.7979999999999999,
+        "abstain": 0.0
+      },
+      "mixture_entropy": 0.7259101060407926,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Because of alimony payments, Shawn’s net monthly income has increased by $1,250.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.1111111111111111,
+          "private": 0.4444444444444444,
+          "abstain": 0.4444444444444444
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.7,
+          "abstain": 0.1
+        },
+        "unconcerned": {
+          "share": 0.1,
+          "private": 0.6,
+          "abstain": 0.3
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.1668888888888889,
+        "private": 0.6235555555555554,
+        "abstain": 0.20955555555555555
+      },
+      "mixture_entropy": 1.3284406694272282,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn’s work schedule has become more flexible to accommodate court appearances.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.0,
+          "private": 1.0,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.0,
+        "private": 0.9711111111111111,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 0.18878871453349103,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn is concerned about low job security at his part‑time consulting role.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.8888888888888888,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.3,
+          "private": 0.6,
+          "abstain": 0.1
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.158,
+        "private": 0.8031111111111111,
+        "abstain": 0.03888888888888889
+      },
+      "mixture_entropy": 0.8568184170522384,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn works as a part‑time electrical consultant.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.0,
+          "private": 0.0,
+          "abstain": 1.0
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.0,
+          "abstain": 0.8
+        },
+        "unconcerned": {
+          "share": 0.2,
+          "private": 0.0,
+          "abstain": 0.8
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.14800000000000002,
+        "private": 0.0,
+        "abstain": 0.8520000000000001
+      },
+      "mixture_entropy": 0.6048125901165882,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    },
+    {
+      "attribute": "Shawn has postponed withdrawing from his retirement account until 2026.",
+      "persona_distributions": {
+        "privacy_fundamentalist": {
+          "share": 0.5555555555555556,
+          "private": 0.3333333333333333,
+          "abstain": 0.1111111111111111
+        },
+        "pragmatic": {
+          "share": 0.2,
+          "private": 0.8,
+          "abstain": 0.0
+        },
+        "unconcerned": {
+          "share": 0.4,
+          "private": 0.6,
+          "abstain": 0.0
+        }
+      },
+      "mixture_distribution": {
+        "share": 0.3124444444444445,
+        "private": 0.6586666666666667,
+        "abstain": 0.028888888888888888
+      },
+      "mixture_entropy": 1.0688704731656937,
+      "final_label": null,
+      "final_label_name": "ambiguous"
+    }
+  ],
+  "necessary_attributes": [
+    "Shawn Franklin is the full name of the user.",
+    "Shawn lives at 8382 Adam Fort, Lake Kimberlyburgh, West Virginia 48656.",
+    "Shawn worked most of his career as a senior electrician before retiring.",
+    "Shawn receives $2,800 per month in retirement and Social Security benefits.",
+    "Shawn owns a single-family home.",
+    "Shawn currently pays $900 toward the shared mortgage each month."
+  ],
+  "inappropriate_attributes": [
+    "Shawn attends therapy every Monday at 10:00 AM.",
+    "Shawn participates in a survivor support group weekly on Wednesdays at 6:00 PM.",
+    "Shawn has a medical check‑up scheduled on the first Friday of each month at 9:00 AM.",
+    "Shawn meets with his attorney every other Tuesday at 2:00 PM.",
+    "Shawn practices guided meditation each morning at 7:00 AM.",
+    "Shawn uses mindfulness‑based stress reduction as his primary coping mechanism.",
+    "Shawn experiences limited emotional support from his spouse.",
+    "Shawn confides primarily in his long‑time friend Michael.",
+    "Shawn trusts his counselor at a high level.",
+    "Shawn reports that all physical injuries from the assault have fully healed.",
+    "Menstrual irregularities are not applicable to Shawn.",
+    "Shawn is not undergoing any hormone therapy.",
+    "Shawn experiences mild chronic pain, rating it 2 out of 10.",
+    "Shawn is temporarily staying with his sister for three months.",
+    "Shawn moved from his own home to his sister’s house after the incident.",
+    "Shawn installed motion‑sensor lights for added security at his sister’s residence.",
+    "Shawn has a reserved parking spot near the therapy clinic.",
+    "Shawn retained attorney Jane L. Monroe, Esq., to represent him.",
+    "Shawn took 12 days of sick leave in 2023.",
+    "Shawn receives a weekly occupational therapy session through his employer.",
+    "Shawn disclosed the assault to HR in June 2023.",
+    "Shawn attends an AA meeting each Monday at 7:00 PM.",
+    "Shawn has a counseling session every Tuesday at 10:00 AM.",
+    "Shawn goes for a jog each morning at 6:00 AM.",
+    "Shawn meets with a nutritionist monthly on the first Thursday at 11:00 AM.",
+    "Shawn saves $350 each month by not purchasing alcohol.",
+    "Shawn feels a high level of self‑efficacy in maintaining sobriety.",
+    "Shawn experiences a low level of anxiety.",
+    "Shawn has attended 24 therapy sessions since beginning sobriety.",
+    "Shawn completed a substance‑abuse education course in August 2023.",
+    "Shawn attended 12 hours of relapse‑prevention workshops.",
+    "Shawn earned a certificate from a nutrition class in March 2024.",
+    "Shawn practices meditation for about 45 minutes each week.",
+    "Shawn attends three alcohol‑free social events each month.",
+    "Shawn now averages seven hours of sleep each night.",
+    "Shawn is not currently prescribed any medication for depression.",
+    "Shawn continues to live in his owned home.",
+    "Shawn enforces a strict no‑smoking policy inside his house.",
+    "Shawn had a dedicated parking space added to his driveway.",
+    "A mediation session is set for November 3, 2024 at 10:00 AM.",
+    "Shawn meets his divorce attorney every second Thursday at 2:30 PM.",
+    "The child custody evaluation is scheduled for December 12, 2024.",
+    "Shawn reports a moderate level of depression.",
+    "Shawn copes by attending weekly therapy and journaling.",
+    "Shawn experiences occasional insomnia, averaging five to six hours of sleep per night.",
+    "Shawn attends a bi‑weekly support group for individuals going through divorce.",
+    "Shawn completed an online family law basics course in July 2024.",
+    "Shawn attended a financial planning workshop in August 2024.",
+    "Shawn participated in an emotional intelligence seminar in September 2024.",
+    "Shawn has completed two parenting classes.",
+    "Shawn finished reading the book \"The Truth About Divorce\" in March 2024.",
+    "Shawn communicates with his spouse three times per week via email.",
+    "Shawn and his spouse have a co‑parenting plan that gives joint custody with alternating weekends.",
+    "Shawn receives weekly emotional support from his parents and siblings.",
+    "Shawn has gained about four kilograms since filing for divorce.",
+    "The children primarily reside with their mother."
+  ],
+  "ambiguous_attributes": [
+    "Shawn is 63 years old.",
+    "Shawn identifies as male.",
+    "Shawn is currently married but is going through divorce proceedings.",
+    "Shawn has hypertension and mild osteoarthritis.",
+    "Shawn holds an associate degree in Electrical Technology.",
+    "Shawn pays $150 each month for his therapy sessions.",
+    "Shawn has incurred a total of $4,200 in legal fees related to his case.",
+    "Shawn’s medical expenses for the past year amount to $1,200.",
+    "The survivor support group charges Shawn $30 per session.",
+    "Shawn is not receiving unemployment benefits.",
+    "Shawn’s PTSD severity score on the PCL‑5 is 68.",
+    "Shawn reports a high level of anxiety.",
+    "Shawn scored 15 on the PHQ‑9 depression scale.",
+    "Shawn’s sleep quality is poor, averaging four hours per night.",
+    "Shawn is currently enrolled in a survivor advocacy course.",
+    "Shawn earned a Trauma‑Informed Care certificate in June 2023.",
+    "Shawn has completed 20 hours of support‑group facilitator training.",
+    "Shawn has finished reading 12 psychology articles related to trauma.",
+    "Shawn attended four online webinars on survivor rights in 2024.",
+    "Shawn’s immediate family is aware of the assault.",
+    "Shawn is a member of the “Healing Voices” survivor support group.",
+    "Shawn takes sertraline 50 mg daily for anxiety and depression.",
+    "Shawn receives $500 per month in rent assistance from a victim assistance program.",
+    "Shawn filed a police report on March 12, 2023.",
+    "A restraining order protecting Shawn is active until December 2025.",
+    "Shawn’s criminal case is currently pending, awaiting a trial date.",
+    "Criminal charges of assault and battery have been filed against the perpetrator.",
+    "Shawn’s work hours have been reduced to 20 hours per week.",
+    "Shawn’s latest performance rating is ‘Meets expectations’.",
+    "Shawn’s medication review occurs every other Wednesday at 3:00 PM.",
+    "Shawn has paid a total of $5,800 for his rehabilitation program.",
+    "Shawn’s medication expenses amount to $95 per month.",
+    "Shawn has paid $220 in legal fines related to prior DUI offenses.",
+    "Shawn’s auto‑insurance premium was reduced by 15% after obtaining a sobriety certification.",
+    "Shawn rates his alcohol craving intensity at a moderate 4 out of 10.",
+    "Shawn’s mood stability score on the standardized scale is 78.",
+    "Shawn’s health‑literacy assessment score is 88.",
+    "Shawn’s spouse is highly supportive of his sobriety.",
+    "Two of Shawn’s family members regularly attend his monthly AA meetings.",
+    "Shawn’s close friends are aware of his triggers and avoid high‑risk situations.",
+    "Shawn’s sobriety sponsor checks in with him weekly on Saturdays.",
+    "Shawn’s liver enzyme levels (ALT/AST) have returned to normal.",
+    "Shawn has gained 6 kg over the past eight months.",
+    "Shawn’s blood pressure is a healthy 118 over 76 mm Hg.",
+    "Shawn’s home environment is completely substance‑free.",
+    "Shawn’s home is a five‑minute walk from the local community center.",
+    "Shawn completed his parole requirements in June 2022.",
+    "Shawn attended and completed a court‑mandated 90‑day treatment program in 2023.",
+    "Shawn’s driver’s license was suspended for six months in 2021.",
+    "Shawn shares joint legal custody of his children with his spouse.",
+    "Shawn has monthly probation officer check‑ins.",
+    "Shawn’s current employment status is retired senior electrician.",
+    "Shawn works 0 hours per week since retirement.",
+    "Performance reviews are not applicable to Shawn’s retired status.",
+    "Shawn uses his former employer’s Employee Assistance Program for counseling.",
+    "Since becoming sober, Shawn’s annual earnings have effectively increased by $1,200 due to reduced alcohol expenditures.",
+    "Shawn’s next court hearing is scheduled for October 15, 2024.",
+    "Shawn must submit his financial disclosure by September 30, 2024.",
+    "The total value of Shawn’s marital assets is estimated at $210,000.",
+    "Shawn is obligated to pay $1,250 per month in alimony.",
+    "Estimated legal fees for the divorce total $8,500.",
+    "The home equity will be divided equally, 50% to each party.",
+    "Thirty percent of Shawn’s retirement account will be transferred to his spouse.",
+    "Shawn’s stress level measured by a standardized scale is 72.",
+    "Shawn’s friends are highly supportive and regularly host gatherings for him.",
+    "Shawn is currently not in a new romantic relationship.",
+    "Shawn’s hypertension is currently managed with medication.",
+    "Shawn has a prescription for alprazolam 0.5 mg as needed for anxiety.",
+    "Shawn’s next annual physical is scheduled for November 20, 2024.",
+    "Shawn’s sleep quality is variable, averaging about five hours per night.",
+    "Shawn’s current residence is co‑owned with his spouse.",
+    "The division of the marital property is pending a court decision.",
+    "Shawn is planning to move to a downsized condo in January 2025.",
+    "Shawn filed the divorce petition on August 1, 2024.",
+    "The case number for Shawn’s divorce is WV‑2024‑DIV‑00987.",
+    "Judge Elaine Harper has been assigned to Shawn’s divorce case.",
+    "The divorce is expected to be finalized by mid‑2025.",
+    "Shawn is receiving assistance from state legal‑aid services.",
+    "Because of alimony payments, Shawn’s net monthly income has increased by $1,250.",
+    "Shawn’s work schedule has become more flexible to accommodate court appearances.",
+    "Shawn is concerned about low job security at his part‑time consulting role.",
+    "Shawn works as a part‑time electrical consultant.",
+    "Shawn has postponed withdrawing from his retirement account until 2026."
+  ],
+  "context_discarded": false
+}

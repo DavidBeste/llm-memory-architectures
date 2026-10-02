@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "planned-extension-contract",
+  "unit": "one ground-truth attribute in one model/architecture/persona/context",
+  "join_key": [
+    "model",
+    "architecture",
+    "persona_idx",
+    "context_idx",
+    "attribute_id"
+  ],
+  "required_fields": [
+    "model",
+    "architecture",
+    "persona_idx",
+    "context_idx",
+    "attribute_id",
+    "attribute_text",
+    "privacy_class",
+    "present_initialized_memory",
+    "present_pre_rerank",
+    "present_post_rerank",
+    "exposed_pre_response",
+    "exposed_post_response",
+    "matching_method",
+    "source_artifact"
+  ],
+  "privacy_classes": [
+    "necessary",
+    "inappropriate",
+    "ambiguous"
+  ],
+  "transition_analyses": [
+    "initialized_to_pre_rerank_retrieval_recall",
+    "pre_to_post_rerank_retention",
+    "post_rerank_to_response_exposure",
+    "end_to_end_initialized_to_response_exposure"
+  ],
+  "note": "The current exporter inventories source readiness but does not infer missing attribute-level matches."
+}
