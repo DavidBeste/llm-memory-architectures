@@ -3,8 +3,8 @@
 This is the authoritative, end-to-end reviewer guide for reproducing the
 reported CIMemories model by memory-architecture by reranking experiment. It
 separates the free verification path from paid experiment replication and
-records the asymmetries that are easy to miss when reading individual command
-descriptions.
+documents the fixed configuration, matched analysis cohort, and recovery steps
+that are easy to miss when reading individual command descriptions.
 
 ## 1. Choose the reproduction level
 
@@ -203,13 +203,10 @@ Add `--execute` only after the matching Memobase configuration is active and
 bash scripts/reproduce_cimemories_experiments.sh deepseek responses --execute
 ```
 
-The exact response policies are:
-
-| Response model | Post-rerank repetitions | Pre-rerank repetitions |
-|---|---:|---:|
-| GPT-5.6-sol | 10 | 1 |
-| GLM-5.3-Flash | 1 | 1 |
-| DeepSeek-V4-Flash | 1 | 1 |
+The paper-facing comparison uses one post-rerank and one pre-rerank generated
+response per model-architecture-persona-context cell. The helper preserves the
+recorded pipeline-generation settings; the reporting step in Section 11
+selects the matched single-generation cohort from the saved responses.
 
 For GPT, the helper runs one ten-persona dataset pipeline for each
 architecture. Record the three printed dataset output directories, then
@@ -237,13 +234,10 @@ bash scripts/reproduce_cimemories_experiments.sh deepseek status --execute
 ```
 
 Expected coverage for every model and architecture is `post 10/10` and
-`pre 10/10`. GPT should report `post x10, pre x1`; GLM and DeepSeek should
-report `post x1, pre x1`.
-
-At the record level, each completed pipeline covers the same 49 scenarios.
-Consequently, each GPT pipeline has 490 post-rerank response records and 49
-pre-rerank records, while each GLM or DeepSeek pipeline has 49 records at each
-stage. Across the complete response cohort there must be 90 distinct
+`pre 10/10`. Repeat counts shown by the status command describe the responses
+stored in each source pipeline; they do not determine the weight of a cell in
+the paper-facing matched analysis. Each completed pipeline covers the same 49
+scenarios, and the complete response cohort contains 90 distinct
 model-architecture-persona pipeline cells. Run replication in a clean checkout
 with an initially empty `research_outputs/` directory so automatic report
 selection cannot pick up unrelated smoke tests or older retries.
@@ -282,12 +276,12 @@ bash scripts/reproduce_cimemories_experiments.sh all report --execute
 
 The command requires a complete 3-model by 3-architecture by 10-persona
 response matrix and all nine direct-memory cells. It uses
-`--first-post-repeat`: the lowest saved GPT post-rerank repetition is selected
-so every response condition contributes one generation per context. The other
-nine GPT repetitions remain available for variance and sensitivity analyses,
-but do not give GPT cells additional weight in the matched main comparison.
-Confidence intervals use the deterministic implementation's 5,000 hierarchical
-bootstrap resamples.
+`--first-post-repeat` to select the lowest saved post-rerank repetition in every
+model-architecture-persona-context cell, so each response condition contributes
+one generation to the matched main comparison. Any additional stored responses
+remain available for optional sensitivity analyses but are not treated as
+additional independent units in that comparison. Confidence intervals use the
+deterministic implementation's 5,000 hierarchical bootstrap resamples.
 
 The generated `integrated_artifact_inputs.json` is the immutable provenance
 lock for subsequent regeneration. Pass it back with `--inputs` when rebuilding
